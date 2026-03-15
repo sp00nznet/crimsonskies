@@ -20,7 +20,7 @@ This is a game preservation project. Crimson Skies is a beloved arcade flight co
 | **Phase 0** | **Complete** | Binary analysis, PE parsing, SafeDisc decryption |
 | **Phase 1** | **Complete** | Function discovery (6,081 functions from 6,083 entries) |
 | **Phase 2** | **Complete** | x86-to-C code generation (821,533 lines, 44 MB, 0 errors) |
-| Phase 3 | Pending | Compilation and linking |
+| **Phase 3** | **Complete** | Compilation and linking (0 errors, 18.4 MB exe) |
 | Phase 4 | Pending | Runtime bringup — CRT init, import bridging |
 | Phase 5 | Pending | Win32/DirectX HAL — COM mocks for DDraw/D3D/DInput/DSound |
 | Phase 6 | Pending | GOS engine abstraction — rendering, audio, input |
@@ -46,6 +46,10 @@ This is a game preservation project. Crimson Skies is a beloved arcade flight co
 | **Lines of C** | 821,533 (44 MB across 13 source files) |
 | **Code Gen Errors** | 0 |
 | **Code Gen Time** | 8.5 seconds |
+| **Compile Errors** | 0 |
+| **Link Errors** | 0 |
+| **Executable Size** | 18.4 MB |
+| **Post-Gen Fixes** | 792 tail calls, 3 FPU cmp, 2 bogus calls, 1 stub |
 
 ### Recompilation Statistics
 
