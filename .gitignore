@@ -1,0 +1,36 @@
+# Build
+build/
+cmake-build-*/
+
+# IDE
+.vs/
+.vscode/
+*.sln
+*.vcxproj*
+.idea/
+*.swp
+*~
+
+# Claude
+.claude/
+
+# Game data (copyrighted - never commit)
+game_disc/
+iso/
+modernized.zip
+crimsonskies.zip
+mod_edition/
+*.iso
+*.bin
+*.cue
+*.zip
+*.7z
+
+# Decrypted binary (derived from copyrighted game)
+analysis/CRIMSON_decrypted.exe
+
+# Generated code (reproducible from binary + tools)
+src/recomp/gen/
+
+# Tools (submodule)
+tools/pcrecomp/

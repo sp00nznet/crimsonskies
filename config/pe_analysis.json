@@ -1,0 +1,90 @@
+{
+  "target": "CRIMSON.ICD",
+  "decrypted": "CRIMSON_decrypted.exe",
+  "image_base": "0x400000",
+  "entry_point": "0x5f7056",
+  "linker_version": "6.00",
+  "timestamp": "1996-02-26 04:38:09 UTC",
+  "sections": [
+    {
+      "name": ".text",
+      "va": "0x1000",
+      "vsize": "0x2014bd",
+      "raw_offset": "0x1000",
+      "raw_size": "0x202000",
+      "is_code": true
+    },
+    {
+      "name": ".rdata",
+      "va": "0x203000",
+      "vsize": "0x159a0",
+      "raw_offset": "0x203000",
+      "raw_size": "0x16000",
+      "is_code": false
+    },
+    {
+      "name": ".data",
+      "va": "0x219000",
+      "vsize": "0x4051d4",
+      "raw_offset": "0x219000",
+      "raw_size": "0x2a000",
+      "is_code": false
+    },
+    {
+      "name": ".idata",
+      "va": "0x61f000",
+      "vsize": "0x362d",
+      "raw_offset": "0x243000",
+      "raw_size": "0x4000",
+      "is_code": false
+    },
+    {
+      "name": ".rsrc",
+      "va": "0x623000",
+      "vsize": "0x591e",
+      "raw_offset": "0x247000",
+      "raw_size": "0x6000",
+      "is_code": false
+    },
+    {
+      "name": ".reloc",
+      "va": "0x629000",
+      "vsize": "0x28d1c",
+      "raw_offset": "0x24d000",
+      "raw_size": "0x29000",
+      "is_code": false
+    }
+  ],
+  "imports": {
+    "ole32.dll": 3,
+    "WINMM.dll": 14,
+    "DSOUND.dll": 1,
+    "IFC21.dll": 19,
+    "IMM32.dll": 1,
+    "MFC42.DLL": 203,
+    "MSVCRT.dll": 124,
+    "KeRNeL32.dll": 74,
+    "USER32.dll": 62,
+    "GDI32.dll": 22,
+    "comdlg32.dll": 2,
+    "ADVAPI32.dll": 6,
+    "SHELL32.dll": 3,
+    "MSVCP60.dll": 33,
+    "DDRAW.dll": 2,
+    "DPLAYX.dll": 1,
+    "DINPUT.dll": 1,
+    "MSACM32.dll": 8,
+    "zTiff.dll": 5,
+    "AVIFIL32.dll": 9,
+    "MSVFW32.dll": 4
+  },
+  "total_imports": 597,
+  "notes": {
+    "compiler": "Visual C++ 6.0 (Visual Studio 98)",
+    "engine": "Zipper Interactive GameZ/GOS",
+    "pdb_path": "D:\\zipper\\CrimsonRun\\run\\Crimson.pdb",
+    "safedisc": "v1.50 (BoG_ marker)",
+    "estimated_functions": 5865,
+    "estimated_instructions": 732257
+  }
+}
