@@ -20,8 +20,8 @@ This is a game preservation project. Crimson Skies is a beloved arcade flight co
 | **Phase 0** | **Complete** | Binary analysis, PE parsing, SafeDisc decryption |
 | **Phase 1** | **Complete** | Function discovery (6,081 functions from 6,083 entries) |
 | **Phase 2** | **Complete** | x86-to-C code generation (821,533 lines, 44 MB, 0 errors) |
-| **Phase 3** | **Complete** | Compilation and linking (0 errors, 18.4 MB exe) |
-| Phase 4 | Pending | Runtime bringup — CRT init, import bridging |
+| **Phase 3** | **Complete** | Compilation and linking (0 errors, 18.4 MB exe, runs) |
+| Phase 4 | **Next** | Runtime bringup — memory mapping, import bridges, CRT init |
 | Phase 5 | Pending | Win32/DirectX HAL — COM mocks for DDraw/D3D/DInput/DSound |
 | Phase 6 | Pending | GOS engine abstraction — rendering, audio, input |
 | Phase 7 | Pending | Asset loading — ROF archives, ZBD files, CAB extraction |
@@ -130,6 +130,18 @@ crimsonskies/
 │   └── pe_analysis.json    # PE metadata for code generator
 ├── CMakeLists.txt
 └── README.md
+```
+
+### Current Runtime Output
+
+```
+Crimson Skies Static Recompilation v0.1
+=======================================
+Binary: CRIMSON.ICD (Zipper Interactive, 2000)
+Engine: GameZ/GOS
+Functions: 6081
+
+Setup complete. Runtime bringup pending.
 ```
 
 ## Building
