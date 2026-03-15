@@ -18,8 +18,8 @@ This is a game preservation project. Crimson Skies is a beloved arcade flight co
 | Phase | Status | Description |
 |-------|--------|-------------|
 | **Phase 0** | **Complete** | Binary analysis, PE parsing, SafeDisc decryption |
-| **Phase 1** | In Progress | Function discovery and disassembly |
-| Phase 2 | Pending | x86-to-C code generation (automated lifting) |
+| **Phase 1** | **Complete** | Function discovery (6,081 functions from 6,083 entries) |
+| **Phase 2** | **Complete** | x86-to-C code generation (821,533 lines, 44 MB, 0 errors) |
 | Phase 3 | Pending | Compilation and linking |
 | Phase 4 | Pending | Runtime bringup — CRT init, import bridging |
 | Phase 5 | Pending | Win32/DirectX HAL — COM mocks for DDraw/D3D/DInput/DSound |
@@ -42,8 +42,21 @@ This is a game preservation project. Crimson Skies is a beloved arcade flight co
 | **Copy Protection** | SafeDisc v1.50 (BoG_ marker, ICD format) |
 | **Relocations** | Present (.reloc section) |
 | **PDB Path** | `D:\zipper\CrimsonRun\run\Crimson.pdb` |
-| **Estimated Functions** | ~5,865 |
-| **Estimated Instructions** | ~732,000 |
+| **Functions** | 6,081 (discovered from 6,083 entry points) |
+| **Lines of C** | 821,533 (44 MB across 13 source files) |
+| **Code Gen Errors** | 0 |
+| **Code Gen Time** | 8.5 seconds |
+
+### Recompilation Statistics
+
+| Metric | Value |
+|--------|-------|
+| Functions recompiled | 6,081 |
+| Total lines of C | 821,533 |
+| Generated code size | 44.0 MB |
+| Source files | 13 + header + dispatch table |
+| Code generation time | 8.5 seconds |
+| Compilation errors | 0 (code gen) |
 
 ### Engine: Zipper Interactive GameZ / GOS
 
