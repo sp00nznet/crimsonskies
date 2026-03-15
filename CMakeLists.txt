@@ -14,20 +14,26 @@ endif()
 set(CMAKE_C_STANDARD 11)
 set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/bin)
 
+# Collect all generated source files
+file(GLOB RECOMP_GENERATED_SOURCES "src/recomp/gen/recomp_*.c")
+
 # Recompiled game executable
 add_executable(crimson WIN32
     src/game/main.c
     src/game/imports.c
     src/game/com_mocks.c
-    # Generated source files will be added here as they're produced
-    # src/recomp/gen/recomp_0000.c
-    # src/recomp/gen/recomp_0001.c
-    # ...
+    ${RECOMP_GENERATED_SOURCES}
 )
 
 target_include_directories(crimson PRIVATE
     src/game
     src/recomp
+    src/recomp/gen
+)
+
+# Generated code uses the RECOMP_GENERATED_CODE define for register aliases
+set_source_files_properties(${RECOMP_GENERATED_SOURCES} PROPERTIES
+    COMPILE_DEFINITIONS "RECOMP_GENERATED_CODE"
 )
 
 # Link against Win32 libraries
@@ -55,6 +61,12 @@ target_compile_options(crimson PRIVATE
     /W3           # Warning level 3
     /wd4244       # Suppress narrowing conversion warnings
     /wd4018       # Suppress signed/unsigned comparison warnings
+    /wd4146       # Suppress unary minus on unsigned
+    /wd4305       # Suppress double->float truncation
+    /wd4267       # Suppress size_t->uint32 conversion
+    /wd4090       # Suppress const qualifier difference
+    /wd4102       # Suppress unreferenced label
+    /bigobj       # Large object files (generated code is big)
 )
 
 target_compile_definitions(crimson PRIVATE
