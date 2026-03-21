@@ -193,6 +193,21 @@ def main():
     entries = find_entries(code_data, code_start, code_end)
     print(f'[*]   Found {len(entries)} function entries', flush=True)
 
+    # Merge manually-added functions from config/functions.json
+    manual_funcs_file = os.path.join(os.path.dirname(__file__), 'config', 'manual_functions.json')
+    if os.path.exists(manual_funcs_file):
+        with open(manual_funcs_file) as mf:
+            manual = json.load(mf)
+        manual_addrs = set(e['address_int'] for e in manual)
+        entry_set = set(entries)
+        added = 0
+        for addr in manual_addrs:
+            if addr not in entry_set and code_start <= addr < code_end:
+                entries.append(addr)
+                added += 1
+        entries.sort()
+        print(f'[*]   Added {added} manual entries (total: {len(entries)})', flush=True)
+
     # Step 3: Disassembly + Lifting
     print(f'\n[*] Step 3: Disassembly + Code Generation...', flush=True)
     md = Cs(CS_ARCH_X86, CS_MODE_32)

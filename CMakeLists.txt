@@ -51,6 +51,7 @@ target_link_libraries(crimson PRIVATE
 # Linker settings matching original binary
 target_link_options(crimson PRIVATE
     /DYNAMICBASE:NO       # No ASLR (fixed image base)
+    /BASE:0x10000000      # Rebase to 0x10000000 to free original VA range (0x00400000-0x00A29000)
     /STACK:0x200000       # 2MB stack (matching original)
     /LARGEADDRESSAWARE:NO # 32-bit address space only
 )

@@ -18,10 +18,10 @@ This is a game preservation project. Crimson Skies is a beloved arcade flight co
 | Phase | Status | Description |
 |-------|--------|-------------|
 | **Phase 0** | **Complete** | Binary analysis, PE parsing, SafeDisc decryption |
-| **Phase 1** | **Complete** | Function discovery (6,081 functions from 6,083 entries) |
-| **Phase 2** | **Complete** | x86-to-C code generation (821,533 lines, 44 MB, 0 errors) |
-| **Phase 3** | **Complete** | Compilation and linking (0 errors, 18.4 MB exe, runs) |
-| Phase 4 | **Next** | Runtime bringup — memory mapping, import bridges, CRT init |
+| **Phase 1** | **Complete** | Function discovery (6,232 functions) |
+| **Phase 2** | **Complete** | x86-to-C code generation (826,381 lines, 44.2 MB, 0 errors) |
+| **Phase 3** | **Complete** | Compilation and linking (0 errors, 0x10000000 base) |
+| **Phase 4** | **In Progress** | Runtime bringup — CRT init runs, MFC42 bridges, 597 imports |
 | Phase 5 | Pending | Win32/DirectX HAL — COM mocks for DDraw/D3D/DInput/DSound |
 | Phase 6 | Pending | GOS engine abstraction — rendering, audio, input |
 | Phase 7 | Pending | Asset loading — ROF archives, ZBD files, CAB extraction |
@@ -42,25 +42,26 @@ This is a game preservation project. Crimson Skies is a beloved arcade flight co
 | **Copy Protection** | SafeDisc v1.50 (BoG_ marker, ICD format) |
 | **Relocations** | Present (.reloc section) |
 | **PDB Path** | `D:\zipper\CrimsonRun\run\Crimson.pdb` |
-| **Functions** | 6,081 (discovered from 6,083 entry points) |
-| **Lines of C** | 821,533 (44 MB across 13 source files) |
+| **Functions** | 6,232 (6,081 auto-discovered + 151 manual) |
+| **Lines of C** | 826,381 (44.2 MB across 13 source files) |
 | **Code Gen Errors** | 0 |
-| **Code Gen Time** | 8.5 seconds |
+| **Code Gen Time** | ~12 seconds |
 | **Compile Errors** | 0 |
 | **Link Errors** | 0 |
-| **Executable Size** | 18.4 MB |
-| **Post-Gen Fixes** | 792 tail calls, 3 FPU cmp, 2 bogus calls, 1 stub |
+| **Image Base** | 0x10000000 (rebased to free original VA range) |
+| **Post-Gen Fixes** | 922 tail calls, 3106 fs:[0] fixes, 2 bogus calls, 7 manual overrides |
+| **Import Bridges** | 597 (from 20 DLLs, auto-generated from IAT) |
 
 ### Recompilation Statistics
 
 | Metric | Value |
 |--------|-------|
-| Functions recompiled | 6,081 |
-| Total lines of C | 821,533 |
-| Generated code size | 44.0 MB |
+| Functions recompiled | 6,232 |
+| Total lines of C | 826,381 |
+| Generated code size | 44.2 MB |
 | Source files | 13 + header + dispatch table |
-| Code generation time | 8.5 seconds |
-| Compilation errors | 0 (code gen) |
+| Code generation time | ~12 seconds |
+| Compilation errors | 0 |
 
 ### Engine: Zipper Interactive GameZ / GOS
 
@@ -132,17 +133,40 @@ crimsonskies/
 └── README.md
 ```
 
-### Current Runtime Output
+### Current Runtime Output (Phase 4)
 
 ```
-Crimson Skies Static Recompilation v0.1
+Crimson Skies Static Recompilation v0.2
 =======================================
 Binary: CRIMSON.ICD (Zipper Interactive, 2000)
 Engine: GameZ/GOS
-Functions: 6081
+Phase 4: Runtime Bringup
 
-Setup complete. Runtime bringup pending.
+[*] VEH crash handler installed
+[*] Setting up memory layout (fixed-base, g_mem_base=0)...
+[*] Setting up import bridges...
+    Registered 589 import bridges
+
+[*] Dispatch table: 6232 recompiled functions
+[*] Import bridges: 589 registered
+
+[*] Calling entry point sub_005F7056...
+[*] _initterm: 0x00619000 - 0x00619268
+    _initterm: called 150+, skipped 0
+    (CRT init, MSVCP60 init, game static constructors)
+
+[*] AfxWinMain entered (MFC42 ordinal 1576)
+    ... MFC/CWinApp initialization in progress
 ```
+
+### Phase 4 Progress
+
+- **Memory mapping**: Data sections mapped at original VAs, exe rebased to 0x10000000
+- **Import bridges**: 597 imports from 20 DLLs bridged (generic stdcall/cdecl/thiscall dispatch)
+- **CRT initialization**: `_initterm` executes 150+ C++ static constructors
+- **MFC42 forwarding**: 203 ordinal imports resolved from real MFC42.DLL
+- **fs:[0] fix**: 3,106 SEH accesses corrected (codegen bug)
+- **Current blocker**: VirtualAlloc at original VAs needs chunked allocation strategy
 
 ## Building
 

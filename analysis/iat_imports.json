@@ -1,0 +1,2432 @@
+{
+  "ole32.dll": [
+    {
+      "name": "CoInitialize",
+      "iat_va": 10618080
+    },
+    {
+      "name": "CoCreateInstance",
+      "iat_va": 10618084
+    },
+    {
+      "name": "CoUninitialize",
+      "iat_va": 10618088
+    }
+  ],
+  "WINMM.dll": [
+    {
+      "name": "mixerGetLineInfoA",
+      "iat_va": 10618008
+    },
+    {
+      "name": "mixerOpen",
+      "iat_va": 10618012
+    },
+    {
+      "name": "mciGetErrorStringA",
+      "iat_va": 10618016
+    },
+    {
+      "name": "mixerGetLineControlsA",
+      "iat_va": 10618020
+    },
+    {
+      "name": "mixerClose",
+      "iat_va": 10618024
+    },
+    {
+      "name": "auxSetVolume",
+      "iat_va": 10618028
+    },
+    {
+      "name": "auxGetVolume",
+      "iat_va": 10618032
+    },
+    {
+      "name": "mciSendCommandA",
+      "iat_va": 10618036
+    },
+    {
+      "name": "auxGetNumDevs",
+      "iat_va": 10618040
+    },
+    {
+      "name": "auxGetDevCapsA",
+      "iat_va": 10618044
+    },
+    {
+      "name": "mixerSetControlDetails",
+      "iat_va": 10618048
+    },
+    {
+      "name": "mixerGetControlDetailsA",
+      "iat_va": 10618052
+    },
+    {
+      "name": "mixerGetNumDevs",
+      "iat_va": 10618056
+    },
+    {
+      "name": "timeGetTime",
+      "iat_va": 10618060
+    }
+  ],
+  "DSOUND.dll": [
+    {
+      "name": "ordinal_1",
+      "iat_va": 10615744
+    }
+  ],
+  "IFC21.dll": [
+    {
+      "name": "??0CImmProject@@QAE@XZ",
+      "iat_va": 10615844
+    },
+    {
+      "name": "?GetContainedEffect@CImmCompoundEffect@@QAEPAVCImmEffect@@J@Z",
+      "iat_va": 10615848
+    },
+    {
+      "name": "??0CImmDXDevice@@QAE@XZ",
+      "iat_va": 10615852
+    },
+    {
+      "name": "?SwitchToAbsoluteMode@CImmDevice@@UAEHH@Z",
+      "iat_va": 10615856
+    },
+    {
+      "name": "?Start@CImmCompoundEffect@@QAEHKK@Z",
+      "iat_va": 10615860
+    },
+    {
+      "name": "?ChangeBaseParams@CImmEffect@@QAEHJJKPAUFEELIT_ENVELOPE@@KKKKK@Z",
+      "iat_va": 10615864
+    },
+    {
+      "name": "?ChangeBaseParamsPolar@CImmEffect@@QAEHJKPAUFEELIT_ENVELOPE@@KKKKK@Z",
+      "iat_va": 10615868
+    },
+    {
+      "name": "?Stop@CImmCompoundEffect@@QAEHXZ",
+      "iat_va": 10615872
+    },
+    {
+      "name": "?Close@CImmProject@@QAEXXZ",
+      "iat_va": 10615876
+    },
+    {
+      "name": "??1CImmDXDevice@@UAE@XZ",
+      "iat_va": 10615880
+    },
+    {
+      "name": "??1CImmProject@@QAE@XZ",
+      "iat_va": 10615884
+    },
+    {
+      "name": "?GetAPI@CImmDXDevice@@UAEPAUIFeelit@@XZ",
+      "iat_va": 10615888
+    },
+    {
+      "name": "?Initialize@CImmDXDevice@@QAEHPAX0PAUIDirectInputA@@PAUIDirectInputDevice2A@@@Z",
+      "iat_va": 10615892
+    },
+    {
+      "name": "?OpenFile@CImmProject@@QAEHPBDPAVCImmDevice@@@Z",
+      "iat_va": 10615896
+    },
+    {
+      "name": "?CreateEffect@CImmProject@@QAEPAVCImmCompoundEffect@@PBDPAVCImmDevice@@K@Z",
+      "iat_va": 10615900
+    },
+    {
+      "name": "?prepare_device@CImmDevice@@MAEHXZ",
+      "iat_va": 10615904
+    },
+    {
+      "name": "?GetDevice@CImmDXDevice@@UAEPAUIFeelitDevice@@XZ",
+      "iat_va": 10615908
+    },
+    {
+      "name": "?ChangeScreenResolution@CImmDevice@@UAEHHKK@Z",
+      "iat_va": 10615912
+    },
+    {
+      "name": "?reset@CImmDXDevice@@MAEXXZ",
+      "iat_va": 10615916
+    }
+  ],
+  "IMM32.dll": [
+    {
+      "name": "ImmGetVirtualKey",
+      "iat_va": 10615924
+    }
+  ],
+  "MFC42.DLL": [
+    {
+      "name": "ordinal_3350",
+      "iat_va": 10616232
+    },
+    {
+      "name": "ordinal_4303",
+      "iat_va": 10616236
+    },
+    {
+      "name": "ordinal_4467",
+      "iat_va": 10616240
+    },
+    {
+      "name": "ordinal_5103",
+      "iat_va": 10616244
+    },
+    {
+      "name": "ordinal_5012",
+      "iat_va": 10616248
+    },
+    {
+      "name": "ordinal_3403",
+      "iat_va": 10616252
+    },
+    {
+      "name": "ordinal_2879",
+      "iat_va": 10616256
+    },
+    {
+      "name": "ordinal_2878",
+      "iat_va": 10616260
+    },
+    {
+      "name": "ordinal_975",
+      "iat_va": 10616264
+    },
+    {
+      "name": "ordinal_4077",
+      "iat_va": 10616268
+    },
+    {
+      "name": "ordinal_5472",
+      "iat_va": 10616272
+    },
+    {
+      "name": "ordinal_4151",
+      "iat_va": 10616276
+    },
+    {
+      "name": "ordinal_2649",
+      "iat_va": 10616280
+    },
+    {
+      "name": "ordinal_1665",
+      "iat_va": 10616284
+    },
+    {
+      "name": "ordinal_4436",
+      "iat_va": 10616288
+    },
+    {
+      "name": "ordinal_5252",
+      "iat_va": 10616292
+    },
+    {
+      "name": "ordinal_4427",
+      "iat_va": 10616296
+    },
+    {
+      "name": "ordinal_4220",
+      "iat_va": 10616300
+    },
+    {
+      "name": "ordinal_2584",
+      "iat_va": 10616304
+    },
+    {
+      "name": "ordinal_3654",
+      "iat_va": 10616308
+    },
+    {
+      "name": "ordinal_5237",
+      "iat_va": 10616312
+    },
+    {
+      "name": "ordinal_1768",
+      "iat_va": 10616316
+    },
+    {
+      "name": "ordinal_2455",
+      "iat_va": 10616320
+    },
+    {
+      "name": "ordinal_5282",
+      "iat_va": 10616324
+    },
+    {
+      "name": "ordinal_1146",
+      "iat_va": 10616328
+    },
+    {
+      "name": "ordinal_2438",
+      "iat_va": 10616332
+    },
+    {
+      "name": "ordinal_3663",
+      "iat_va": 10616336
+    },
+    {
+      "name": "ordinal_2379",
+      "iat_va": 10616340
+    },
+    {
+      "name": "ordinal_4457",
+      "iat_va": 10616344
+    },
+    {
+      "name": "ordinal_2414",
+      "iat_va": 10616348
+    },
+    {
+      "name": "ordinal_4499",
+      "iat_va": 10616352
+    },
+    {
+      "name": "ordinal_6215",
+      "iat_va": 10616356
+    },
+    {
+      "name": "ordinal_2514",
+      "iat_va": 10616360
+    },
+    {
+      "name": "ordinal_2575",
+      "iat_va": 10616364
+    },
+    {
+      "name": "ordinal_4396",
+      "iat_va": 10616368
+    },
+    {
+      "name": "ordinal_3574",
+      "iat_va": 10616372
+    },
+    {
+      "name": "ordinal_3721",
+      "iat_va": 10616376
+    },
+    {
+      "name": "ordinal_795",
+      "iat_va": 10616380
+    },
+    {
+      "name": "ordinal_609",
+      "iat_va": 10616384
+    },
+    {
+      "name": "ordinal_2614",
+      "iat_va": 10616388
+    },
+    {
+      "name": "ordinal_6283",
+      "iat_va": 10616392
+    },
+    {
+      "name": "ordinal_6282",
+      "iat_va": 10616396
+    },
+    {
+      "name": "ordinal_5710",
+      "iat_va": 10616400
+    },
+    {
+      "name": "ordinal_1644",
+      "iat_va": 10616404
+    },
+    {
+      "name": "ordinal_4129",
+      "iat_va": 10616408
+    },
+    {
+      "name": "ordinal_3059",
+      "iat_va": 10616412
+    },
+    {
+      "name": "ordinal_5100",
+      "iat_va": 10616416
+    },
+    {
+      "name": "ordinal_6375",
+      "iat_va": 10616420
+    },
+    {
+      "name": "ordinal_3729",
+      "iat_va": 10616424
+    },
+    {
+      "name": "ordinal_2818",
+      "iat_va": 10616428
+    },
+    {
+      "name": "ordinal_2152",
+      "iat_va": 10616432
+    },
+    {
+      "name": "ordinal_4406",
+      "iat_va": 10616436
+    },
+    {
+      "name": "ordinal_3394",
+      "iat_va": 10616440
+    },
+    {
+      "name": "ordinal_2390",
+      "iat_va": 10616444
+    },
+    {
+      "name": "ordinal_3361",
+      "iat_va": 10616448
+    },
+    {
+      "name": "ordinal_2396",
+      "iat_va": 10616452
+    },
+    {
+      "name": "ordinal_3346",
+      "iat_va": 10616456
+    },
+    {
+      "name": "ordinal_5300",
+      "iat_va": 10616460
+    },
+    {
+      "name": "ordinal_5302",
+      "iat_va": 10616464
+    },
+    {
+      "name": "ordinal_4079",
+      "iat_va": 10616468
+    },
+    {
+      "name": "ordinal_4698",
+      "iat_va": 10616472
+    },
+    {
+      "name": "ordinal_5307",
+      "iat_va": 10616476
+    },
+    {
+      "name": "ordinal_4622",
+      "iat_va": 10616480
+    },
+    {
+      "name": "ordinal_3738",
+      "iat_va": 10616484
+    },
+    {
+      "name": "ordinal_2621",
+      "iat_va": 10616488
+    },
+    {
+      "name": "ordinal_1232",
+      "iat_va": 10616492
+    },
+    {
+      "name": "ordinal_1168",
+      "iat_va": 10616496
+    },
+    {
+      "name": "ordinal_2725",
+      "iat_va": 10616500
+    },
+    {
+      "name": "ordinal_4274",
+      "iat_va": 10616504
+    },
+    {
+      "name": "ordinal_5289",
+      "iat_va": 10616508
+    },
+    {
+      "name": "ordinal_815",
+      "iat_va": 10616512
+    },
+    {
+      "name": "ordinal_561",
+      "iat_va": 10616516
+    },
+    {
+      "name": "ordinal_1842",
+      "iat_va": 10616520
+    },
+    {
+      "name": "ordinal_4242",
+      "iat_va": 10616524
+    },
+    {
+      "name": "ordinal_3571",
+      "iat_va": 10616528
+    },
+    {
+      "name": "ordinal_366",
+      "iat_va": 10616532
+    },
+    {
+      "name": "ordinal_3626",
+      "iat_va": 10616536
+    },
+    {
+      "name": "ordinal_674",
+      "iat_va": 10616540
+    },
+    {
+      "name": "ordinal_4413",
+      "iat_va": 10616544
+    },
+    {
+      "name": "ordinal_755",
+      "iat_va": 10616548
+    },
+    {
+      "name": "ordinal_470",
+      "iat_va": 10616552
+    },
+    {
+      "name": "ordinal_5030",
+      "iat_va": 10616556
+    },
+    {
+      "name": "ordinal_1641",
+      "iat_va": 10616560
+    },
+    {
+      "name": "ordinal_4337",
+      "iat_va": 10616564
+    },
+    {
+      "name": "ordinal_6376",
+      "iat_va": 10616568
+    },
+    {
+      "name": "ordinal_2055",
+      "iat_va": 10616572
+    },
+    {
+      "name": "ordinal_2648",
+      "iat_va": 10616576
+    },
+    {
+      "name": "ordinal_4441",
+      "iat_va": 10616580
+    },
+    {
+      "name": "ordinal_4837",
+      "iat_va": 10616584
+    },
+    {
+      "name": "ordinal_3798",
+      "iat_va": 10616588
+    },
+    {
+      "name": "ordinal_5280",
+      "iat_va": 10616592
+    },
+    {
+      "name": "ordinal_4353",
+      "iat_va": 10616596
+    },
+    {
+      "name": "ordinal_6374",
+      "iat_va": 10616600
+    },
+    {
+      "name": "ordinal_5163",
+      "iat_va": 10616604
+    },
+    {
+      "name": "ordinal_2723",
+      "iat_va": 10616608
+    },
+    {
+      "name": "ordinal_922",
+      "iat_va": 10616612
+    },
+    {
+      "name": "ordinal_926",
+      "iat_va": 10616616
+    },
+    {
+      "name": "ordinal_2086",
+      "iat_va": 10616620
+    },
+    {
+      "name": "ordinal_2385",
+      "iat_va": 10616624
+    },
+    {
+      "name": "ordinal_5241",
+      "iat_va": 10616628
+    },
+    {
+      "name": "ordinal_4407",
+      "iat_va": 10616632
+    },
+    {
+      "name": "ordinal_1775",
+      "iat_va": 10616636
+    },
+    {
+      "name": "ordinal_4078",
+      "iat_va": 10616640
+    },
+    {
+      "name": "ordinal_6052",
+      "iat_va": 10616644
+    },
+    {
+      "name": "ordinal_4710",
+      "iat_va": 10616648
+    },
+    {
+      "name": "ordinal_4486",
+      "iat_va": 10616652
+    },
+    {
+      "name": "ordinal_2554",
+      "iat_va": 10616656
+    },
+    {
+      "name": "ordinal_2512",
+      "iat_va": 10616660
+    },
+    {
+      "name": "ordinal_1576",
+      "iat_va": 10616664
+    },
+    {
+      "name": "ordinal_4998",
+      "iat_va": 10616668
+    },
+    {
+      "name": "ordinal_2587",
+      "iat_va": 10616672
+    },
+    {
+      "name": "ordinal_4424",
+      "iat_va": 10616676
+    },
+    {
+      "name": "ordinal_4853",
+      "iat_va": 10616680
+    },
+    {
+      "name": "ordinal_2642",
+      "iat_va": 10616684
+    },
+    {
+      "name": "ordinal_2362",
+      "iat_va": 10616688
+    },
+    {
+      "name": "ordinal_2301",
+      "iat_va": 10616692
+    },
+    {
+      "name": "ordinal_3874",
+      "iat_va": 10616696
+    },
+    {
+      "name": "ordinal_6605",
+      "iat_va": 10616700
+    },
+    {
+      "name": "ordinal_4284",
+      "iat_va": 10616704
+    },
+    {
+      "name": "ordinal_3402",
+      "iat_va": 10616708
+    },
+    {
+      "name": "ordinal_4299",
+      "iat_va": 10616712
+    },
+    {
+      "name": "ordinal_2864",
+      "iat_va": 10616716
+    },
+    {
+      "name": "ordinal_6880",
+      "iat_va": 10616720
+    },
+    {
+      "name": "ordinal_2915",
+      "iat_va": 10616724
+    },
+    {
+      "name": "ordinal_939",
+      "iat_va": 10616728
+    },
+    {
+      "name": "ordinal_3803",
+      "iat_va": 10616732
+    },
+    {
+      "name": "ordinal_2645",
+      "iat_va": 10616736
+    },
+    {
+      "name": "ordinal_6199",
+      "iat_va": 10616740
+    },
+    {
+      "name": "ordinal_924",
+      "iat_va": 10616744
+    },
+    {
+      "name": "ordinal_5731",
+      "iat_va": 10616748
+    },
+    {
+      "name": "ordinal_2581",
+      "iat_va": 10616752
+    },
+    {
+      "name": "ordinal_4376",
+      "iat_va": 10616756
+    },
+    {
+      "name": "ordinal_3639",
+      "iat_va": 10616760
+    },
+    {
+      "name": "ordinal_4401",
+      "iat_va": 10616764
+    },
+    {
+      "name": "ordinal_2413",
+      "iat_va": 10616768
+    },
+    {
+      "name": "ordinal_4219",
+      "iat_va": 10616772
+    },
+    {
+      "name": "ordinal_2024",
+      "iat_va": 10616776
+    },
+    {
+      "name": "ordinal_2737",
+      "iat_va": 10616780
+    },
+    {
+      "name": "ordinal_6366",
+      "iat_va": 10616784
+    },
+    {
+      "name": "ordinal_1771",
+      "iat_va": 10616788
+    },
+    {
+      "name": "ordinal_3873",
+      "iat_va": 10616792
+    },
+    {
+      "name": "ordinal_2370",
+      "iat_va": 10616796
+    },
+    {
+      "name": "ordinal_6453",
+      "iat_va": 10616800
+    },
+    {
+      "name": "ordinal_6334",
+      "iat_va": 10616804
+    },
+    {
+      "name": "ordinal_4224",
+      "iat_va": 10616808
+    },
+    {
+      "name": "ordinal_5981",
+      "iat_va": 10616812
+    },
+    {
+      "name": "ordinal_2366",
+      "iat_va": 10616816
+    },
+    {
+      "name": "ordinal_4234",
+      "iat_va": 10616820
+    },
+    {
+      "name": "ordinal_2302",
+      "iat_va": 10616824
+    },
+    {
+      "name": "ordinal_324",
+      "iat_va": 10616828
+    },
+    {
+      "name": "ordinal_2293",
+      "iat_va": 10616832
+    },
+    {
+      "name": "ordinal_616",
+      "iat_va": 10616836
+    },
+    {
+      "name": "ordinal_4425",
+      "iat_va": 10616840
+    },
+    {
+      "name": "ordinal_567",
+      "iat_va": 10616844
+    },
+    {
+      "name": "ordinal_3597",
+      "iat_va": 10616848
+    },
+    {
+      "name": "ordinal_3079",
+      "iat_va": 10616852
+    },
+    {
+      "name": "ordinal_4627",
+      "iat_va": 10616856
+    },
+    {
+      "name": "ordinal_4080",
+      "iat_va": 10616860
+    },
+    {
+      "name": "ordinal_3830",
+      "iat_va": 10616864
+    },
+    {
+      "name": "ordinal_3825",
+      "iat_va": 10616868
+    },
+    {
+      "name": "ordinal_3831",
+      "iat_va": 10616872
+    },
+    {
+      "name": "ordinal_3922",
+      "iat_va": 10616876
+    },
+    {
+      "name": "ordinal_2976",
+      "iat_va": 10616880
+    },
+    {
+      "name": "ordinal_5265",
+      "iat_va": 10616884
+    },
+    {
+      "name": "ordinal_3081",
+      "iat_va": 10616888
+    },
+    {
+      "name": "ordinal_2985",
+      "iat_va": 10616892
+    },
+    {
+      "name": "ordinal_3262",
+      "iat_va": 10616896
+    },
+    {
+      "name": "ordinal_3136",
+      "iat_va": 10616900
+    },
+    {
+      "name": "ordinal_4465",
+      "iat_va": 10616904
+    },
+    {
+      "name": "ordinal_3259",
+      "iat_va": 10616908
+    },
+    {
+      "name": "ordinal_3147",
+      "iat_va": 10616912
+    },
+    {
+      "name": "ordinal_2982",
+      "iat_va": 10616916
+    },
+    {
+      "name": "ordinal_5277",
+      "iat_va": 10616920
+    },
+    {
+      "name": "ordinal_2124",
+      "iat_va": 10616924
+    },
+    {
+      "name": "ordinal_2446",
+      "iat_va": 10616928
+    },
+    {
+      "name": "ordinal_5261",
+      "iat_va": 10616932
+    },
+    {
+      "name": "ordinal_1727",
+      "iat_va": 10616936
+    },
+    {
+      "name": "ordinal_5065",
+      "iat_va": 10616940
+    },
+    {
+      "name": "ordinal_3749",
+      "iat_va": 10616944
+    },
+    {
+      "name": "ordinal_1089",
+      "iat_va": 10616948
+    },
+    {
+      "name": "ordinal_5199",
+      "iat_va": 10616952
+    },
+    {
+      "name": "ordinal_2764",
+      "iat_va": 10616956
+    },
+    {
+      "name": "ordinal_3582",
+      "iat_va": 10616960
+    },
+    {
+      "name": "ordinal_823",
+      "iat_va": 10616964
+    },
+    {
+      "name": "ordinal_800",
+      "iat_va": 10616968
+    },
+    {
+      "name": "ordinal_825",
+      "iat_va": 10616972
+    },
+    {
+      "name": "ordinal_860",
+      "iat_va": 10616976
+    },
+    {
+      "name": "ordinal_540",
+      "iat_va": 10616980
+    },
+    {
+      "name": "ordinal_537",
+      "iat_va": 10616984
+    },
+    {
+      "name": "ordinal_941",
+      "iat_va": 10616988
+    },
+    {
+      "name": "ordinal_535",
+      "iat_va": 10616992
+    },
+    {
+      "name": "ordinal_858",
+      "iat_va": 10616996
+    },
+    {
+      "name": "ordinal_804",
+      "iat_va": 10617000
+    },
+    {
+      "name": "ordinal_692",
+      "iat_va": 10617004
+    },
+    {
+      "name": "ordinal_641",
+      "iat_va": 10617008
+    },
+    {
+      "name": "ordinal_2023",
+      "iat_va": 10617012
+    },
+    {
+      "name": "ordinal_4218",
+      "iat_va": 10617016
+    },
+    {
+      "name": "ordinal_2411",
+      "iat_va": 10617020
+    },
+    {
+      "name": "ordinal_6055",
+      "iat_va": 10617024
+    },
+    {
+      "name": "ordinal_1776",
+      "iat_va": 10617028
+    },
+    {
+      "name": "ordinal_2578",
+      "iat_va": 10617032
+    },
+    {
+      "name": "ordinal_5290",
+      "iat_va": 10617036
+    },
+    {
+      "name": "ordinal_4398",
+      "iat_va": 10617040
+    }
+  ],
+  "MSVCRT.dll": [
+    {
+      "name": "_fullpath",
+      "iat_va": 10617220
+    },
+    {
+      "name": "_chmod",
+      "iat_va": 10617224
+    },
+    {
+      "name": "rename",
+      "iat_va": 10617228
+    },
+    {
+      "name": "strstr",
+      "iat_va": 10617232
+    },
+    {
+      "name": "fflush",
+      "iat_va": 10617236
+    },
+    {
+      "name": "_CIasin",
+      "iat_va": 10617240
+    },
+    {
+      "name": "_beginthreadex",
+      "iat_va": 10617244
+    },
+    {
+      "name": "isupper",
+      "iat_va": 10617248
+    },
+    {
+      "name": "isspace",
+      "iat_va": 10617252
+    },
+    {
+      "name": "strtok",
+      "iat_va": 10617256
+    },
+    {
+      "name": "_iob",
+      "iat_va": 10617260
+    },
+    {
+      "name": "time",
+      "iat_va": 10617264
+    },
+    {
+      "name": "calloc",
+      "iat_va": 10617268
+    },
+    {
+      "name": "_stat",
+      "iat_va": 10617272
+    },
+    {
+      "name": "atof",
+      "iat_va": 10617276
+    },
+    {
+      "name": "memmove",
+      "iat_va": 10617280
+    },
+    {
+      "name": "toupper",
+      "iat_va": 10617284
+    },
+    {
+      "name": "strrchr",
+      "iat_va": 10617288
+    },
+    {
+      "name": "tolower",
+      "iat_va": 10617292
+    },
+    {
+      "name": "fprintf",
+      "iat_va": 10617296
+    },
+    {
+      "name": "_access",
+      "iat_va": 10617300
+    },
+    {
+      "name": "srand",
+      "iat_va": 10617304
+    },
+    {
+      "name": "floor",
+      "iat_va": 10617308
+    },
+    {
+      "name": "_rmtmp",
+      "iat_va": 10617312
+    },
+    {
+      "name": "_vsnprintf",
+      "iat_va": 10617316
+    },
+    {
+      "name": "wctomb",
+      "iat_va": 10617320
+    },
+    {
+      "name": "_isnan",
+      "iat_va": 10617324
+    },
+    {
+      "name": "_CIfmod",
+      "iat_va": 10617328
+    },
+    {
+      "name": "_splitpath",
+      "iat_va": 10617332
+    },
+    {
+      "name": "fread",
+      "iat_va": 10617336
+    },
+    {
+      "name": "exit",
+      "iat_va": 10617340
+    },
+    {
+      "name": "malloc",
+      "iat_va": 10617344
+    },
+    {
+      "name": "free",
+      "iat_va": 10617348
+    },
+    {
+      "name": "strncpy",
+      "iat_va": 10617352
+    },
+    {
+      "name": "_purecall",
+      "iat_va": 10617356
+    },
+    {
+      "name": "sprintf",
+      "iat_va": 10617360
+    },
+    {
+      "name": "_stricmp",
+      "iat_va": 10617364
+    },
+    {
+      "name": "_strdup",
+      "iat_va": 10617368
+    },
+    {
+      "name": "fopen",
+      "iat_va": 10617372
+    },
+    {
+      "name": "fgets",
+      "iat_va": 10617376
+    },
+    {
+      "name": "vsprintf",
+      "iat_va": 10617380
+    },
+    {
+      "name": "_exit",
+      "iat_va": 10617384
+    },
+    {
+      "name": "isleadbyte",
+      "iat_va": 10617388
+    },
+    {
+      "name": "_mbscpy",
+      "iat_va": 10617392
+    },
+    {
+      "name": "_mbstrlen",
+      "iat_va": 10617396
+    },
+    {
+      "name": "setlocale",
+      "iat_va": 10617400
+    },
+    {
+      "name": "isprint",
+      "iat_va": 10617404
+    },
+    {
+      "name": "_controlfp",
+      "iat_va": 10617408
+    },
+    {
+      "name": "fclose",
+      "iat_va": 10617412
+    },
+    {
+      "name": "atoi",
+      "iat_va": 10617416
+    },
+    {
+      "name": "sscanf",
+      "iat_va": 10617420
+    },
+    {
+      "name": "_itoa",
+      "iat_va": 10617424
+    },
+    {
+      "name": "_strnicmp",
+      "iat_va": 10617428
+    },
+    {
+      "name": "strchr",
+      "iat_va": 10617432
+    },
+    {
+      "name": "isdigit",
+      "iat_va": 10617436
+    },
+    {
+      "name": "atol",
+      "iat_va": 10617440
+    },
+    {
+      "name": "ceil",
+      "iat_va": 10617444
+    },
+    {
+      "name": "fseek",
+      "iat_va": 10617448
+    },
+    {
+      "name": "ftell",
+      "iat_va": 10617452
+    },
+    {
+      "name": "rewind",
+      "iat_va": 10617456
+    },
+    {
+      "name": "fscanf",
+      "iat_va": 10617460
+    },
+    {
+      "name": "strncat",
+      "iat_va": 10617464
+    },
+    {
+      "name": "_copysign",
+      "iat_va": 10617468
+    },
+    {
+      "name": "_pctype",
+      "iat_va": 10617472
+    },
+    {
+      "name": "_isctype",
+      "iat_va": 10617476
+    },
+    {
+      "name": "__mb_cur_max",
+      "iat_va": 10617480
+    },
+    {
+      "name": "_snprintf",
+      "iat_va": 10617484
+    },
+    {
+      "name": "strtod",
+      "iat_va": 10617488
+    },
+    {
+      "name": "strtol",
+      "iat_va": 10617492
+    },
+    {
+      "name": "ctime",
+      "iat_va": 10617496
+    },
+    {
+      "name": "freopen",
+      "iat_va": 10617500
+    },
+    {
+      "name": "_findclose",
+      "iat_va": 10617504
+    },
+    {
+      "name": "_findnext",
+      "iat_va": 10617508
+    },
+    {
+      "name": "_findfirst",
+      "iat_va": 10617512
+    },
+    {
+      "name": "fgetc",
+      "iat_va": 10617516
+    },
+    {
+      "name": "strpbrk",
+      "iat_va": 10617520
+    },
+    {
+      "name": "iswspace",
+      "iat_va": 10617524
+    },
+    {
+      "name": "difftime",
+      "iat_va": 10617528
+    },
+    {
+      "name": "strlen",
+      "iat_va": 10617532
+    },
+    {
+      "name": "strcmp",
+      "iat_va": 10617536
+    },
+    {
+      "name": "memcpy",
+      "iat_va": 10617540
+    },
+    {
+      "name": "memset",
+      "iat_va": 10617544
+    },
+    {
+      "name": "abs",
+      "iat_va": 10617548
+    },
+    {
+      "name": "tmpfile",
+      "iat_va": 10617552
+    },
+    {
+      "name": "_mkdir",
+      "iat_va": 10617556
+    },
+    {
+      "name": "fwrite",
+      "iat_va": 10617560
+    },
+    {
+      "name": "_errno",
+      "iat_va": 10617564
+    },
+    {
+      "name": "__RTtypeid",
+      "iat_va": 10617568
+    },
+    {
+      "name": "__p__commode",
+      "iat_va": 10617572
+    },
+    {
+      "name": "_ftol",
+      "iat_va": 10617576
+    },
+    {
+      "name": "qsort",
+      "iat_va": 10617580
+    },
+    {
+      "name": "__set_app_type",
+      "iat_va": 10617584
+    },
+    {
+      "name": "__p__fmode",
+      "iat_va": 10617588
+    },
+    {
+      "name": "_initterm",
+      "iat_va": 10617592
+    },
+    {
+      "name": "_adjust_fdiv",
+      "iat_va": 10617596
+    },
+    {
+      "name": "__setusermatherr",
+      "iat_va": 10617600
+    },
+    {
+      "name": "_XcptFilter",
+      "iat_va": 10617604
+    },
+    {
+      "name": "__getmainargs",
+      "iat_va": 10617608
+    },
+    {
+      "name": "_acmdln",
+      "iat_va": 10617612
+    },
+    {
+      "name": "_except_handler3",
+      "iat_va": 10617616
+    },
+    {
+      "name": "??1type_info@@UAE@XZ",
+      "iat_va": 10617620
+    },
+    {
+      "name": "?terminate@@YAXXZ",
+      "iat_va": 10617624
+    },
+    {
+      "name": "abort",
+      "iat_va": 10617628
+    },
+    {
+      "name": "_onexit",
+      "iat_va": 10617632
+    },
+    {
+      "name": "__dllonexit",
+      "iat_va": 10617636
+    },
+    {
+      "name": "_mbsinc",
+      "iat_va": 10617640
+    },
+    {
+      "name": "_mbsninc",
+      "iat_va": 10617644
+    },
+    {
+      "name": "_mbsnextc",
+      "iat_va": 10617648
+    },
+    {
+      "name": "??8type_info@@QBEHABV0@@Z",
+      "iat_va": 10617652
+    },
+    {
+      "name": "realloc",
+      "iat_va": 10617656
+    },
+    {
+      "name": "__RTDynamicCast",
+      "iat_va": 10617660
+    },
+    {
+      "name": "__CxxFrameHandler",
+      "iat_va": 10617664
+    },
+    {
+      "name": "printf",
+      "iat_va": 10617668
+    },
+    {
+      "name": "strncmp",
+      "iat_va": 10617672
+    },
+    {
+      "name": "_CIacos",
+      "iat_va": 10617676
+    },
+    {
+      "name": "rand",
+      "iat_va": 10617680
+    },
+    {
+      "name": "remove",
+      "iat_va": 10617684
+    },
+    {
+      "name": "_CIpow",
+      "iat_va": 10617688
+    },
+    {
+      "name": "_HUGE",
+      "iat_va": 10617692
+    },
+    {
+      "name": "_strcmpi",
+      "iat_va": 10617696
+    },
+    {
+      "name": "_strupr",
+      "iat_va": 10617700
+    },
+    {
+      "name": "_strlwr",
+      "iat_va": 10617704
+    },
+    {
+      "name": "_swab",
+      "iat_va": 10617708
+    },
+    {
+      "name": "_setmbcp",
+      "iat_va": 10617712
+    }
+  ],
+  "KeRNeL32.dll": [
+    {
+      "name": "lstrcmpA",
+      "iat_va": 10615932
+    },
+    {
+      "name": "lstrcatA",
+      "iat_va": 10615936
+    },
+    {
+      "name": "lstrcpyA",
+      "iat_va": 10615940
+    },
+    {
+      "name": "lstrlenA",
+      "iat_va": 10615944
+    },
+    {
+      "name": "IsDBCSLeadByte",
+      "iat_va": 10615948
+    },
+    {
+      "name": "lstrcpynA",
+      "iat_va": 10615952
+    },
+    {
+      "name": "lstrcmpiA",
+      "iat_va": 10615956
+    },
+    {
+      "name": "GetTimeFormatA",
+      "iat_va": 10615960
+    },
+    {
+      "name": "GetDateFormatA",
+      "iat_va": 10615964
+    },
+    {
+      "name": "FileTimeToSystemTime",
+      "iat_va": 10615968
+    },
+    {
+      "name": "CompareFileTime",
+      "iat_va": 10615972
+    },
+    {
+      "name": "LocalFree",
+      "iat_va": 10615976
+    },
+    {
+      "name": "FormatMessageA",
+      "iat_va": 10615980
+    },
+    {
+      "name": "SetLastError",
+      "iat_va": 10615984
+    },
+    {
+      "name": "DeleteFileA",
+      "iat_va": 10615988
+    },
+    {
+      "name": "CloseHandle",
+      "iat_va": 10615992
+    },
+    {
+      "name": "GetLastError",
+      "iat_va": 10615996
+    },
+    {
+      "name": "CreateFileA",
+      "iat_va": 10616000
+    },
+    {
+      "name": "SetFileAttributesA",
+      "iat_va": 10616004
+    },
+    {
+      "name": "WriteFile",
+      "iat_va": 10616008
+    },
+    {
+      "name": "CreateDirectoryA",
+      "iat_va": 10616012
+    },
+    {
+      "name": "GetTempPathA",
+      "iat_va": 10616016
+    },
+    {
+      "name": "RemoveDirectoryA",
+      "iat_va": 10616020
+    },
+    {
+      "name": "GetStringTypeExA",
+      "iat_va": 10616024
+    },
+    {
+      "name": "IsBadStringPtrA",
+      "iat_va": 10616028
+    },
+    {
+      "name": "GetFileAttributesA",
+      "iat_va": 10616032
+    },
+    {
+      "name": "GetLocaleInfoA",
+      "iat_va": 10616036
+    },
+    {
+      "name": "GetProcAddress",
+      "iat_va": 10616040
+    },
+    {
+      "name": "MoveFileA",
+      "iat_va": 10616044
+    },
+    {
+      "name": "FreeLibrary",
+      "iat_va": 10616048
+    },
+    {
+      "name": "GetPrivateProfileStringA",
+      "iat_va": 10616052
+    },
+    {
+      "name": "LoadLibraryA",
+      "iat_va": 10616056
+    },
+    {
+      "name": "FindNextFileA",
+      "iat_va": 10616060
+    },
+    {
+      "name": "FindFirstFileA",
+      "iat_va": 10616064
+    },
+    {
+      "name": "FindClose",
+      "iat_va": 10616068
+    },
+    {
+      "name": "GetFullPathNameA",
+      "iat_va": 10616072
+    },
+    {
+      "name": "WaitForSingleObject",
+      "iat_va": 10616076
+    },
+    {
+      "name": "GetShortPathNameA",
+      "iat_va": 10616080
+    },
+    {
+      "name": "ExitProcess",
+      "iat_va": 10616084
+    },
+    {
+      "name": "GetCommandLineA",
+      "iat_va": 10616088
+    },
+    {
+      "name": "Sleep",
+      "iat_va": 10616092
+    },
+    {
+      "name": "ReleaseMutex",
+      "iat_va": 10616096
+    },
+    {
+      "name": "GetUserDefaultLangID",
+      "iat_va": 10616100
+    },
+    {
+      "name": "CreateMutexA",
+      "iat_va": 10616104
+    },
+    {
+      "name": "GetFileSize",
+      "iat_va": 10616108
+    },
+    {
+      "name": "OutputDebugStringA",
+      "iat_va": 10616112
+    },
+    {
+      "name": "ReadFile",
+      "iat_va": 10616116
+    },
+    {
+      "name": "GetFileTime",
+      "iat_va": 10616120
+    },
+    {
+      "name": "GetTickCount",
+      "iat_va": 10616124
+    },
+    {
+      "name": "SetFilePointer",
+      "iat_va": 10616128
+    },
+    {
+      "name": "GetLogicalDriveStringsA",
+      "iat_va": 10616132
+    },
+    {
+      "name": "MultiByteToWideChar",
+      "iat_va": 10616136
+    },
+    {
+      "name": "GetDriveTypeA",
+      "iat_va": 10616140
+    },
+    {
+      "name": "SetThreadPriority",
+      "iat_va": 10616144
+    },
+    {
+      "name": "CreateThread",
+      "iat_va": 10616148
+    },
+    {
+      "name": "ResumeThread",
+      "iat_va": 10616152
+    },
+    {
+      "name": "GetProcessAffinityMask",
+      "iat_va": 10616156
+    },
+    {
+      "name": "GetCurrentProcess",
+      "iat_va": 10616160
+    },
+    {
+      "name": "GlobalMemoryStatus",
+      "iat_va": 10616164
+    },
+    {
+      "name": "QueryPerformanceCounter",
+      "iat_va": 10616168
+    },
+    {
+      "name": "QueryPerformanceFrequency",
+      "iat_va": 10616172
+    },
+    {
+      "name": "GetThreadPriority",
+      "iat_va": 10616176
+    },
+    {
+      "name": "GetCurrentThread",
+      "iat_va": 10616180
+    },
+    {
+      "name": "GetCPInfo",
+      "iat_va": 10616184
+    },
+    {
+      "name": "LocalAlloc",
+      "iat_va": 10616188
+    },
+    {
+      "name": "GetStartupInfoA",
+      "iat_va": 10616192
+    },
+    {
+      "name": "GetModuleHandleA",
+      "iat_va": 10616196
+    },
+    {
+      "name": "EnterCriticalSection",
+      "iat_va": 10616200
+    },
+    {
+      "name": "LeaveCriticalSection",
+      "iat_va": 10616204
+    },
+    {
+      "name": "DeleteCriticalSection",
+      "iat_va": 10616208
+    },
+    {
+      "name": "InitializeCriticalSection",
+      "iat_va": 10616212
+    },
+    {
+      "name": "GetACP",
+      "iat_va": 10616216
+    },
+    {
+      "name": "CompareStringA",
+      "iat_va": 10616220
+    },
+    {
+      "name": "GetVersionExA",
+      "iat_va": 10616224
+    }
+  ],
+  "USER32.dll": [
+    {
+      "name": "RegisterWindowMessageA",
+      "iat_va": 10617756
+    },
+    {
+      "name": "LoadBitmapA",
+      "iat_va": 10617760
+    },
+    {
+      "name": "MsgWaitForMultipleObjects",
+      "iat_va": 10617764
+    },
+    {
+      "name": "SetRect",
+      "iat_va": 10617768
+    },
+    {
+      "name": "IsCharAlphaNumericA",
+      "iat_va": 10617772
+    },
+    {
+      "name": "PostQuitMessage",
+      "iat_va": 10617776
+    },
+    {
+      "name": "AdjustWindowRectEx",
+      "iat_va": 10617780
+    },
+    {
+      "name": "GetMenu",
+      "iat_va": 10617784
+    },
+    {
+      "name": "SystemParametersInfoA",
+      "iat_va": 10617788
+    },
+    {
+      "name": "GetWindowRect",
+      "iat_va": 10617792
+    },
+    {
+      "name": "ShowWindow",
+      "iat_va": 10617796
+    },
+    {
+      "name": "OpenIcon",
+      "iat_va": 10617800
+    },
+    {
+      "name": "EqualRect",
+      "iat_va": 10617804
+    },
+    {
+      "name": "SetWindowPos",
+      "iat_va": 10617808
+    },
+    {
+      "name": "ReleaseDC",
+      "iat_va": 10617812
+    },
+    {
+      "name": "DrawTextExA",
+      "iat_va": 10617816
+    },
+    {
+      "name": "IntersectRect",
+      "iat_va": 10617820
+    },
+    {
+      "name": "PeekMessageA",
+      "iat_va": 10617824
+    },
+    {
+      "name": "GetKeyboardType",
+      "iat_va": 10617828
+    },
+    {
+      "name": "ClientToScreen",
+      "iat_va": 10617832
+    },
+    {
+      "name": "GetKeyNameTextA",
+      "iat_va": 10617836
+    },
+    {
+      "name": "GetKeyboardState",
+      "iat_va": 10617840
+    },
+    {
+      "name": "MapVirtualKeyA",
+      "iat_va": 10617844
+    },
+    {
+      "name": "ToAscii",
+      "iat_va": 10617848
+    },
+    {
+      "name": "MessageBeep",
+      "iat_va": 10617852
+    },
+    {
+      "name": "MessageBoxExA",
+      "iat_va": 10617856
+    },
+    {
+      "name": "UnregisterClassA",
+      "iat_va": 10617860
+    },
+    {
+      "name": "GetLastActivePopup",
+      "iat_va": 10617864
+    },
+    {
+      "name": "IsIconic",
+      "iat_va": 10617868
+    },
+    {
+      "name": "CharNextA",
+      "iat_va": 10617872
+    },
+    {
+      "name": "GetClientRect",
+      "iat_va": 10617876
+    },
+    {
+      "name": "GetDC",
+      "iat_va": 10617880
+    },
+    {
+      "name": "TranslateMessage",
+      "iat_va": 10617884
+    },
+    {
+      "name": "OffsetRect",
+      "iat_va": 10617888
+    },
+    {
+      "name": "GetKeyboardLayout",
+      "iat_va": 10617892
+    },
+    {
+      "name": "DispatchMessageA",
+      "iat_va": 10617896
+    },
+    {
+      "name": "SetFocus",
+      "iat_va": 10617900
+    },
+    {
+      "name": "CharPrevA",
+      "iat_va": 10617904
+    },
+    {
+      "name": "SetCursorPos",
+      "iat_va": 10617908
+    },
+    {
+      "name": "GetSystemMetrics",
+      "iat_va": 10617912
+    },
+    {
+      "name": "LoadMenuA",
+      "iat_va": 10617916
+    },
+    {
+      "name": "SetWindowLongA",
+      "iat_va": 10617920
+    },
+    {
+      "name": "PostMessageA",
+      "iat_va": 10617924
+    },
+    {
+      "name": "FindWindowA",
+      "iat_va": 10617928
+    },
+    {
+      "name": "SetForegroundWindow",
+      "iat_va": 10617932
+    },
+    {
+      "name": "DefWindowProcA",
+      "iat_va": 10617936
+    },
+    {
+      "name": "LoadIconA",
+      "iat_va": 10617940
+    },
+    {
+      "name": "LoadCursorA",
+      "iat_va": 10617944
+    },
+    {
+      "name": "UpdateWindow",
+      "iat_va": 10617948
+    },
+    {
+      "name": "ClipCursor",
+      "iat_va": 10617952
+    },
+    {
+      "name": "ShowCursor",
+      "iat_va": 10617956
+    },
+    {
+      "name": "RemoveMenu",
+      "iat_va": 10617960
+    },
+    {
+      "name": "GetWindowLongA",
+      "iat_va": 10617964
+    },
+    {
+      "name": "GetParent",
+      "iat_va": 10617968
+    },
+    {
+      "name": "MessageBoxA",
+      "iat_va": 10617972
+    },
+    {
+      "name": "LoadStringA",
+      "iat_va": 10617976
+    },
+    {
+      "name": "CheckMenuItem",
+      "iat_va": 10617980
+    },
+    {
+      "name": "InvalidateRect",
+      "iat_va": 10617984
+    },
+    {
+      "name": "SetMenu",
+      "iat_va": 10617988
+    },
+    {
+      "name": "SendMessageA",
+      "iat_va": 10617992
+    },
+    {
+      "name": "GetKeyState",
+      "iat_va": 10617996
+    },
+    {
+      "name": "EnableWindow",
+      "iat_va": 10618000
+    }
+  ],
+  "GDI32.dll": [
+    {
+      "name": "SetBkColor",
+      "iat_va": 10615752
+    },
+    {
+      "name": "SetBkMode",
+      "iat_va": 10615756
+    },
+    {
+      "name": "CreateFontA",
+      "iat_va": 10615760
+    },
+    {
+      "name": "SetTextColor",
+      "iat_va": 10615764
+    },
+    {
+      "name": "GetTextMetricsA",
+      "iat_va": 10615768
+    },
+    {
+      "name": "SaveDC",
+      "iat_va": 10615772
+    },
+    {
+      "name": "GetStockObject",
+      "iat_va": 10615776
+    },
+    {
+      "name": "RestoreDC",
+      "iat_va": 10615780
+    },
+    {
+      "name": "BitBlt",
+      "iat_va": 10615784
+    },
+    {
+      "name": "SetStretchBltMode",
+      "iat_va": 10615788
+    },
+    {
+      "name": "StretchBlt",
+      "iat_va": 10615792
+    },
+    {
+      "name": "CreateCompatibleDC",
+      "iat_va": 10615796
+    },
+    {
+      "name": "CreateDIBSection",
+      "iat_va": 10615800
+    },
+    {
+      "name": "SelectObject",
+      "iat_va": 10615804
+    },
+    {
+      "name": "GetDeviceCaps",
+      "iat_va": 10615808
+    },
+    {
+      "name": "GetSystemPaletteEntries",
+      "iat_va": 10615812
+    },
+    {
+      "name": "GetObjectA",
+      "iat_va": 10615816
+    },
+    {
+      "name": "PatBlt",
+      "iat_va": 10615820
+    },
+    {
+      "name": "DeleteObject",
+      "iat_va": 10615824
+    },
+    {
+      "name": "CreateFontIndirectA",
+      "iat_va": 10615828
+    },
+    {
+      "name": "DeleteDC",
+      "iat_va": 10615832
+    },
+    {
+      "name": "GetTextExtentPoint32A",
+      "iat_va": 10615836
+    }
+  ],
+  "comdlg32.dll": [
+    {
+      "name": "GetSaveFileNameA",
+      "iat_va": 10618068
+    },
+    {
+      "name": "GetOpenFileNameA",
+      "iat_va": 10618072
+    }
+  ],
+  "ADVAPI32.dll": [
+    {
+      "name": "RegQueryValueExA",
+      "iat_va": 10615648
+    },
+    {
+      "name": "RegOpenKeyExA",
+      "iat_va": 10615652
+    },
+    {
+      "name": "RegCloseKey",
+      "iat_va": 10615656
+    },
+    {
+      "name": "RegSetValueExA",
+      "iat_va": 10615660
+    },
+    {
+      "name": "RegCreateKeyExA",
+      "iat_va": 10615664
+    },
+    {
+      "name": "RegDeleteKeyA",
+      "iat_va": 10615668
+    }
+  ],
+  "SHELL32.dll": [
+    {
+      "name": "SHGetPathFromIDListA",
+      "iat_va": 10617740
+    },
+    {
+      "name": "ShellExecuteA",
+      "iat_va": 10617744
+    },
+    {
+      "name": "SHGetSpecialFolderLocation",
+      "iat_va": 10617748
+    }
+  ],
+  "MSVCP60.dll": [
+    {
+      "name": "?_Eos@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@AAEXI@Z",
+      "iat_va": 10617084
+    },
+    {
+      "name": "?_Tidy@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@AAEX_N@Z",
+      "iat_va": 10617088
+    },
+    {
+      "name": "?_Xlen@std@@YAXXZ",
+      "iat_va": 10617092
+    },
+    {
+      "name": "?max_size@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QBEIXZ",
+      "iat_va": 10617096
+    },
+    {
+      "name": "?_Grow@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@AAE_NI_N@Z",
+      "iat_va": 10617100
+    },
+    {
+      "name": "?_C@?1??_Nullstr@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@CAPBDXZ@4DB",
+      "iat_va": 10617104
+    },
+    {
+      "name": "?erase@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QAEAAV12@II@Z",
+      "iat_va": 10617108
+    },
+    {
+      "name": "?npos@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@2IB",
+      "iat_va": 10617112
+    },
+    {
+      "name": "??1?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QAE@XZ",
+      "iat_va": 10617116
+    },
+    {
+      "name": "??0Init@ios_base@std@@QAE@XZ",
+      "iat_va": 10617120
+    },
+    {
+      "name": "??1Init@ios_base@std@@QAE@XZ",
+      "iat_va": 10617124
+    },
+    {
+      "name": "??0_Winit@std@@QAE@XZ",
+      "iat_va": 10617128
+    },
+    {
+      "name": "??1_Winit@std@@QAE@XZ",
+      "iat_va": 10617132
+    },
+    {
+      "name": "?assign@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QAEAAV12@PBDI@Z",
+      "iat_va": 10617136
+    },
+    {
+      "name": "?_Xran@std@@YAXXZ",
+      "iat_va": 10617140
+    },
+    {
+      "name": "?assign@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QAEAAV12@ABV12@II@Z",
+      "iat_va": 10617144
+    },
+    {
+      "name": "?_Split@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@AAEXXZ",
+      "iat_va": 10617148
+    },
+    {
+      "name": "??8std@@YA_NABV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@0@PBD@Z",
+      "iat_va": 10617152
+    },
+    {
+      "name": "?_Refcnt@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@AAEAAEPBD@Z",
+      "iat_va": 10617156
+    },
+    {
+      "name": "??0?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QAE@ABV?$allocator@D@1@@Z",
+      "iat_va": 10617160
+    },
+    {
+      "name": "??_F?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QAEXXZ",
+      "iat_va": 10617164
+    },
+    {
+      "name": "??Hstd@@YA?AV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@0@ABV10@PBD@Z",
+      "iat_va": 10617168
+    },
+    {
+      "name": "?c_str@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QBEPBDXZ",
+      "iat_va": 10617172
+    },
+    {
+      "name": "?append@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QAEAAV12@PBDI@Z",
+      "iat_va": 10617176
+    },
+    {
+      "name": "??1_Lockit@std@@QAE@XZ",
+      "iat_va": 10617180
+    },
+    {
+      "name": "??0_Lockit@std@@QAE@XZ",
+      "iat_va": 10617184
+    },
+    {
+      "name": "?insert@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QAEAAV12@IPBDI@Z",
+      "iat_va": 10617188
+    },
+    {
+      "name": "??9std@@YA_NABV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@0@PBD@Z",
+      "iat_va": 10617192
+    },
+    {
+      "name": "??Hstd@@YA?AV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@0@ABV10@D@Z",
+      "iat_va": 10617196
+    },
+    {
+      "name": "?assign@?$char_traits@D@std@@SAXAADABD@Z",
+      "iat_va": 10617200
+    },
+    {
+      "name": "?_Nullstr@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@CAPBDXZ",
+      "iat_va": 10617204
+    },
+    {
+      "name": "??4?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QAEAAV01@PBD@Z",
+      "iat_va": 10617208
+    },
+    {
+      "name": "?_Copy@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@AAEXI@Z",
+      "iat_va": 10617212
+    }
+  ],
+  "DDRAW.dll": [
+    {
+      "name": "DirectDrawCreate",
+      "iat_va": 10615716
+    },
+    {
+      "name": "DirectDrawEnumerateA",
+      "iat_va": 10615720
+    }
+  ],
+  "DPLAYX.dll": [
+    {
+      "name": "ordinal_4",
+      "iat_va": 10615736
+    }
+  ],
+  "DINPUT.dll": [
+    {
+      "name": "DirectInputCreateA",
+      "iat_va": 10615728
+    }
+  ],
+  "MSACM32.dll": [
+    {
+      "name": "acmStreamPrepareHeader",
+      "iat_va": 10617048
+    },
+    {
+      "name": "acmStreamOpen",
+      "iat_va": 10617052
+    },
+    {
+      "name": "acmStreamUnprepareHeader",
+      "iat_va": 10617056
+    },
+    {
+      "name": "acmStreamClose",
+      "iat_va": 10617060
+    },
+    {
+      "name": "acmStreamSize",
+      "iat_va": 10617064
+    },
+    {
+      "name": "acmMetrics",
+      "iat_va": 10617068
+    },
+    {
+      "name": "acmStreamConvert",
+      "iat_va": 10617072
+    },
+    {
+      "name": "acmFormatSuggest",
+      "iat_va": 10617076
+    }
+  ],
+  "zTiff.dll": [
+    {
+      "name": "TIFFNumberOfStrips",
+      "iat_va": 10618096
+    },
+    {
+      "name": "TIFFOpen",
+      "iat_va": 10618100
+    },
+    {
+      "name": "TIFFClose",
+      "iat_va": 10618104
+    },
+    {
+      "name": "TIFFGetField",
+      "iat_va": 10618108
+    },
+    {
+      "name": "TIFFReadEncodedStrip",
+      "iat_va": 10618112
+    }
+  ],
+  "AVIFIL32.dll": [
+    {
+      "name": "AVIFileInit",
+      "iat_va": 10615676
+    },
+    {
+      "name": "AVIStreamFindSample",
+      "iat_va": 10615680
+    },
+    {
+      "name": "AVIFileExit",
+      "iat_va": 10615684
+    },
+    {
+      "name": "AVIStreamRead",
+      "iat_va": 10615688
+    },
+    {
+      "name": "AVIStreamOpenFromFileA",
+      "iat_va": 10615692
+    },
+    {
+      "name": "AVIStreamReadFormat",
+      "iat_va": 10615696
+    },
+    {
+      "name": "AVIStreamLength",
+      "iat_va": 10615700
+    },
+    {
+      "name": "AVIStreamRelease",
+      "iat_va": 10615704
+    },
+    {
+      "name": "AVIStreamInfoA",
+      "iat_va": 10615708
+    }
+  ],
+  "MSVFW32.dll": [
+    {
+      "name": "ICDecompress",
+      "iat_va": 10617720
+    },
+    {
+      "name": "ICLocate",
+      "iat_va": 10617724
+    },
+    {
+      "name": "ICClose",
+      "iat_va": 10617728
+    },
+    {
+      "name": "ICSendMessage",
+      "iat_va": 10617732
+    }
+  ]
+}
