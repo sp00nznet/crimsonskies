@@ -1,0 +1,3 @@
+LIBRARY va_holder
+EXPORTS
+    va_holder_init

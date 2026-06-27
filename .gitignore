@@ -34,3 +34,18 @@ src/recomp/gen/
 
 # Tools (submodule)
 tools/pcrecomp/
+
+# Runtime logs (transient)
+crimson_recomp.log
+crimson_launcher.log
+*.log
+
+# Copyrighted game binaries — never commit
+extracted/
+
+# Third-party SafeDisc workaround binaries
+analysis/csfix.dll
+analysis/csfix.ini
+
+# Scratch analysis output
+undef_labels.txt

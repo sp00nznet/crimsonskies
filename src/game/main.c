@@ -18,6 +18,98 @@
 #include "recomp_funcs.h"
 
 /*========================================================================
+ * Self-relaunching launcher for VA space reservation
+ *
+ * Problem: The Windows loader maps NLS/locale files and creates the process
+ * heap BEFORE we get any chance to run code (even TLS callbacks are too late).
+ * These allocations scatter through VA 0x00010000-0x00A2A000 which we need.
+ *
+ * Solution: The first launch acts as a "launcher" that:
+ *   1. Creates a new process (itself) in SUSPENDED state
+ *   2. Reserves our target VA ranges in the child via VirtualAllocEx
+ *   3. Resumes the child — NLS/heap find our ranges occupied, go elsewhere
+ *   4. The child detects the pre-reserved ranges and proceeds normally
+ *
+ * The child process detects it's the "recomp instance" by checking if
+ * its target VA ranges are already reserved (MEM_RESERVE + MEM_PRIVATE).
+ *========================================================================*/
+#define RECOMP_ENV_VAR "CRIMSON_RECOMP_CHILD"
+
+/* Check if we're the child (recomp instance) via environment variable */
+static int is_recomp_instance(void) {
+    char buf[8];
+    DWORD n = GetEnvironmentVariableA(RECOMP_ENV_VAR, buf, sizeof(buf));
+    return (n > 0 && buf[0] == '1');
+}
+
+/* Launcher: re-exec ourselves with VA ranges pre-reserved */
+static int launcher_main(HINSTANCE hInstance) {
+    char exe_path[MAX_PATH];
+    GetModuleFileNameA(NULL, exe_path, MAX_PATH);
+
+    /* Get the original command line */
+    char* cmdline = GetCommandLineA();
+
+    STARTUPINFOA si = { sizeof(si) };
+    PROCESS_INFORMATION pi;
+
+    printf("[*] Launcher: creating suspended child process...\n");
+
+    /* Set env var so child knows it's the recomp instance */
+    SetEnvironmentVariableA(RECOMP_ENV_VAR, "1");
+
+    if (!CreateProcessA(exe_path, cmdline, NULL, NULL, FALSE,
+                        CREATE_SUSPENDED, NULL, NULL, &si, &pi)) {
+        fprintf(stderr, "FATAL: CreateProcess failed (err %lu)\n", GetLastError());
+        return 1;
+    }
+
+    /* Reserve the target VA ranges in the child.
+     * We deliberately start at 0x00100000 (the recomp stack), NOT 0x00010000:
+     * the 0x10000-0x20000 range is occupied by the child's PEB/process
+     * parameters (set up by the loader before the thread runs) and cannot be
+     * reserved. The original binary's address space begins at 0x00400000, so
+     * nothing below the stack is needed; fs:[0]/null-page accesses are handled
+     * separately by the VEH. */
+    void* reserved = VirtualAllocEx(pi.hProcess,
+                                    (void*)0x00100000,
+                                    0x00A2A000 - 0x00100000,
+                                    MEM_RESERVE, PAGE_NOACCESS);
+    if (reserved) {
+        printf("    Reserved 0x00100000-0x00A2A000 in child (handle %p)\n", reserved);
+    } else {
+        fprintf(stderr, "    WARN: VirtualAllocEx failed (err %lu)\n", GetLastError());
+        /* Try smaller chunks (skip the gap between stack and data) */
+        struct { uint32_t base; uint32_t size; } chunks[] = {
+            { 0x00100000, 0x00100000 },             /* Stack */
+            { 0x00603000, 0x00A2A000 - 0x00603000 },/* Data */
+        };
+        for (int i = 0; i < 2; i++) {
+            void* r = VirtualAllocEx(pi.hProcess,
+                                     (void*)(uintptr_t)chunks[i].base,
+                                     chunks[i].size,
+                                     MEM_RESERVE, PAGE_NOACCESS);
+            printf("    Chunk 0x%08X: %s\n", chunks[i].base,
+                   r ? "OK" : "FAILED");
+        }
+    }
+
+    /* Resume the child */
+    ResumeThread(pi.hThread);
+    CloseHandle(pi.hThread);
+
+    printf("[*] Launcher: child PID %lu, waiting...\n", pi.dwProcessId);
+    WaitForSingleObject(pi.hProcess, INFINITE);
+
+    DWORD exitCode;
+    GetExitCodeProcess(pi.hProcess, &exitCode);
+    CloseHandle(pi.hProcess);
+
+    printf("[*] Launcher: child exited with code %lu\n", exitCode);
+    return (int)exitCode;
+}
+
+/*========================================================================
  * Global Register State
  *========================================================================*/
 
@@ -949,6 +1041,15 @@ static LONG WINAPI veh_handler(EXCEPTION_POINTERS *ep) {
 
             /* We can't easily fix the instruction pointer here.
              * Instead, temporarily map a page at VA 0 using a different approach. */
+            static int s_nullpage_logged = 0;
+            if (!s_nullpage_logged) {
+                s_nullpage_logged = 1;
+                fprintf(stderr, "\n[VEH] FIRST null-page fault: %s VA 0x%08X at EIP %p\n",
+                        ep->ExceptionRecord->ExceptionInformation[0] ? "WRITE" : "READ",
+                        (unsigned)fault_addr, addr);
+                fprintf(stderr, "[VEH] EAX=%08X ECX=%08X EDX=%08X ESI=%08X EDI=%08X ESP=%08X depth=%u calls=%u\n",
+                        g_eax, g_ecx, g_edx, g_esi, g_edi, g_esp, g_call_depth, g_total_calls);
+            }
             return EXCEPTION_CONTINUE_SEARCH;
         }
     }
@@ -1008,42 +1109,58 @@ static LONG WINAPI veh_handler(EXCEPTION_POINTERS *ep) {
  * Memory Setup
  *========================================================================*/
 
+
+/* Helper: try VirtualAlloc at a fixed address, log result */
+static void* va_alloc_fixed(uint32_t base, uint32_t size, const char* label) {
+    void* p = VirtualAlloc((void*)(uintptr_t)base, size,
+                           MEM_RESERVE | MEM_COMMIT, PAGE_READWRITE);
+    if (p) {
+        printf("    %-10s %p  (0x%08X - 0x%08X, %u KB)\n",
+               label, p, base, base + size, size / 1024);
+    } else {
+        fprintf(stderr, "    FAIL: VirtualAlloc 0x%08X (%u KB) — err %lu\n",
+                base, size / 1024, GetLastError());
+    }
+    return p;
+}
+
 static int setup_memory(const char* data_file) {
-    printf("[*] Setting up memory layout (fixed-base, g_mem_base=0)...\n");
+    printf("[*] Setting up memory layout (chunked, g_mem_base=0)...\n");
 
     /* With exe rebased to 0x10000000, we can map at original VAs.
      * g_mem_base = 0 means ADDR(va) = va, so all addresses are real. */
     g_mem_base = 0;
 
-    /* Try to allocate the entire original VA range in one shot:
-     * 0x00010000 - 0x00A29000 (covers SEH workaround, stack, and data) */
-    void* va_block = VirtualAlloc(
-        (void*)0x00010000,
-        0x00A29000 - 0x00010000,
-        MEM_RESERVE | MEM_COMMIT,
-        PAGE_READWRITE
-    );
-    if (!va_block) {
-        fprintf(stderr, "FATAL: Failed to allocate VA range 0x00010000-0x00A29000 (err %lu)\n",
-                GetLastError());
-        fprintf(stderr, "    Is the exe rebased to 0x10000000? Check /BASE linker option.\n");
-        return 0;
+    /* VA ranges were pre-reserved by the launcher (parent process).
+     * Now commit them for use. The ranges are MEM_RESERVE + PRIVATE. */
+
+    struct { uint32_t base; uint32_t size; const char* label; } ranges[] = {
+        { 0x00100000, 0x00100000, "Stack" },
+        { 0x00603000, 0x00A2A000 - 0x00603000, "Data" },
+    };
+
+    for (int r = 0; r < 2; r++) {
+        void* block = VirtualAlloc((void*)(uintptr_t)ranges[r].base,
+                                   ranges[r].size,
+                                   MEM_COMMIT, PAGE_READWRITE);
+        if (block) {
+            printf("    %-6s %p (0x%08X - 0x%08X, %u KB)\n",
+                   ranges[r].label, block, ranges[r].base,
+                   ranges[r].base + ranges[r].size, ranges[r].size / 1024);
+        } else {
+            fprintf(stderr, "FATAL: VirtualAlloc commit %s failed (err %lu)\n",
+                    ranges[r].label, GetLastError());
+            return 0;
+        }
     }
-    printf("    VA block:  %p (0x00010000 - 0x00A29000)\n", va_block);
 
-    /* Initialize SEH area — MEM32(0) can't work since VA 0 is null guard.
-     * But with g_mem_base=0, MEM32(0) = *(0) which will crash.
-     * We'll handle this by catching the access violation in VEH. */
-    /* Set 0x00010000 area to 0xFF for SEH chain end */
-    memset(va_block, 0xFF, 0x10000);
+    /* No SEH guard region: 0x10000-0x20000 collides with the PEB and the
+     * original binary never uses it. SEH chain terminators live in g_seh_sim /
+     * g_fs_seg and null-page (fs:[0]) faults are caught by the VEH. */
 
-    /* Stack: 0x00100000 - 0x00200000 (already allocated in block) */
     g_esp = 0x001FFFC0;
-    printf("    Stack:     0x00100000 - 0x00200000 (ESP=0x%08X)\n", g_esp);
+    printf("    ESP:       0x%08X\n", g_esp);
 
-    /* Data sections are at 0x00603000+ (within our block) */
-    printf("    Data:      0x%08X - 0x%08X (%u KB)\n",
-           CS_DATA_START, CS_DATA_END, CS_DATA_SIZE / 1024);
     printf("    g_mem_base: %lld (should be 0)\n", (long long)g_mem_base);
 
     /* Load initialized data from the original binary */
@@ -1178,13 +1295,24 @@ static void setup_imports(void) {
 
 int WINAPI WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance,
                    LPSTR lpCmdLine, int nCmdShow) {
-    (void)hInstance; (void)hPrevInstance; (void)nCmdShow;
+    (void)hPrevInstance; (void)nCmdShow;
+
+    /* Check if we're the recomp instance (VA ranges pre-reserved by launcher).
+     * If not, act as the launcher: spawn a child with reserved VA space. */
+    int is_child = is_recomp_instance();
+    const char* logfile = is_child ? "crimson_recomp.log" : "crimson_launcher.log";
 
     /* Redirect output to file for debugging */
-    freopen("crimson_recomp.log", "w", stdout);
-    freopen("crimson_recomp.log", "a", stderr);
+    freopen(logfile, "w", stdout);
+    freopen(logfile, "a", stderr);
     setbuf(stdout, NULL);  /* unbuffered for crash debugging */
     setbuf(stderr, NULL);
+
+    if (!is_child) {
+        printf("[*] Running as launcher (VA ranges not pre-reserved)\n");
+        return launcher_main(hInstance);
+    }
+    printf("[*] Running as recomp instance (VA ranges pre-reserved by launcher)\n");
 
     printf("Crimson Skies Static Recompilation v0.2\n");
     printf("=======================================\n");

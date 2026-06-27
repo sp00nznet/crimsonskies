@@ -14,8 +14,11 @@ endif()
 set(CMAKE_C_STANDARD 11)
 set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/bin)
 
-# Collect all generated source files
-file(GLOB RECOMP_GENERATED_SOURCES "src/recomp/gen/recomp_*.c")
+# Collect all generated source files.
+# CONFIGURE_DEPENDS re-globs at build time so newly generated recomp_*.c files
+# (e.g. after the function set grows and run_pipeline.py emits more chunks) are
+# picked up without a manual reconfigure — avoids "unresolved external sub_*" links.
+file(GLOB RECOMP_GENERATED_SOURCES CONFIGURE_DEPENDS "src/recomp/gen/recomp_*.c")
 
 # Recompiled game executable
 add_executable(crimson WIN32

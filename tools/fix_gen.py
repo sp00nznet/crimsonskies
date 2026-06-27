@@ -46,12 +46,35 @@ def fix_file(filepath):
         for i in range(start, end):
             line = lines[i]
 
-            # Fix cross-function gotos
+            # Fix unconditional cross-function gotos
             m = re.match(r'(\s+)goto (L_([0-9A-Fa-f]+));(.*)', line)
             if m:
                 indent, label, addr, comment = m.groups()
                 if label not in labels_in_func:
                     lines[i] = f'{indent}RECOMP_ITAIL(0x{addr}u); return;{comment}\n'
+                    fixes += 1
+
+            # Fix conditional cross-function gotos: "if (cond) goto L_x;"
+            # C goto cannot cross function boundaries, so a Jcc whose target
+            # lies in another function becomes a conditional tail dispatch.
+            m = re.match(r'(\s+)(if \(.*\)) goto (L_([0-9A-Fa-f]+));(.*)', line)
+            if m:
+                indent, cond, label, addr, comment = m.groups()
+                if label not in labels_in_func:
+                    lines[i] = (f'{indent}{cond} {{ RECOMP_ITAIL(0x{addr}u); '
+                                f'return; }}{comment}\n')
+                    fixes += 1
+
+            # Route fs: segment accesses to the simulated TEB (g_fs_seg).
+            # The lifter drops the segment override and emits MEM32(0) for
+            # fs:[0], which reads real VA 0 and faults. The disassembly comment
+            # preserves the original 'fs:[...]', so key off that and swap the
+            # MEM* accessor for the FS_MEM* accessor (defined in recomp_types.h).
+            if re.search(r'/\*.*\bfs:', line):
+                swapped = re.sub(r'\bMEM(8|16|32)\(', r'FS_MEM\1(', line)
+                if swapped != line:
+                    lines[i] = swapped
+                    line = swapped
                     fixes += 1
 
             # Fix single-arg CMP_EQ (FPU comparison result)

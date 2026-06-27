@@ -21,7 +21,7 @@ This is a game preservation project. Crimson Skies is a beloved arcade flight co
 | **Phase 1** | **Complete** | Function discovery (6,232 functions) |
 | **Phase 2** | **Complete** | x86-to-C code generation (826,381 lines, 44.2 MB, 0 errors) |
 | **Phase 3** | **Complete** | Compilation and linking (0 errors, 0x10000000 base) |
-| **Phase 4** | **In Progress** | Runtime bringup — CRT init runs, MFC42 bridges, 597 imports |
+| **Phase 4** | **In Progress** | Runtime bringup — VA-range + fs:[0] gates passed, CRT init executes; 7,005 functions; 589 import bridges |
 | Phase 5 | Pending | Win32/DirectX HAL — COM mocks for DDraw/D3D/DInput/DSound |
 | Phase 6 | Pending | GOS engine abstraction — rendering, audio, input |
 | Phase 7 | Pending | Asset loading — ROF archives, ZBD files, CAB extraction |
@@ -42,8 +42,8 @@ This is a game preservation project. Crimson Skies is a beloved arcade flight co
 | **Copy Protection** | SafeDisc v1.50 (BoG_ marker, ICD format) |
 | **Relocations** | Present (.reloc section) |
 | **PDB Path** | `D:\zipper\CrimsonRun\run\Crimson.pdb` |
-| **Functions** | 6,232 (6,081 auto-discovered + 151 manual) |
-| **Lines of C** | 826,381 (44.2 MB across 13 source files) |
+| **Functions** | 7,005 (6,232 call-graph + 773 IDA-recovered C++ vtable virtuals) |
+| **Lines of C** | 842,912 (44.7 MB across 15 source files) |
 | **Code Gen Errors** | 0 |
 | **Code Gen Time** | ~12 seconds |
 | **Compile Errors** | 0 |
@@ -138,35 +138,44 @@ crimsonskies/
 ```
 Crimson Skies Static Recompilation v0.2
 =======================================
-Binary: CRIMSON.ICD (Zipper Interactive, 2000)
-Engine: GameZ/GOS
 Phase 4: Runtime Bringup
 
 [*] VEH crash handler installed
-[*] Setting up memory layout (fixed-base, g_mem_base=0)...
+[*] Setting up memory layout (chunked, g_mem_base=0)...
+    Stack  0x00100000 - 0x00200000 (1024 KB)
+    Data   0x00603000 - 0x00A2A000 (4252 KB)
+    Loaded VA 0x00603000 / 0x00619000 / 0x00A1F000 / 0x00A23000 from binary
 [*] Setting up import bridges...
     Registered 589 import bridges
 
-[*] Dispatch table: 6232 recompiled functions
-[*] Import bridges: 589 registered
+[*] Dispatch table: 7005 recompiled functions
 
 [*] Calling entry point sub_005F7056...
-[*] _initterm: 0x00619000 - 0x00619268
-    _initterm: called 150+, skipped 0
-    (CRT init, MSVCP60 init, game static constructors)
-
-[*] AfxWinMain entered (MFC42 ordinal 1576)
-    ... MFC/CWinApp initialization in progress
+    CRT init: __set_app_type, __p__fmode/_commode, __setusermatherr,
+              _controlfp, _initterm all execute
+    (crashes deeper in init — see Phase 4 Progress)
 ```
 
 ### Phase 4 Progress
 
-- **Memory mapping**: Data sections mapped at original VAs, exe rebased to 0x10000000
-- **Import bridges**: 597 imports from 20 DLLs bridged (generic stdcall/cdecl/thiscall dispatch)
-- **CRT initialization**: `_initterm` executes 150+ C++ static constructors
-- **MFC42 forwarding**: 203 ordinal imports resolved from real MFC42.DLL
-- **fs:[0] fix**: 3,106 SEH accesses corrected (codegen bug)
-- **Current blocker**: VirtualAlloc at original VAs needs chunked allocation strategy
+- **Function set**: 7,005 functions — added 773 IDA-recovered C++ vtable virtuals (call-graph
+  discovery doesn't parse vtables). See `docs/IDA_ANALYSIS_HANDOFF.md`.
+- **VA-range gate PASSED**: launcher re-execs a suspended child, pre-reserves Stack (0x100000) +
+  Data (0x603000–0xA2A000) via `VirtualAllocEx`, then commits. The old `0x10000–0x20000` "SEH
+  guard" was dropped (it collides with the child PEB and isn't part of the original image).
+- **fs:[0] gate PASSED**: all 1,605 `fs:[0]` sites were emitted as `MEM32(0)` (faulted on real
+  VA 0); `fix_gen.py` now routes `fs:` accesses to `FS_MEM32`/`g_fs_seg`.
+- **CRT initialization**: entry point runs; CRT startup functions execute.
+- **Import bridges**: 589 imports bridged (generic stdcall/cdecl/thiscall dispatch). Optional
+  `IFC21.dll` (force feedback) and `zTiff.dll` (TIFF) are absent → non-fatal load warnings.
+- **Current blocker**: crash `READ 0xFFFFFFE0` (ebp-relative with `ebp=0`) at call depth 6, plus
+  a recurring unresolved `ICALL 0x00401860` (mid-function pointer target). See `IDA_ANALYSIS_HANDOFF.md`.
+
+### Build / regen pipeline
+
+Order matters: `python run_pipeline.py … → python tools/fix_gen.py → cmake --build build --config Release`.
+`run_pipeline.py` does **not** run `fix_gen.py`; skipping it fails the build with `C2094` undefined-label
+errors (the lifter emits `goto L_x` for cross-function branches that `fix_gen` rewrites to `RECOMP_ITAIL`).
 
 ## Building
 
