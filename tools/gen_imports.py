@@ -243,8 +243,15 @@ for dll, funcs in sorted(iat.items()):
             lines.append(f'    register_import_auto(0x{va:08X}, "{dll}", "{name}", {nargs}, {is_stdcall});')
         else:
             if dll in ('MFC42.DLL', 'MSVCP60.dll', 'IFC21.dll'):
-                # C++ DLLs use __thiscall for most methods
-                lines.append(f'    register_import_auto(0x{va:08X}, "{dll}", "{name}", 2, 2); /* thiscall, TODO: nargs */')
+                # C++ DLLs use __thiscall for most methods. The MSVC-mangled
+                # name encodes the signature: a void argument list ends in 'XZ'
+                # (e.g. ??0Init@ios_base@std@@QAE@XZ -> 0 args). Detect that
+                # exactly; otherwise fall back to a 2-arg guess. Wrong counts
+                # corrupt the (callee-cleans) stack, so getting void right
+                # removes a real drift source for C++ ctors/dtors.
+                nargs = 0 if name.endswith('XZ') else 2
+                tag = 'void' if nargs == 0 else 'TODO: nargs'
+                lines.append(f'    register_import_auto(0x{va:08X}, "{dll}", "{name}", {nargs}, 2); /* thiscall, {tag} */')
             else:
                 is_stdcall = 1 if dll in stdcall_dlls else 0
                 lines.append(f'    register_import_auto(0x{va:08X}, "{dll}", "{name}", 0, {is_stdcall}); /* TODO: nargs */')

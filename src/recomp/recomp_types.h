@@ -348,11 +348,15 @@ extern uint32_t g_trace_ring_idx;
         PUSH32(esp, 0xDEAD0000u); \
         TRACE_LOG("[ICALL %u d%u] -> native 0x%08X\n", g_total_icalls, g_call_depth, _va); \
         if (!recomp_native_call(_va)) { \
-            esp += 4; /* undo push */ \
             TRACE_LOG("ICALL: unresolved VA 0x%08X\n", _va); \
             fprintf(stderr, "!!! UNRESOLVED ICALL: VA 0x%08X (call #%u, icall #%u) in %s\n", _va, g_total_calls, g_total_icalls, __func__); \
             eax = 0; \
         } \
+        esp += 4; /* pop the dummy return address pushed above — symmetric on \
+                     both success and failure. generic_bridge does ABI arg \
+                     cleanup only (stdcall/thiscall: nargs*4, cdecl: 0); the \
+                     return-address slot is owned by this macro. Without this, \
+                     every native import call leaked 4 bytes of stack. */ \
         g_ebx = _save_ebx; g_esi = _save_esi; g_edi = _save_edi; \
     } \
 } while(0)

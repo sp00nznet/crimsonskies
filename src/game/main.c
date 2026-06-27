@@ -221,14 +221,49 @@ static int g_import_count = 0;
  * via a universal stdcall/cdecl thunk.
  *------------------------------------------------------------------------*/
 
-/* Forward declaration */
-static void thiscall_bridge(int idx);
+/*------------------------------------------------------------------------
+ * call_native_measured: call a native function with `nmax` dword args and
+ * ECX=this_ecx, returning EAX, and report how many arg bytes the callee popped
+ * via *cleaned. This removes any dependency on knowing each import's exact arg
+ * count: we push a generous arg window, let a callee-cleans function pop the
+ * args it owns (stdcall/thiscall), measure the ESP delta, and fully restore
+ * the real stack. cdecl callees pop nothing, so *cleaned == 0. The recomp
+ * stack is then advanced by *cleaned (the dummy return address is owned by the
+ * RECOMP_ICALL/ITAIL macro, not here).
+ *------------------------------------------------------------------------*/
+static uint32_t call_native_measured(void* fn, const uint32_t* args, int nmax,
+                                     uint32_t this_ecx, int* cleaned) {
+    volatile uint32_t ret_val = 0, esp_after_push = 0, esp_after_call = 0;
+    __asm {
+        push esi
+        mov  esi, args
+        mov  ecx, nmax
+    cnm_push:
+        test ecx, ecx
+        jz   cnm_pushed
+        dec  ecx
+        push dword ptr [esi + ecx*4]
+        jmp  cnm_push
+    cnm_pushed:
+        mov  esp_after_push, esp
+        mov  ecx, this_ecx            /* this for thiscall; ignored otherwise */
+        call fn                       /* callee-cleans pops its own args */
+        mov  esp_after_call, esp
+        mov  ret_val, eax
+        mov  eax, nmax                /* restore esp past our pushes */
+        shl  eax, 2
+        add  eax, esp_after_push
+        mov  esp, eax
+        pop  esi
+    }
+    *cleaned = (int)(esp_after_call - esp_after_push);
+    return ret_val;
+}
 
-/* Generic bridge dispatcher — called from per-import thunks */
+/* Generic bridge dispatcher — called from recomp_native_call. */
 static void generic_bridge(int idx) {
     import_entry_t* imp = &g_imports[idx];
     void* fn = imp->native_addr;
-    int nargs = imp->nargs;
 
     if (!fn) {
         fprintf(stderr, "BRIDGE: NULL native for %s!%s\n", imp->dll_name, imp->func_name);
@@ -236,170 +271,29 @@ static void generic_bridge(int idx) {
         return;
     }
 
-    /* Read args from recomp stack */
-    uint32_t a[16];
-    for (int i = 0; i < nargs && i < 16; i++) {
+    /* Read a generous window of args from the recomp stack. STACK32 skips the
+     * dummy return address at g_esp. Extra values are harmless: callee-cleans
+     * functions pop only their declared args and cdecl functions read only
+     * what they need. */
+    enum { NMAX = 16 };
+    uint32_t a[NMAX];
+    for (int i = 0; i < NMAX; i++) {
         a[i] = STACK32(i);
     }
 
-    /* Call native function.
-     * All Win32 APIs are __stdcall (callee-cleans).
-     * MSVCRT functions are __cdecl (caller-cleans).
-     * We use inline asm or a function pointer cast to make the call. */
-
-    uint32_t result = 0;
-
-    /* Use a switch on nargs for the call — the compiler will optimize this */
-    typedef uint32_t (__stdcall *fn0_t)(void);
-    typedef uint32_t (__stdcall *fn1_t)(uint32_t);
-    typedef uint32_t (__stdcall *fn2_t)(uint32_t, uint32_t);
-    typedef uint32_t (__stdcall *fn3_t)(uint32_t, uint32_t, uint32_t);
-    typedef uint32_t (__stdcall *fn4_t)(uint32_t, uint32_t, uint32_t, uint32_t);
-    typedef uint32_t (__stdcall *fn5_t)(uint32_t, uint32_t, uint32_t, uint32_t, uint32_t);
-    typedef uint32_t (__stdcall *fn6_t)(uint32_t, uint32_t, uint32_t, uint32_t, uint32_t, uint32_t);
-    typedef uint32_t (__stdcall *fn7_t)(uint32_t, uint32_t, uint32_t, uint32_t, uint32_t, uint32_t, uint32_t);
-    typedef uint32_t (__stdcall *fn8_t)(uint32_t, uint32_t, uint32_t, uint32_t, uint32_t, uint32_t, uint32_t, uint32_t);
-    typedef uint32_t (__stdcall *fn9_t)(uint32_t, uint32_t, uint32_t, uint32_t, uint32_t, uint32_t, uint32_t, uint32_t, uint32_t);
-    typedef uint32_t (__stdcall *fn10_t)(uint32_t, uint32_t, uint32_t, uint32_t, uint32_t, uint32_t, uint32_t, uint32_t, uint32_t, uint32_t);
-    typedef uint32_t (__stdcall *fn11_t)(uint32_t, uint32_t, uint32_t, uint32_t, uint32_t, uint32_t, uint32_t, uint32_t, uint32_t, uint32_t, uint32_t);
-    typedef uint32_t (__stdcall *fn12_t)(uint32_t, uint32_t, uint32_t, uint32_t, uint32_t, uint32_t, uint32_t, uint32_t, uint32_t, uint32_t, uint32_t, uint32_t);
-
-    typedef uint32_t (__cdecl *cfn0_t)(void);
-    typedef uint32_t (__cdecl *cfn1_t)(uint32_t);
-    typedef uint32_t (__cdecl *cfn2_t)(uint32_t, uint32_t);
-    typedef uint32_t (__cdecl *cfn3_t)(uint32_t, uint32_t, uint32_t);
-    typedef uint32_t (__cdecl *cfn4_t)(uint32_t, uint32_t, uint32_t, uint32_t);
-    typedef uint32_t (__cdecl *cfn5_t)(uint32_t, uint32_t, uint32_t, uint32_t, uint32_t);
-    typedef uint32_t (__cdecl *cfn6_t)(uint32_t, uint32_t, uint32_t, uint32_t, uint32_t, uint32_t);
-    typedef uint32_t (__cdecl *cfn7_t)(uint32_t, uint32_t, uint32_t, uint32_t, uint32_t, uint32_t, uint32_t);
-    typedef uint32_t (__cdecl *cfn8_t)(uint32_t, uint32_t, uint32_t, uint32_t, uint32_t, uint32_t, uint32_t, uint32_t);
-
-    if (imp->is_stdcall == 2) {
-        /* thiscall — delegate to thiscall_bridge */
-        thiscall_bridge(idx);
-        return;
-    }
-
-    if (imp->is_stdcall) {
-        switch (nargs) {
-            case 0:  result = ((fn0_t)fn)(); break;
-            case 1:  result = ((fn1_t)fn)(a[0]); break;
-            case 2:  result = ((fn2_t)fn)(a[0], a[1]); break;
-            case 3:  result = ((fn3_t)fn)(a[0], a[1], a[2]); break;
-            case 4:  result = ((fn4_t)fn)(a[0], a[1], a[2], a[3]); break;
-            case 5:  result = ((fn5_t)fn)(a[0], a[1], a[2], a[3], a[4]); break;
-            case 6:  result = ((fn6_t)fn)(a[0], a[1], a[2], a[3], a[4], a[5]); break;
-            case 7:  result = ((fn7_t)fn)(a[0], a[1], a[2], a[3], a[4], a[5], a[6]); break;
-            case 8:  result = ((fn8_t)fn)(a[0], a[1], a[2], a[3], a[4], a[5], a[6], a[7]); break;
-            case 9:  result = ((fn9_t)fn)(a[0], a[1], a[2], a[3], a[4], a[5], a[6], a[7], a[8]); break;
-            case 10: result = ((fn10_t)fn)(a[0], a[1], a[2], a[3], a[4], a[5], a[6], a[7], a[8], a[9]); break;
-            case 11: result = ((fn11_t)fn)(a[0], a[1], a[2], a[3], a[4], a[5], a[6], a[7], a[8], a[9], a[10]); break;
-            case 12: result = ((fn12_t)fn)(a[0], a[1], a[2], a[3], a[4], a[5], a[6], a[7], a[8], a[9], a[10], a[11]); break;
-            default:
-                fprintf(stderr, "BRIDGE: unsupported nargs=%d for %s!%s\n", nargs, imp->dll_name, imp->func_name);
-                break;
-        }
-        /* stdcall: callee cleans stack */
-        g_esp += nargs * 4;
-    } else {
-        /* cdecl: caller cleans stack — we don't touch g_esp */
-        switch (nargs) {
-            case 0:  result = ((cfn0_t)fn)(); break;
-            case 1:  result = ((cfn1_t)fn)(a[0]); break;
-            case 2:  result = ((cfn2_t)fn)(a[0], a[1]); break;
-            case 3:  result = ((cfn3_t)fn)(a[0], a[1], a[2]); break;
-            case 4:  result = ((cfn4_t)fn)(a[0], a[1], a[2], a[3]); break;
-            case 5:  result = ((cfn5_t)fn)(a[0], a[1], a[2], a[3], a[4]); break;
-            case 6:  result = ((cfn6_t)fn)(a[0], a[1], a[2], a[3], a[4], a[5]); break;
-            case 7:  result = ((cfn7_t)fn)(a[0], a[1], a[2], a[3], a[4], a[5], a[6]); break;
-            case 8:  result = ((cfn8_t)fn)(a[0], a[1], a[2], a[3], a[4], a[5], a[6], a[7]); break;
-            default:
-                fprintf(stderr, "BRIDGE: unsupported nargs=%d for %s!%s\n", nargs, imp->dll_name, imp->func_name);
-                break;
-        }
-    }
+    /* Call and measure the callee's stack cleanup — no per-import arg count
+     * needed. ECX = this for thiscall (is_stdcall == 2); ignored otherwise. */
+    uint32_t this_ecx = (imp->is_stdcall == 2) ? g_ecx : 0;
+    int cleaned = 0;
+    uint32_t result = call_native_measured(fn, a, NMAX, this_ecx, &cleaned);
+    g_esp += (uint32_t)cleaned;  /* measured callee cleanup (0 for cdecl) */
 
     g_eax = result;
 }
 
-/*------------------------------------------------------------------------
- * Thiscall bridge for MFC42 and similar C++ DLLs.
- *
- * __thiscall: ECX = this, callee-cleans stack args.
- * We don't know exact arg counts, so we copy a generous 12 dwords
- * from the recomp stack onto the native stack, call the function,
- * and detect how many args were consumed by checking ESP delta.
- *------------------------------------------------------------------------*/
-
-/*
- * Thiscall trampoline: calls a __thiscall function with ECX = this.
- * Since C doesn't support __thiscall function pointers, we use
- * __stdcall casts and set ECX manually via inline asm.
- * Note: __stdcall = callee-cleans, same as __thiscall but with
- * ECX set manually rather than first arg.
- */
-
-static void thiscall_bridge(int idx) {
-    import_entry_t* imp = &g_imports[idx];
-    void* fn = imp->native_addr;
-
-    if (!fn) {
-        static int null_warn_count = 0;
-        if (null_warn_count < 5) {
-            fprintf(stderr, "BRIDGE: NULL native for %s!%s (thiscall)\n",
-                    imp->dll_name, imp->func_name);
-            null_warn_count++;
-        }
-        g_eax = 0;
-        return;
-    }
-
-    uint32_t a[12];
-    int nargs = imp->nargs;
-    for (int i = 0; i < nargs && i < 12; i++) {
-        a[i] = STACK32(i);
-    }
-
-    /* Use stdcall function pointer types (same stack cleanup as thiscall) */
-    typedef uint32_t (__stdcall *tc0_t)(void);
-    typedef uint32_t (__stdcall *tc1_t)(uint32_t);
-    typedef uint32_t (__stdcall *tc2_t)(uint32_t, uint32_t);
-    typedef uint32_t (__stdcall *tc3_t)(uint32_t, uint32_t, uint32_t);
-    typedef uint32_t (__stdcall *tc4_t)(uint32_t, uint32_t, uint32_t, uint32_t);
-    typedef uint32_t (__stdcall *tc5_t)(uint32_t, uint32_t, uint32_t, uint32_t, uint32_t);
-    typedef uint32_t (__stdcall *tc6_t)(uint32_t, uint32_t, uint32_t, uint32_t, uint32_t, uint32_t);
-    typedef uint32_t (__stdcall *tc7_t)(uint32_t, uint32_t, uint32_t, uint32_t, uint32_t, uint32_t, uint32_t);
-    typedef uint32_t (__stdcall *tc8_t)(uint32_t, uint32_t, uint32_t, uint32_t, uint32_t, uint32_t, uint32_t, uint32_t);
-
-    /* Set ECX = this (g_ecx) before the call via inline asm.
-     * MFC objects are heap-allocated with real addresses from malloc. */
-    uint32_t this_ecx = g_ecx;
-    uint32_t result = 0;
-
-    /* The __asm mov ecx right before the switch works because MSVC
-     * won't touch ECX between our asm and the call (it's caller-saved
-     * and the compiler knows we set it). */
-    __asm { mov ecx, this_ecx }
-    switch (nargs) {
-        case 0:  result = ((tc0_t)fn)(); break;
-        case 1:  result = ((tc1_t)fn)(a[0]); break;
-        case 2:  result = ((tc2_t)fn)(a[0], a[1]); break;
-        case 3:  result = ((tc3_t)fn)(a[0], a[1], a[2]); break;
-        case 4:  result = ((tc4_t)fn)(a[0], a[1], a[2], a[3]); break;
-        case 5:  result = ((tc5_t)fn)(a[0], a[1], a[2], a[3], a[4]); break;
-        case 6:  result = ((tc6_t)fn)(a[0], a[1], a[2], a[3], a[4], a[5]); break;
-        case 7:  result = ((tc7_t)fn)(a[0], a[1], a[2], a[3], a[4], a[5], a[6]); break;
-        case 8:  result = ((tc8_t)fn)(a[0], a[1], a[2], a[3], a[4], a[5], a[6], a[7]); break;
-        default:
-            fprintf(stderr, "BRIDGE: thiscall unsupported nargs=%d for %s!%s\n",
-                    nargs, imp->dll_name, imp->func_name);
-            break;
-    }
-
-    /* thiscall: callee cleans stack args */
-    g_esp += nargs * 4;
-    g_eax = result;
-}
+/* Thiscall imports are handled by generic_bridge via call_native_measured
+ * (it sets ECX = this when is_stdcall == 2 and measures the callee cleanup),
+ * so no separate thiscall bridge is needed. */
 
 /*------------------------------------------------------------------------
  * Import registration
@@ -499,17 +393,13 @@ static int register_import_ordinal(uint32_t iat_va, const char* dll_name,
  *------------------------------------------------------------------------*/
 
 recomp_func_t recomp_lookup_import(uint32_t va) {
-    /* Check if this is one of our sentinel values */
-    if (va >= IMPORT_SENTINEL_BASE && va < IMPORT_SENTINEL_BASE + (uint32_t)g_import_count) {
-        int idx = (int)(va - IMPORT_SENTINEL_BASE);
-        if (g_imports[idx].bridge) {
-            return g_imports[idx].bridge;
-        }
-        /* No custom bridge — use generic bridge */
-        /* We can't return a function pointer to generic_bridge(idx) directly,
-         * so we use recomp_native_call instead */
-        return NULL;
-    }
+    /* Always return NULL so import sentinels are dispatched via the native
+     * path in RECOMP_ICALL/ITAIL (recomp_native_call below). That path owns
+     * the dummy return address (push + symmetric pop), and every bridge —
+     * custom or generic — cleans ONLY its stdcall/thiscall args. Keeping a
+     * single convention avoids the per-bridge dummy-ret leaks that drifted
+     * the stack and pushed 0xDEAD0000 into native call arguments. */
+    (void)va;
     return NULL;
 }
 
@@ -517,7 +407,13 @@ int recomp_native_call(uint32_t va) {
     /* Check if this is one of our sentinel values */
     if (va >= IMPORT_SENTINEL_BASE && va < IMPORT_SENTINEL_BASE + (uint32_t)g_import_count) {
         int idx = (int)(va - IMPORT_SENTINEL_BASE);
-        generic_bridge(idx);
+        if (g_imports[idx].bridge) {
+            /* Custom bridge — must clean only its args (the caller macro pops
+             * the dummy return address). */
+            g_imports[idx].bridge();
+        } else {
+            generic_bridge(idx);
+        }
         return 1;
     }
     return 0;
@@ -697,8 +593,8 @@ static void bridge_purecall(void) {
 
 /* __set_app_type: CRT init — ignore */
 static void bridge_set_app_type(void) {
-    /* arg: int type (on stack) */
-    g_esp += 4; /* cdecl but original code pops it */
+    /* __set_app_type(int): cdecl — caller cleans the arg; the macro pops the
+     * dummy return address, so this bridge adjusts nothing. */
     g_eax = 0;
 }
 

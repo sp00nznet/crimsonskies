@@ -48,25 +48,25 @@
     register_import_auto(0x00A1FC18, "GDI32.dll", "DeleteDC", 1, 1);
     register_import_auto(0x00A1FC1C, "GDI32.dll", "GetTextExtentPoint32A", 4, 1);
     /* === IFC21.dll (19 imports) === */
-    register_import_auto(0x00A1FC24, "IFC21.dll", "??0CImmProject@@QAE@XZ", 2, 2); /* thiscall, TODO: nargs */
+    register_import_auto(0x00A1FC24, "IFC21.dll", "??0CImmProject@@QAE@XZ", 0, 2); /* thiscall, void */
     register_import_auto(0x00A1FC28, "IFC21.dll", "?GetContainedEffect@CImmCompoundEffect@@QAEPAVCImmEffect@@J@Z", 2, 2); /* thiscall, TODO: nargs */
-    register_import_auto(0x00A1FC2C, "IFC21.dll", "??0CImmDXDevice@@QAE@XZ", 2, 2); /* thiscall, TODO: nargs */
+    register_import_auto(0x00A1FC2C, "IFC21.dll", "??0CImmDXDevice@@QAE@XZ", 0, 2); /* thiscall, void */
     register_import_auto(0x00A1FC30, "IFC21.dll", "?SwitchToAbsoluteMode@CImmDevice@@UAEHH@Z", 2, 2); /* thiscall, TODO: nargs */
     register_import_auto(0x00A1FC34, "IFC21.dll", "?Start@CImmCompoundEffect@@QAEHKK@Z", 2, 2); /* thiscall, TODO: nargs */
     register_import_auto(0x00A1FC38, "IFC21.dll", "?ChangeBaseParams@CImmEffect@@QAEHJJKPAUFEELIT_ENVELOPE@@KKKKK@Z", 2, 2); /* thiscall, TODO: nargs */
     register_import_auto(0x00A1FC3C, "IFC21.dll", "?ChangeBaseParamsPolar@CImmEffect@@QAEHJKPAUFEELIT_ENVELOPE@@KKKKK@Z", 2, 2); /* thiscall, TODO: nargs */
-    register_import_auto(0x00A1FC40, "IFC21.dll", "?Stop@CImmCompoundEffect@@QAEHXZ", 2, 2); /* thiscall, TODO: nargs */
-    register_import_auto(0x00A1FC44, "IFC21.dll", "?Close@CImmProject@@QAEXXZ", 2, 2); /* thiscall, TODO: nargs */
-    register_import_auto(0x00A1FC48, "IFC21.dll", "??1CImmDXDevice@@UAE@XZ", 2, 2); /* thiscall, TODO: nargs */
-    register_import_auto(0x00A1FC4C, "IFC21.dll", "??1CImmProject@@QAE@XZ", 2, 2); /* thiscall, TODO: nargs */
-    register_import_auto(0x00A1FC50, "IFC21.dll", "?GetAPI@CImmDXDevice@@UAEPAUIFeelit@@XZ", 2, 2); /* thiscall, TODO: nargs */
+    register_import_auto(0x00A1FC40, "IFC21.dll", "?Stop@CImmCompoundEffect@@QAEHXZ", 0, 2); /* thiscall, void */
+    register_import_auto(0x00A1FC44, "IFC21.dll", "?Close@CImmProject@@QAEXXZ", 0, 2); /* thiscall, void */
+    register_import_auto(0x00A1FC48, "IFC21.dll", "??1CImmDXDevice@@UAE@XZ", 0, 2); /* thiscall, void */
+    register_import_auto(0x00A1FC4C, "IFC21.dll", "??1CImmProject@@QAE@XZ", 0, 2); /* thiscall, void */
+    register_import_auto(0x00A1FC50, "IFC21.dll", "?GetAPI@CImmDXDevice@@UAEPAUIFeelit@@XZ", 0, 2); /* thiscall, void */
     register_import_auto(0x00A1FC54, "IFC21.dll", "?Initialize@CImmDXDevice@@QAEHPAX0PAUIDirectInputA@@PAUIDirectInputDevice2A@@@Z", 2, 2); /* thiscall, TODO: nargs */
     register_import_auto(0x00A1FC58, "IFC21.dll", "?OpenFile@CImmProject@@QAEHPBDPAVCImmDevice@@@Z", 2, 2); /* thiscall, TODO: nargs */
     register_import_auto(0x00A1FC5C, "IFC21.dll", "?CreateEffect@CImmProject@@QAEPAVCImmCompoundEffect@@PBDPAVCImmDevice@@K@Z", 2, 2); /* thiscall, TODO: nargs */
-    register_import_auto(0x00A1FC60, "IFC21.dll", "?prepare_device@CImmDevice@@MAEHXZ", 2, 2); /* thiscall, TODO: nargs */
-    register_import_auto(0x00A1FC64, "IFC21.dll", "?GetDevice@CImmDXDevice@@UAEPAUIFeelitDevice@@XZ", 2, 2); /* thiscall, TODO: nargs */
+    register_import_auto(0x00A1FC60, "IFC21.dll", "?prepare_device@CImmDevice@@MAEHXZ", 0, 2); /* thiscall, void */
+    register_import_auto(0x00A1FC64, "IFC21.dll", "?GetDevice@CImmDXDevice@@UAEPAUIFeelitDevice@@XZ", 0, 2); /* thiscall, void */
     register_import_auto(0x00A1FC68, "IFC21.dll", "?ChangeScreenResolution@CImmDevice@@UAEHHKK@Z", 2, 2); /* thiscall, TODO: nargs */
-    register_import_auto(0x00A1FC6C, "IFC21.dll", "?reset@CImmDXDevice@@MAEXXZ", 2, 2); /* thiscall, TODO: nargs */
+    register_import_auto(0x00A1FC6C, "IFC21.dll", "?reset@CImmDXDevice@@MAEXXZ", 0, 2); /* thiscall, void */
     /* === IMM32.dll (1 imports) === */
     register_import_auto(0x00A1FC74, "IMM32.dll", "ImmGetVirtualKey", 1, 1);
     /* === KeRNeL32.dll (74 imports) === */
@@ -360,35 +360,35 @@
     /* === MSVCP60.dll (33 imports) === */
     register_import_auto(0x00A200FC, "MSVCP60.dll", "?_Eos@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@AAEXI@Z", 2, 2); /* thiscall, TODO: nargs */
     register_import_auto(0x00A20100, "MSVCP60.dll", "?_Tidy@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@AAEX_N@Z", 2, 2); /* thiscall, TODO: nargs */
-    register_import_auto(0x00A20104, "MSVCP60.dll", "?_Xlen@std@@YAXXZ", 2, 2); /* thiscall, TODO: nargs */
-    register_import_auto(0x00A20108, "MSVCP60.dll", "?max_size@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QBEIXZ", 2, 2); /* thiscall, TODO: nargs */
+    register_import_auto(0x00A20104, "MSVCP60.dll", "?_Xlen@std@@YAXXZ", 0, 2); /* thiscall, void */
+    register_import_auto(0x00A20108, "MSVCP60.dll", "?max_size@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QBEIXZ", 0, 2); /* thiscall, void */
     register_import_auto(0x00A2010C, "MSVCP60.dll", "?_Grow@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@AAE_NI_N@Z", 2, 2); /* thiscall, TODO: nargs */
     register_import_auto(0x00A20110, "MSVCP60.dll", "?_C@?1??_Nullstr@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@CAPBDXZ@4DB", 2, 2); /* thiscall, TODO: nargs */
     register_import_auto(0x00A20114, "MSVCP60.dll", "?erase@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QAEAAV12@II@Z", 2, 2); /* thiscall, TODO: nargs */
     register_import_auto(0x00A20118, "MSVCP60.dll", "?npos@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@2IB", 2, 2); /* thiscall, TODO: nargs */
-    register_import_auto(0x00A2011C, "MSVCP60.dll", "??1?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QAE@XZ", 2, 2); /* thiscall, TODO: nargs */
-    register_import_auto(0x00A20120, "MSVCP60.dll", "??0Init@ios_base@std@@QAE@XZ", 2, 2); /* thiscall, TODO: nargs */
-    register_import_auto(0x00A20124, "MSVCP60.dll", "??1Init@ios_base@std@@QAE@XZ", 2, 2); /* thiscall, TODO: nargs */
-    register_import_auto(0x00A20128, "MSVCP60.dll", "??0_Winit@std@@QAE@XZ", 2, 2); /* thiscall, TODO: nargs */
-    register_import_auto(0x00A2012C, "MSVCP60.dll", "??1_Winit@std@@QAE@XZ", 2, 2); /* thiscall, TODO: nargs */
+    register_import_auto(0x00A2011C, "MSVCP60.dll", "??1?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QAE@XZ", 0, 2); /* thiscall, void */
+    register_import_auto(0x00A20120, "MSVCP60.dll", "??0Init@ios_base@std@@QAE@XZ", 0, 2); /* thiscall, void */
+    register_import_auto(0x00A20124, "MSVCP60.dll", "??1Init@ios_base@std@@QAE@XZ", 0, 2); /* thiscall, void */
+    register_import_auto(0x00A20128, "MSVCP60.dll", "??0_Winit@std@@QAE@XZ", 0, 2); /* thiscall, void */
+    register_import_auto(0x00A2012C, "MSVCP60.dll", "??1_Winit@std@@QAE@XZ", 0, 2); /* thiscall, void */
     register_import_auto(0x00A20130, "MSVCP60.dll", "?assign@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QAEAAV12@PBDI@Z", 2, 2); /* thiscall, TODO: nargs */
-    register_import_auto(0x00A20134, "MSVCP60.dll", "?_Xran@std@@YAXXZ", 2, 2); /* thiscall, TODO: nargs */
+    register_import_auto(0x00A20134, "MSVCP60.dll", "?_Xran@std@@YAXXZ", 0, 2); /* thiscall, void */
     register_import_auto(0x00A20138, "MSVCP60.dll", "?assign@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QAEAAV12@ABV12@II@Z", 2, 2); /* thiscall, TODO: nargs */
-    register_import_auto(0x00A2013C, "MSVCP60.dll", "?_Split@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@AAEXXZ", 2, 2); /* thiscall, TODO: nargs */
+    register_import_auto(0x00A2013C, "MSVCP60.dll", "?_Split@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@AAEXXZ", 0, 2); /* thiscall, void */
     register_import_auto(0x00A20140, "MSVCP60.dll", "??8std@@YA_NABV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@0@PBD@Z", 2, 2); /* thiscall, TODO: nargs */
     register_import_auto(0x00A20144, "MSVCP60.dll", "?_Refcnt@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@AAEAAEPBD@Z", 2, 2); /* thiscall, TODO: nargs */
     register_import_auto(0x00A20148, "MSVCP60.dll", "??0?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QAE@ABV?$allocator@D@1@@Z", 2, 2); /* thiscall, TODO: nargs */
-    register_import_auto(0x00A2014C, "MSVCP60.dll", "??_F?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QAEXXZ", 2, 2); /* thiscall, TODO: nargs */
+    register_import_auto(0x00A2014C, "MSVCP60.dll", "??_F?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QAEXXZ", 0, 2); /* thiscall, void */
     register_import_auto(0x00A20150, "MSVCP60.dll", "??Hstd@@YA?AV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@0@ABV10@PBD@Z", 2, 2); /* thiscall, TODO: nargs */
-    register_import_auto(0x00A20154, "MSVCP60.dll", "?c_str@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QBEPBDXZ", 2, 2); /* thiscall, TODO: nargs */
+    register_import_auto(0x00A20154, "MSVCP60.dll", "?c_str@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QBEPBDXZ", 0, 2); /* thiscall, void */
     register_import_auto(0x00A20158, "MSVCP60.dll", "?append@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QAEAAV12@PBDI@Z", 2, 2); /* thiscall, TODO: nargs */
-    register_import_auto(0x00A2015C, "MSVCP60.dll", "??1_Lockit@std@@QAE@XZ", 2, 2); /* thiscall, TODO: nargs */
-    register_import_auto(0x00A20160, "MSVCP60.dll", "??0_Lockit@std@@QAE@XZ", 2, 2); /* thiscall, TODO: nargs */
+    register_import_auto(0x00A2015C, "MSVCP60.dll", "??1_Lockit@std@@QAE@XZ", 0, 2); /* thiscall, void */
+    register_import_auto(0x00A20160, "MSVCP60.dll", "??0_Lockit@std@@QAE@XZ", 0, 2); /* thiscall, void */
     register_import_auto(0x00A20164, "MSVCP60.dll", "?insert@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QAEAAV12@IPBDI@Z", 2, 2); /* thiscall, TODO: nargs */
     register_import_auto(0x00A20168, "MSVCP60.dll", "??9std@@YA_NABV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@0@PBD@Z", 2, 2); /* thiscall, TODO: nargs */
     register_import_auto(0x00A2016C, "MSVCP60.dll", "??Hstd@@YA?AV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@0@ABV10@D@Z", 2, 2); /* thiscall, TODO: nargs */
     register_import_auto(0x00A20170, "MSVCP60.dll", "?assign@?$char_traits@D@std@@SAXAADABD@Z", 2, 2); /* thiscall, TODO: nargs */
-    register_import_auto(0x00A20174, "MSVCP60.dll", "?_Nullstr@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@CAPBDXZ", 2, 2); /* thiscall, TODO: nargs */
+    register_import_auto(0x00A20174, "MSVCP60.dll", "?_Nullstr@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@CAPBDXZ", 0, 2); /* thiscall, void */
     register_import_auto(0x00A20178, "MSVCP60.dll", "??4?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QAEAAV01@PBD@Z", 2, 2); /* thiscall, TODO: nargs */
     register_import_auto(0x00A2017C, "MSVCP60.dll", "?_Copy@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@AAEXI@Z", 2, 2); /* thiscall, TODO: nargs */
     /* === MSVCRT.dll (124 imports) === */
