@@ -5566,5 +5566,23 @@
     "address_int": 6276433,
     "name": "sub_005FC551",
     "note": "IDA vtable scan - virtual method missed by call-graph discovery"
+  },
+  {
+    "address": "0x00410D90",
+    "address_int": 4263312,
+    "name": "sub_00410D90",
+    "note": "thiscall ctor \u2014 array-construct iterator + field init"
+  },
+  {
+    "address": "0x00411010",
+    "address_int": 4263952,
+    "name": "sub_00411010",
+    "note": "element constructor (passed by ptr to sub_005F6F5A)"
+  },
+  {
+    "address": "0x00411140",
+    "address_int": 4264256,
+    "name": "sub_00411140",
+    "note": "element helper/dtor (passed by ptr)"
   }
 ]

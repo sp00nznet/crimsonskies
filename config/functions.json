@@ -9,7 +9,13 @@
     "address": "0x00401010",
     "address_int": 4198416,
     "name": "sub_00401010",
-    "num_instructions": 18
+    "num_instructions": 12
+  },
+  {
+    "address": "0x00401030",
+    "address_int": 4198448,
+    "name": "sub_00401030",
+    "num_instructions": 8
   },
   {
     "address": "0x00401040",
@@ -27,7 +33,13 @@
     "address": "0x00401060",
     "address_int": 4198496,
     "name": "sub_00401060",
-    "num_instructions": 10
+    "num_instructions": 4
+  },
+  {
+    "address": "0x00401070",
+    "address_int": 4198512,
+    "name": "sub_00401070",
+    "num_instructions": 8
   },
   {
     "address": "0x00401080",
@@ -45,13 +57,55 @@
     "address": "0x004010A0",
     "address_int": 4198560,
     "name": "sub_004010A0",
-    "num_instructions": 10
+    "num_instructions": 4
+  },
+  {
+    "address": "0x004010B0",
+    "address_int": 4198576,
+    "name": "sub_004010B0",
+    "num_instructions": 8
   },
   {
     "address": "0x004010C0",
     "address_int": 4198592,
     "name": "sub_004010C0",
-    "num_instructions": 92
+    "num_instructions": 65
+  },
+  {
+    "address": "0x004011B0",
+    "address_int": 4198832,
+    "name": "sub_004011B0",
+    "num_instructions": 2
+  },
+  {
+    "address": "0x004011C0",
+    "address_int": 4198848,
+    "name": "sub_004011C0",
+    "num_instructions": 8
+  },
+  {
+    "address": "0x004011E0",
+    "address_int": 4198880,
+    "name": "sub_004011E0",
+    "num_instructions": 30
+  },
+  {
+    "address": "0x00401230",
+    "address_int": 4198960,
+    "name": "sub_00401230",
+    "num_instructions": 18
+  },
+  {
+    "address": "0x00401270",
+    "address_int": 4199024,
+    "name": "sub_00401270",
+    "num_instructions": 18
+  },
+  {
+    "address": "0x004012B0",
+    "address_int": 4199088,
+    "name": "sub_004012B0",
+    "num_instructions": 18
   },
   {
     "address": "0x004012F0",
@@ -69,13 +123,37 @@
     "address": "0x00401640",
     "address_int": 4200000,
     "name": "sub_00401640",
-    "num_instructions": 91
+    "num_instructions": 86
+  },
+  {
+    "address": "0x00401780",
+    "address_int": 4200320,
+    "name": "sub_00401780",
+    "num_instructions": 10
   },
   {
     "address": "0x004017A0",
     "address_int": 4200352,
     "name": "sub_004017A0",
-    "num_instructions": 63
+    "num_instructions": 58
+  },
+  {
+    "address": "0x00401860",
+    "address_int": 4200544,
+    "name": "sub_00401860",
+    "num_instructions": 3
+  },
+  {
+    "address": "0x00401870",
+    "address_int": 4200560,
+    "name": "sub_00401870",
+    "num_instructions": 3
+  },
+  {
+    "address": "0x00401880",
+    "address_int": 4200576,
+    "name": "sub_00401880",
+    "num_instructions": 10
   },
   {
     "address": "0x00401910",
@@ -207,7 +285,13 @@
     "address": "0x00403350",
     "address_int": 4207440,
     "name": "sub_00403350",
-    "num_instructions": 413
+    "num_instructions": 257
+  },
+  {
+    "address": "0x00403680",
+    "address_int": 4208256,
+    "name": "sub_00403680",
+    "num_instructions": 165
   },
   {
     "address": "0x00403990",
@@ -276,6 +360,12 @@
     "num_instructions": 70
   },
   {
+    "address": "0x00404630",
+    "address_int": 4212272,
+    "name": "sub_00404630",
+    "num_instructions": 16
+  },
+  {
     "address": "0x00404660",
     "address_int": 4212320,
     "name": "sub_00404660",
@@ -309,7 +399,13 @@
     "address": "0x00404940",
     "address_int": 4213056,
     "name": "sub_00404940",
-    "num_instructions": 233
+    "num_instructions": 9
+  },
+  {
+    "address": "0x00404960",
+    "address_int": 4213088,
+    "name": "sub_00404960",
+    "num_instructions": 229
   },
   {
     "address": "0x00404EF0",
@@ -354,10 +450,22 @@
     "num_instructions": 7
   },
   {
+    "address": "0x00405440",
+    "address_int": 4215872,
+    "name": "sub_00405440",
+    "num_instructions": 8
+  },
+  {
     "address": "0x00405460",
     "address_int": 4215904,
     "name": "sub_00405460",
-    "num_instructions": 18
+    "num_instructions": 7
+  },
+  {
+    "address": "0x00405480",
+    "address_int": 4215936,
+    "name": "sub_00405480",
+    "num_instructions": 14
   },
   {
     "address": "0x004054B0",
@@ -633,7 +741,13 @@
     "address": "0x00408F60",
     "address_int": 4231008,
     "name": "sub_00408F60",
-    "num_instructions": 270
+    "num_instructions": 268
+  },
+  {
+    "address": "0x00409250",
+    "address_int": 4231760,
+    "name": "sub_00409250",
+    "num_instructions": 13
   },
   {
     "address": "0x00409280",
@@ -669,7 +783,13 @@
     "address": "0x00409330",
     "address_int": 4231984,
     "name": "sub_00409330",
-    "num_instructions": 18
+    "num_instructions": 12
+  },
+  {
+    "address": "0x00409350",
+    "address_int": 4232016,
+    "name": "sub_00409350",
+    "num_instructions": 8
   },
   {
     "address": "0x00409360",
@@ -687,7 +807,19 @@
     "address": "0x00409380",
     "address_int": 4232064,
     "name": "sub_00409380",
-    "num_instructions": 7076
+    "num_instructions": 4
+  },
+  {
+    "address": "0x00409390",
+    "address_int": 4232080,
+    "name": "sub_00409390",
+    "num_instructions": 8
+  },
+  {
+    "address": "0x004093A0",
+    "address_int": 4232096,
+    "name": "sub_004093A0",
+    "num_instructions": 7066
   },
   {
     "address": "0x0040FA30",
@@ -996,6 +1128,12 @@
     "num_instructions": 40
   },
   {
+    "address": "0x00410D90",
+    "address_int": 4263312,
+    "name": "sub_00410D90",
+    "num_instructions": 15
+  },
+  {
     "address": "0x00410DE0",
     "address_int": 4263392,
     "name": "sub_00410DE0",
@@ -1062,6 +1200,12 @@
     "num_instructions": 6
   },
   {
+    "address": "0x00411010",
+    "address_int": 4263952,
+    "name": "sub_00411010",
+    "num_instructions": 10
+  },
+  {
     "address": "0x00411030",
     "address_int": 4263984,
     "name": "sub_00411030",
@@ -1077,7 +1221,13 @@
     "address": "0x004110F0",
     "address_int": 4264176,
     "name": "sub_004110F0",
-    "num_instructions": 38
+    "num_instructions": 27
+  },
+  {
+    "address": "0x00411140",
+    "address_int": 4264256,
+    "name": "sub_00411140",
+    "num_instructions": 16
   },
   {
     "address": "0x00411170",
@@ -1125,7 +1275,13 @@
     "address": "0x00411650",
     "address_int": 4265552,
     "name": "sub_00411650",
-    "num_instructions": 26
+    "num_instructions": 12
+  },
+  {
+    "address": "0x00411670",
+    "address_int": 4265584,
+    "name": "sub_00411670",
+    "num_instructions": 16
   },
   {
     "address": "0x00411690",
@@ -1137,7 +1293,13 @@
     "address": "0x004116A0",
     "address_int": 4265632,
     "name": "sub_004116A0",
-    "num_instructions": 10
+    "num_instructions": 4
+  },
+  {
+    "address": "0x004116B0",
+    "address_int": 4265648,
+    "name": "sub_004116B0",
+    "num_instructions": 8
   },
   {
     "address": "0x004116C0",
@@ -1155,7 +1317,13 @@
     "address": "0x004118D0",
     "address_int": 4266192,
     "name": "sub_004118D0",
-    "num_instructions": 26
+    "num_instructions": 12
+  },
+  {
+    "address": "0x004118F0",
+    "address_int": 4266224,
+    "name": "sub_004118F0",
+    "num_instructions": 16
   },
   {
     "address": "0x00411910",
@@ -1167,7 +1335,13 @@
     "address": "0x00411920",
     "address_int": 4266272,
     "name": "sub_00411920",
-    "num_instructions": 10
+    "num_instructions": 4
+  },
+  {
+    "address": "0x00411930",
+    "address_int": 4266288,
+    "name": "sub_00411930",
+    "num_instructions": 8
   },
   {
     "address": "0x00411940",
@@ -1545,7 +1719,13 @@
     "address": "0x00414580",
     "address_int": 4277632,
     "name": "sub_00414580",
-    "num_instructions": 203
+    "num_instructions": 55
+  },
+  {
+    "address": "0x00414640",
+    "address_int": 4277824,
+    "name": "sub_00414640",
+    "num_instructions": 189
   },
   {
     "address": "0x004148A0",
@@ -1695,7 +1875,55 @@
     "address": "0x00415690",
     "address_int": 4282000,
     "name": "sub_00415690",
-    "num_instructions": 293
+    "num_instructions": 62
+  },
+  {
+    "address": "0x00415780",
+    "address_int": 4282240,
+    "name": "sub_00415780",
+    "num_instructions": 67
+  },
+  {
+    "address": "0x00415840",
+    "address_int": 4282432,
+    "name": "sub_00415840",
+    "num_instructions": 23
+  },
+  {
+    "address": "0x00415890",
+    "address_int": 4282512,
+    "name": "sub_00415890",
+    "num_instructions": 54
+  },
+  {
+    "address": "0x00415930",
+    "address_int": 4282672,
+    "name": "sub_00415930",
+    "num_instructions": 4
+  },
+  {
+    "address": "0x00415940",
+    "address_int": 4282688,
+    "name": "sub_00415940",
+    "num_instructions": 13
+  },
+  {
+    "address": "0x00415970",
+    "address_int": 4282736,
+    "name": "sub_00415970",
+    "num_instructions": 117
+  },
+  {
+    "address": "0x00415AE0",
+    "address_int": 4283104,
+    "name": "sub_00415AE0",
+    "num_instructions": 3
+  },
+  {
+    "address": "0x00415AF0",
+    "address_int": 4283120,
+    "name": "sub_00415AF0",
+    "num_instructions": 8
   },
   {
     "address": "0x00415B10",
@@ -1851,7 +2079,31 @@
     "address": "0x00416AD0",
     "address_int": 4287184,
     "name": "sub_00416AD0",
-    "num_instructions": 79
+    "num_instructions": 70
+  },
+  {
+    "address": "0x00416BE0",
+    "address_int": 4287456,
+    "name": "sub_00416BE0",
+    "num_instructions": 8
+  },
+  {
+    "address": "0x00416C00",
+    "address_int": 4287488,
+    "name": "sub_00416C00",
+    "num_instructions": 10
+  },
+  {
+    "address": "0x00416C20",
+    "address_int": 4287520,
+    "name": "sub_00416C20",
+    "num_instructions": 12
+  },
+  {
+    "address": "0x00416C50",
+    "address_int": 4287568,
+    "name": "sub_00416C50",
+    "num_instructions": 10
   },
   {
     "address": "0x00416C70",
@@ -2110,6 +2362,12 @@
     "address_int": 4300816,
     "name": "sub_0041A010",
     "num_instructions": 12
+  },
+  {
+    "address": "0x0041A040",
+    "address_int": 4300864,
+    "name": "sub_0041A040",
+    "num_instructions": 22
   },
   {
     "address": "0x0041A0A0",
@@ -3672,6 +3930,12 @@
     "num_instructions": 60
   },
   {
+    "address": "0x0042B4B0",
+    "address_int": 4371632,
+    "name": "sub_0042B4B0",
+    "num_instructions": 3
+  },
+  {
     "address": "0x0042B4C0",
     "address_int": 4371648,
     "name": "sub_0042B4C0",
@@ -3687,7 +3951,13 @@
     "address": "0x0042B500",
     "address_int": 4371712,
     "name": "sub_0042B500",
-    "num_instructions": 16
+    "num_instructions": 11
+  },
+  {
+    "address": "0x0042B520",
+    "address_int": 4371744,
+    "name": "sub_0042B520",
+    "num_instructions": 7
   },
   {
     "address": "0x0042B530",
@@ -3705,7 +3975,13 @@
     "address": "0x0042B550",
     "address_int": 4371792,
     "name": "sub_0042B550",
-    "num_instructions": 9
+    "num_instructions": 4
+  },
+  {
+    "address": "0x0042B560",
+    "address_int": 4371808,
+    "name": "sub_0042B560",
+    "num_instructions": 7
   },
   {
     "address": "0x0042B570",
@@ -5547,7 +5823,13 @@
     "address": "0x0043D640",
     "address_int": 4445760,
     "name": "sub_0043D640",
-    "num_instructions": 2920
+    "num_instructions": 2904
+  },
+  {
+    "address": "0x0043F660",
+    "address_int": 4453984,
+    "name": "sub_0043F660",
+    "num_instructions": 19
   },
   {
     "address": "0x0043F6B0",
@@ -6195,7 +6477,13 @@
     "address": "0x00441570",
     "address_int": 4461936,
     "name": "sub_00441570",
-    "num_instructions": 17
+    "num_instructions": 12
+  },
+  {
+    "address": "0x00441590",
+    "address_int": 4461968,
+    "name": "sub_00441590",
+    "num_instructions": 9
   },
   {
     "address": "0x004415B0",
@@ -6672,6 +6960,18 @@
     "num_instructions": 2
   },
   {
+    "address": "0x004454E0",
+    "address_int": 4478176,
+    "name": "sub_004454E0",
+    "num_instructions": 6
+  },
+  {
+    "address": "0x004454F0",
+    "address_int": 4478192,
+    "name": "sub_004454F0",
+    "num_instructions": 6
+  },
+  {
     "address": "0x00445500",
     "address_int": 4478208,
     "name": "sub_00445500",
@@ -6747,7 +7047,13 @@
     "address": "0x004457A0",
     "address_int": 4478880,
     "name": "sub_004457A0",
-    "num_instructions": 17
+    "num_instructions": 12
+  },
+  {
+    "address": "0x004457C0",
+    "address_int": 4478912,
+    "name": "sub_004457C0",
+    "num_instructions": 9
   },
   {
     "address": "0x004457E0",
@@ -6765,7 +7071,19 @@
     "address": "0x004459F0",
     "address_int": 4479472,
     "name": "sub_004459F0",
-    "num_instructions": 201
+    "num_instructions": 159
+  },
+  {
+    "address": "0x00445C00",
+    "address_int": 4480000,
+    "name": "sub_00445C00",
+    "num_instructions": 34
+  },
+  {
+    "address": "0x00445C60",
+    "address_int": 4480096,
+    "name": "sub_00445C60",
+    "num_instructions": 17
   },
   {
     "address": "0x00445CA0",
@@ -7029,7 +7347,13 @@
     "address": "0x00448F30",
     "address_int": 4493104,
     "name": "sub_00448F30",
-    "num_instructions": 17
+    "num_instructions": 12
+  },
+  {
+    "address": "0x00448F50",
+    "address_int": 4493136,
+    "name": "sub_00448F50",
+    "num_instructions": 9
   },
   {
     "address": "0x00448F70",
@@ -7089,7 +7413,13 @@
     "address": "0x004499B0",
     "address_int": 4495792,
     "name": "sub_004499B0",
-    "num_instructions": 18
+    "num_instructions": 12
+  },
+  {
+    "address": "0x004499D0",
+    "address_int": 4495824,
+    "name": "sub_004499D0",
+    "num_instructions": 8
   },
   {
     "address": "0x004499E0",
@@ -7162,6 +7492,12 @@
     "address_int": 4498480,
     "name": "sub_0044A430",
     "num_instructions": 20
+  },
+  {
+    "address": "0x0044A480",
+    "address_int": 4498560,
+    "name": "sub_0044A480",
+    "num_instructions": 5
   },
   {
     "address": "0x0044A490",
@@ -7533,7 +7869,13 @@
     "address": "0x0044C140",
     "address_int": 4505920,
     "name": "sub_0044C140",
-    "num_instructions": 25
+    "num_instructions": 9
+  },
+  {
+    "address": "0x0044C170",
+    "address_int": 4505968,
+    "name": "sub_0044C170",
+    "num_instructions": 22
   },
   {
     "address": "0x0044C1C0",
@@ -7551,7 +7893,13 @@
     "address": "0x0044C270",
     "address_int": 4506224,
     "name": "sub_0044C270",
-    "num_instructions": 37
+    "num_instructions": 11
+  },
+  {
+    "address": "0x0044C2B0",
+    "address_int": 4506288,
+    "name": "sub_0044C2B0",
+    "num_instructions": 32
   },
   {
     "address": "0x0044C310",
@@ -7629,7 +7977,13 @@
     "address": "0x0044DFD0",
     "address_int": 4513744,
     "name": "sub_0044DFD0",
-    "num_instructions": 17
+    "num_instructions": 12
+  },
+  {
+    "address": "0x0044DFF0",
+    "address_int": 4513776,
+    "name": "sub_0044DFF0",
+    "num_instructions": 9
   },
   {
     "address": "0x0044E010",
@@ -7684,6 +8038,12 @@
     "address_int": 4516752,
     "name": "sub_0044EB90",
     "num_instructions": 35
+  },
+  {
+    "address": "0x0044EBE0",
+    "address_int": 4516832,
+    "name": "sub_0044EBE0",
+    "num_instructions": 15
   },
   {
     "address": "0x0044EC10",
@@ -7815,7 +8175,13 @@
     "address": "0x004501C0",
     "address_int": 4522432,
     "name": "sub_004501C0",
-    "num_instructions": 12
+    "num_instructions": 6
+  },
+  {
+    "address": "0x004501F0",
+    "address_int": 4522480,
+    "name": "sub_004501F0",
+    "num_instructions": 8
   },
   {
     "address": "0x00450200",
@@ -7833,7 +8199,13 @@
     "address": "0x00450230",
     "address_int": 4522544,
     "name": "sub_00450230",
-    "num_instructions": 10
+    "num_instructions": 4
+  },
+  {
+    "address": "0x00450240",
+    "address_int": 4522560,
+    "name": "sub_00450240",
+    "num_instructions": 8
   },
   {
     "address": "0x00450250",
@@ -7851,7 +8223,13 @@
     "address": "0x00450270",
     "address_int": 4522608,
     "name": "sub_00450270",
-    "num_instructions": 10
+    "num_instructions": 4
+  },
+  {
+    "address": "0x00450280",
+    "address_int": 4522624,
+    "name": "sub_00450280",
+    "num_instructions": 8
   },
   {
     "address": "0x00450290",
@@ -7941,7 +8319,13 @@
     "address": "0x004510A0",
     "address_int": 4526240,
     "name": "sub_004510A0",
-    "num_instructions": 44
+    "num_instructions": 12
+  },
+  {
+    "address": "0x004510C0",
+    "address_int": 4526272,
+    "name": "sub_004510C0",
+    "num_instructions": 36
   },
   {
     "address": "0x00451140",
@@ -8007,7 +8391,13 @@
     "address": "0x004517C0",
     "address_int": 4528064,
     "name": "sub_004517C0",
-    "num_instructions": 17
+    "num_instructions": 12
+  },
+  {
+    "address": "0x004517E0",
+    "address_int": 4528096,
+    "name": "sub_004517E0",
+    "num_instructions": 9
   },
   {
     "address": "0x00451800",
@@ -8133,7 +8523,13 @@
     "address": "0x004538C0",
     "address_int": 4536512,
     "name": "sub_004538C0",
-    "num_instructions": 16
+    "num_instructions": 11
+  },
+  {
+    "address": "0x004538E0",
+    "address_int": 4536544,
+    "name": "sub_004538E0",
+    "num_instructions": 7
   },
   {
     "address": "0x004538F0",
@@ -8151,7 +8547,13 @@
     "address": "0x00453910",
     "address_int": 4536592,
     "name": "sub_00453910",
-    "num_instructions": 9
+    "num_instructions": 4
+  },
+  {
+    "address": "0x00453920",
+    "address_int": 4536608,
+    "name": "sub_00453920",
+    "num_instructions": 7
   },
   {
     "address": "0x00453930",
@@ -8187,7 +8589,13 @@
     "address": "0x00453B20",
     "address_int": 4537120,
     "name": "sub_00453B20",
-    "num_instructions": 16
+    "num_instructions": 11
+  },
+  {
+    "address": "0x00453B40",
+    "address_int": 4537152,
+    "name": "sub_00453B40",
+    "num_instructions": 7
   },
   {
     "address": "0x00453B50",
@@ -8205,7 +8613,13 @@
     "address": "0x00453B70",
     "address_int": 4537200,
     "name": "sub_00453B70",
-    "num_instructions": 9
+    "num_instructions": 4
+  },
+  {
+    "address": "0x00453B80",
+    "address_int": 4537216,
+    "name": "sub_00453B80",
+    "num_instructions": 7
   },
   {
     "address": "0x00453B90",
@@ -8241,7 +8655,13 @@
     "address": "0x00453DC0",
     "address_int": 4537792,
     "name": "sub_00453DC0",
-    "num_instructions": 16
+    "num_instructions": 11
+  },
+  {
+    "address": "0x00453DE0",
+    "address_int": 4537824,
+    "name": "sub_00453DE0",
+    "num_instructions": 7
   },
   {
     "address": "0x00453DF0",
@@ -8259,7 +8679,13 @@
     "address": "0x00453E10",
     "address_int": 4537872,
     "name": "sub_00453E10",
-    "num_instructions": 9
+    "num_instructions": 4
+  },
+  {
+    "address": "0x00453E20",
+    "address_int": 4537888,
+    "name": "sub_00453E20",
+    "num_instructions": 7
   },
   {
     "address": "0x00453E30",
@@ -8673,7 +9099,13 @@
     "address": "0x00455F60",
     "address_int": 4546400,
     "name": "sub_00455F60",
-    "num_instructions": 16
+    "num_instructions": 11
+  },
+  {
+    "address": "0x00455F80",
+    "address_int": 4546432,
+    "name": "sub_00455F80",
+    "num_instructions": 7
   },
   {
     "address": "0x00455F90",
@@ -8691,7 +9123,13 @@
     "address": "0x00455FB0",
     "address_int": 4546480,
     "name": "sub_00455FB0",
-    "num_instructions": 9
+    "num_instructions": 4
+  },
+  {
+    "address": "0x00455FC0",
+    "address_int": 4546496,
+    "name": "sub_00455FC0",
+    "num_instructions": 7
   },
   {
     "address": "0x00455FD0",
@@ -8709,7 +9147,13 @@
     "address": "0x00455FF0",
     "address_int": 4546544,
     "name": "sub_00455FF0",
-    "num_instructions": 10
+    "num_instructions": 4
+  },
+  {
+    "address": "0x00456000",
+    "address_int": 4546560,
+    "name": "sub_00456000",
+    "num_instructions": 8
   },
   {
     "address": "0x00456010",
@@ -8727,7 +9171,13 @@
     "address": "0x00456030",
     "address_int": 4546608,
     "name": "sub_00456030",
-    "num_instructions": 11
+    "num_instructions": 4
+  },
+  {
+    "address": "0x00456040",
+    "address_int": 4546624,
+    "name": "sub_00456040",
+    "num_instructions": 9
   },
   {
     "address": "0x00456060",
@@ -8763,7 +9213,13 @@
     "address": "0x004562F0",
     "address_int": 4547312,
     "name": "sub_004562F0",
-    "num_instructions": 9
+    "num_instructions": 4
+  },
+  {
+    "address": "0x00456300",
+    "address_int": 4547328,
+    "name": "sub_00456300",
+    "num_instructions": 7
   },
   {
     "address": "0x00456310",
@@ -8781,7 +9237,13 @@
     "address": "0x00456330",
     "address_int": 4547376,
     "name": "sub_00456330",
-    "num_instructions": 9
+    "num_instructions": 4
+  },
+  {
+    "address": "0x00456340",
+    "address_int": 4547392,
+    "name": "sub_00456340",
+    "num_instructions": 7
   },
   {
     "address": "0x00456350",
@@ -8883,7 +9345,13 @@
     "address": "0x00456A70",
     "address_int": 4549232,
     "name": "sub_00456A70",
-    "num_instructions": 16
+    "num_instructions": 11
+  },
+  {
+    "address": "0x00456A90",
+    "address_int": 4549264,
+    "name": "sub_00456A90",
+    "num_instructions": 7
   },
   {
     "address": "0x00456AA0",
@@ -8901,7 +9369,13 @@
     "address": "0x00456AC0",
     "address_int": 4549312,
     "name": "sub_00456AC0",
-    "num_instructions": 9
+    "num_instructions": 4
+  },
+  {
+    "address": "0x00456AD0",
+    "address_int": 4549328,
+    "name": "sub_00456AD0",
+    "num_instructions": 7
   },
   {
     "address": "0x00456AE0",
@@ -8925,7 +9399,13 @@
     "address": "0x00456C50",
     "address_int": 4549712,
     "name": "sub_00456C50",
-    "num_instructions": 16
+    "num_instructions": 11
+  },
+  {
+    "address": "0x00456C70",
+    "address_int": 4549744,
+    "name": "sub_00456C70",
+    "num_instructions": 7
   },
   {
     "address": "0x00456C80",
@@ -8943,7 +9423,13 @@
     "address": "0x00456CA0",
     "address_int": 4549792,
     "name": "sub_00456CA0",
-    "num_instructions": 9
+    "num_instructions": 4
+  },
+  {
+    "address": "0x00456CB0",
+    "address_int": 4549808,
+    "name": "sub_00456CB0",
+    "num_instructions": 7
   },
   {
     "address": "0x00456CC0",
@@ -8973,7 +9459,13 @@
     "address": "0x00457390",
     "address_int": 4551568,
     "name": "sub_00457390",
-    "num_instructions": 18
+    "num_instructions": 12
+  },
+  {
+    "address": "0x004573B0",
+    "address_int": 4551600,
+    "name": "sub_004573B0",
+    "num_instructions": 8
   },
   {
     "address": "0x004573C0",
@@ -8991,7 +9483,13 @@
     "address": "0x004573E0",
     "address_int": 4551648,
     "name": "sub_004573E0",
-    "num_instructions": 10
+    "num_instructions": 4
+  },
+  {
+    "address": "0x004573F0",
+    "address_int": 4551664,
+    "name": "sub_004573F0",
+    "num_instructions": 8
   },
   {
     "address": "0x00457400",
@@ -9045,7 +9543,13 @@
     "address": "0x00458250",
     "address_int": 4555344,
     "name": "sub_00458250",
-    "num_instructions": 16
+    "num_instructions": 11
+  },
+  {
+    "address": "0x00458270",
+    "address_int": 4555376,
+    "name": "sub_00458270",
+    "num_instructions": 7
   },
   {
     "address": "0x00458280",
@@ -9063,7 +9567,13 @@
     "address": "0x004582A0",
     "address_int": 4555424,
     "name": "sub_004582A0",
-    "num_instructions": 9
+    "num_instructions": 4
+  },
+  {
+    "address": "0x004582B0",
+    "address_int": 4555440,
+    "name": "sub_004582B0",
+    "num_instructions": 7
   },
   {
     "address": "0x004582C0",
@@ -9081,7 +9591,13 @@
     "address": "0x004582E0",
     "address_int": 4555488,
     "name": "sub_004582E0",
-    "num_instructions": 10
+    "num_instructions": 4
+  },
+  {
+    "address": "0x004582F0",
+    "address_int": 4555504,
+    "name": "sub_004582F0",
+    "num_instructions": 8
   },
   {
     "address": "0x00458300",
@@ -9165,7 +9681,13 @@
     "address": "0x00458BD0",
     "address_int": 4557776,
     "name": "sub_00458BD0",
-    "num_instructions": 26
+    "num_instructions": 12
+  },
+  {
+    "address": "0x00458BF0",
+    "address_int": 4557808,
+    "name": "sub_00458BF0",
+    "num_instructions": 16
   },
   {
     "address": "0x00458C20",
@@ -9220,6 +9742,12 @@
     "address_int": 4562496,
     "name": "sub_00459E40",
     "num_instructions": 7
+  },
+  {
+    "address": "0x00459E70",
+    "address_int": 4562544,
+    "name": "sub_00459E70",
+    "num_instructions": 6
   },
   {
     "address": "0x00459E90",
@@ -9285,7 +9813,25 @@
     "address": "0x0045C050",
     "address_int": 4571216,
     "name": "sub_0045C050",
-    "num_instructions": 119
+    "num_instructions": 78
+  },
+  {
+    "address": "0x0045C1A0",
+    "address_int": 4571552,
+    "name": "sub_0045C1A0",
+    "num_instructions": 48
+  },
+  {
+    "address": "0x0045C210",
+    "address_int": 4571664,
+    "name": "sub_0045C210",
+    "num_instructions": 15
+  },
+  {
+    "address": "0x0045C240",
+    "address_int": 4571712,
+    "name": "sub_0045C240",
+    "num_instructions": 10
   },
   {
     "address": "0x0045C260",
@@ -9363,7 +9909,13 @@
     "address": "0x0045CBD0",
     "address_int": 4574160,
     "name": "sub_0045CBD0",
-    "num_instructions": 28
+    "num_instructions": 12
+  },
+  {
+    "address": "0x0045CBF0",
+    "address_int": 4574192,
+    "name": "sub_0045CBF0",
+    "num_instructions": 18
   },
   {
     "address": "0x0045CC20",
@@ -9393,7 +9945,13 @@
     "address": "0x0045CE40",
     "address_int": 4574784,
     "name": "sub_0045CE40",
-    "num_instructions": 12
+    "num_instructions": 6
+  },
+  {
+    "address": "0x0045CE70",
+    "address_int": 4574832,
+    "name": "sub_0045CE70",
+    "num_instructions": 8
   },
   {
     "address": "0x0045CE80",
@@ -9459,7 +10017,13 @@
     "address": "0x0045D7E0",
     "address_int": 4577248,
     "name": "sub_0045D7E0",
-    "num_instructions": 17
+    "num_instructions": 12
+  },
+  {
+    "address": "0x0045D800",
+    "address_int": 4577280,
+    "name": "sub_0045D800",
+    "num_instructions": 9
   },
   {
     "address": "0x0045D820",
@@ -9525,13 +10089,25 @@
     "address": "0x0045DF60",
     "address_int": 4579168,
     "name": "sub_0045DF60",
-    "num_instructions": 143
+    "num_instructions": 134
+  },
+  {
+    "address": "0x0045E0F0",
+    "address_int": 4579568,
+    "name": "sub_0045E0F0",
+    "num_instructions": 12
   },
   {
     "address": "0x0045E120",
     "address_int": 4579616,
     "name": "sub_0045E120",
     "num_instructions": 93
+  },
+  {
+    "address": "0x0045E280",
+    "address_int": 4579968,
+    "name": "sub_0045E280",
+    "num_instructions": 10
   },
   {
     "address": "0x0045E310",
@@ -9543,7 +10119,13 @@
     "address": "0x0045E320",
     "address_int": 4580128,
     "name": "sub_0045E320",
-    "num_instructions": 17
+    "num_instructions": 12
+  },
+  {
+    "address": "0x0045E340",
+    "address_int": 4580160,
+    "name": "sub_0045E340",
+    "num_instructions": 9
   },
   {
     "address": "0x0045E360",
@@ -9657,6 +10239,12 @@
     "address": "0x0045F360",
     "address_int": 4584288,
     "name": "sub_0045F360",
+    "num_instructions": 4
+  },
+  {
+    "address": "0x0045F370",
+    "address_int": 4584304,
+    "name": "sub_0045F370",
     "num_instructions": 12
   },
   {
@@ -9718,6 +10306,18 @@
     "address_int": 4585632,
     "name": "sub_0045F8A0",
     "num_instructions": 95
+  },
+  {
+    "address": "0x0045F9A0",
+    "address_int": 4585888,
+    "name": "sub_0045F9A0",
+    "num_instructions": 10
+  },
+  {
+    "address": "0x0045F9C0",
+    "address_int": 4585920,
+    "name": "sub_0045F9C0",
+    "num_instructions": 17
   },
   {
     "address": "0x0045F9F0",
@@ -10197,7 +10797,13 @@
     "address": "0x00463590",
     "address_int": 4601232,
     "name": "sub_00463590",
-    "num_instructions": 16
+    "num_instructions": 11
+  },
+  {
+    "address": "0x004635B0",
+    "address_int": 4601264,
+    "name": "sub_004635B0",
+    "num_instructions": 7
   },
   {
     "address": "0x004635C0",
@@ -10215,7 +10821,13 @@
     "address": "0x004635E0",
     "address_int": 4601312,
     "name": "sub_004635E0",
-    "num_instructions": 9
+    "num_instructions": 4
+  },
+  {
+    "address": "0x004635F0",
+    "address_int": 4601328,
+    "name": "sub_004635F0",
+    "num_instructions": 7
   },
   {
     "address": "0x00463600",
@@ -10233,7 +10845,13 @@
     "address": "0x00463620",
     "address_int": 4601376,
     "name": "sub_00463620",
-    "num_instructions": 10
+    "num_instructions": 4
+  },
+  {
+    "address": "0x00463630",
+    "address_int": 4601392,
+    "name": "sub_00463630",
+    "num_instructions": 8
   },
   {
     "address": "0x00463640",
@@ -10407,7 +11025,19 @@
     "address": "0x00464AC0",
     "address_int": 4606656,
     "name": "sub_00464AC0",
-    "num_instructions": 145
+    "num_instructions": 28
+  },
+  {
+    "address": "0x00464B40",
+    "address_int": 4606784,
+    "name": "sub_00464B40",
+    "num_instructions": 91
+  },
+  {
+    "address": "0x00464C60",
+    "address_int": 4607072,
+    "name": "sub_00464C60",
+    "num_instructions": 34
   },
   {
     "address": "0x00464CB0",
@@ -10419,7 +11049,13 @@
     "address": "0x00464E60",
     "address_int": 4607584,
     "name": "sub_00464E60",
-    "num_instructions": 41
+    "num_instructions": 10
+  },
+  {
+    "address": "0x00464E80",
+    "address_int": 4607616,
+    "name": "sub_00464E80",
+    "num_instructions": 35
   },
   {
     "address": "0x00464EE0",
@@ -10468,6 +11104,12 @@
     "address_int": 4609680,
     "name": "sub_00465690",
     "num_instructions": 78
+  },
+  {
+    "address": "0x00465790",
+    "address_int": 4609936,
+    "name": "sub_00465790",
+    "num_instructions": 4
   },
   {
     "address": "0x004657A0",
@@ -10881,19 +11523,55 @@
     "address": "0x0046BAF0",
     "address_int": 4635376,
     "name": "sub_0046BAF0",
-    "num_instructions": 193
+    "num_instructions": 37
+  },
+  {
+    "address": "0x0046BB80",
+    "address_int": 4635520,
+    "name": "sub_0046BB80",
+    "num_instructions": 106
+  },
+  {
+    "address": "0x0046BCE0",
+    "address_int": 4635872,
+    "name": "sub_0046BCE0",
+    "num_instructions": 69
   },
   {
     "address": "0x0046BDC0",
     "address_int": 4636096,
     "name": "sub_0046BDC0",
-    "num_instructions": 30
+    "num_instructions": 20
+  },
+  {
+    "address": "0x0046BE00",
+    "address_int": 4636160,
+    "name": "sub_0046BE00",
+    "num_instructions": 13
   },
   {
     "address": "0x0046BE30",
     "address_int": 4636208,
     "name": "sub_0046BE30",
-    "num_instructions": 60
+    "num_instructions": 41
+  },
+  {
+    "address": "0x0046BEB0",
+    "address_int": 4636336,
+    "name": "sub_0046BEB0",
+    "num_instructions": 22
+  },
+  {
+    "address": "0x0046BF00",
+    "address_int": 4636416,
+    "name": "sub_0046BF00",
+    "num_instructions": 8
+  },
+  {
+    "address": "0x0046BF20",
+    "address_int": 4636448,
+    "name": "sub_0046BF20",
+    "num_instructions": 9
   },
   {
     "address": "0x0046BF40",
@@ -10947,7 +11625,13 @@
     "address": "0x0046C490",
     "address_int": 4637840,
     "name": "sub_0046C490",
-    "num_instructions": 27
+    "num_instructions": 12
+  },
+  {
+    "address": "0x0046C4B0",
+    "address_int": 4637872,
+    "name": "sub_0046C4B0",
+    "num_instructions": 17
   },
   {
     "address": "0x0046C4F0",
@@ -11097,7 +11781,13 @@
     "address": "0x0046CA20",
     "address_int": 4639264,
     "name": "sub_0046CA20",
-    "num_instructions": 18
+    "num_instructions": 12
+  },
+  {
+    "address": "0x0046CA40",
+    "address_int": 4639296,
+    "name": "sub_0046CA40",
+    "num_instructions": 8
   },
   {
     "address": "0x0046CA50",
@@ -11307,7 +11997,13 @@
     "address": "0x0046DA50",
     "address_int": 4643408,
     "name": "sub_0046DA50",
-    "num_instructions": 18
+    "num_instructions": 12
+  },
+  {
+    "address": "0x0046DA70",
+    "address_int": 4643440,
+    "name": "sub_0046DA70",
+    "num_instructions": 8
   },
   {
     "address": "0x0046DA80",
@@ -11325,7 +12021,13 @@
     "address": "0x0046DAA0",
     "address_int": 4643488,
     "name": "sub_0046DAA0",
-    "num_instructions": 10
+    "num_instructions": 4
+  },
+  {
+    "address": "0x0046DAB0",
+    "address_int": 4643504,
+    "name": "sub_0046DAB0",
+    "num_instructions": 8
   },
   {
     "address": "0x0046DAC0",
@@ -11349,7 +12051,13 @@
     "address": "0x0046DC40",
     "address_int": 4643904,
     "name": "sub_0046DC40",
-    "num_instructions": 42
+    "num_instructions": 27
+  },
+  {
+    "address": "0x0046DC90",
+    "address_int": 4643984,
+    "name": "sub_0046DC90",
+    "num_instructions": 18
   },
   {
     "address": "0x0046DCD0",
@@ -11637,7 +12345,13 @@
     "address": "0x0046FAF0",
     "address_int": 4651760,
     "name": "sub_0046FAF0",
-    "num_instructions": 17
+    "num_instructions": 12
+  },
+  {
+    "address": "0x0046FB10",
+    "address_int": 4651792,
+    "name": "sub_0046FB10",
+    "num_instructions": 9
   },
   {
     "address": "0x0046FB60",
@@ -11703,7 +12417,13 @@
     "address": "0x0046FF50",
     "address_int": 4652880,
     "name": "sub_0046FF50",
-    "num_instructions": 44
+    "num_instructions": 37
+  },
+  {
+    "address": "0x0046FFD0",
+    "address_int": 4653008,
+    "name": "sub_0046FFD0",
+    "num_instructions": 7
   },
   {
     "address": "0x0046FFF0",
@@ -11733,7 +12453,13 @@
     "address": "0x004701A0",
     "address_int": 4653472,
     "name": "sub_004701A0",
-    "num_instructions": 16
+    "num_instructions": 11
+  },
+  {
+    "address": "0x004701C0",
+    "address_int": 4653504,
+    "name": "sub_004701C0",
+    "num_instructions": 7
   },
   {
     "address": "0x004701D0",
@@ -11751,7 +12477,13 @@
     "address": "0x004701F0",
     "address_int": 4653552,
     "name": "sub_004701F0",
-    "num_instructions": 9
+    "num_instructions": 4
+  },
+  {
+    "address": "0x00470200",
+    "address_int": 4653568,
+    "name": "sub_00470200",
+    "num_instructions": 7
   },
   {
     "address": "0x00470210",
@@ -11788,6 +12520,12 @@
     "address_int": 4655360,
     "name": "sub_00470900",
     "num_instructions": 86
+  },
+  {
+    "address": "0x004709F0",
+    "address_int": 4655600,
+    "name": "sub_004709F0",
+    "num_instructions": 4
   },
   {
     "address": "0x00470A10",
@@ -11907,7 +12645,13 @@
     "address": "0x00471730",
     "address_int": 4658992,
     "name": "sub_00471730",
-    "num_instructions": 17
+    "num_instructions": 12
+  },
+  {
+    "address": "0x00471750",
+    "address_int": 4659024,
+    "name": "sub_00471750",
+    "num_instructions": 9
   },
   {
     "address": "0x00471770",
@@ -11985,7 +12729,13 @@
     "address": "0x00471B50",
     "address_int": 4660048,
     "name": "sub_00471B50",
-    "num_instructions": 17
+    "num_instructions": 12
+  },
+  {
+    "address": "0x00471B70",
+    "address_int": 4660080,
+    "name": "sub_00471B70",
+    "num_instructions": 9
   },
   {
     "address": "0x00471B90",
@@ -12039,7 +12789,13 @@
     "address": "0x004725E0",
     "address_int": 4662752,
     "name": "sub_004725E0",
-    "num_instructions": 18
+    "num_instructions": 12
+  },
+  {
+    "address": "0x00472600",
+    "address_int": 4662784,
+    "name": "sub_00472600",
+    "num_instructions": 8
   },
   {
     "address": "0x00472610",
@@ -12057,7 +12813,43 @@
     "address": "0x004729B0",
     "address_int": 4663728,
     "name": "sub_004729B0",
-    "num_instructions": 123
+    "num_instructions": 23
+  },
+  {
+    "address": "0x00472A10",
+    "address_int": 4663824,
+    "name": "sub_00472A10",
+    "num_instructions": 18
+  },
+  {
+    "address": "0x00472A60",
+    "address_int": 4663904,
+    "name": "sub_00472A60",
+    "num_instructions": 5
+  },
+  {
+    "address": "0x00472A70",
+    "address_int": 4663920,
+    "name": "sub_00472A70",
+    "num_instructions": 47
+  },
+  {
+    "address": "0x00472AF0",
+    "address_int": 4664048,
+    "name": "sub_00472AF0",
+    "num_instructions": 15
+  },
+  {
+    "address": "0x00472B20",
+    "address_int": 4664096,
+    "name": "sub_00472B20",
+    "num_instructions": 33
+  },
+  {
+    "address": "0x00472B90",
+    "address_int": 4664208,
+    "name": "sub_00472B90",
+    "num_instructions": 15
   },
   {
     "address": "0x00472BD0",
@@ -12070,6 +12862,12 @@
     "address_int": 4664288,
     "name": "sub_00472BE0",
     "num_instructions": 9
+  },
+  {
+    "address": "0x00472C10",
+    "address_int": 4664336,
+    "name": "sub_00472C10",
+    "num_instructions": 13
   },
   {
     "address": "0x00472C40",
@@ -12093,7 +12891,13 @@
     "address": "0x00473060",
     "address_int": 4665440,
     "name": "sub_00473060",
-    "num_instructions": 8
+    "num_instructions": 3
+  },
+  {
+    "address": "0x00473070",
+    "address_int": 4665456,
+    "name": "sub_00473070",
+    "num_instructions": 9
   },
   {
     "address": "0x00473090",
@@ -12141,7 +12945,13 @@
     "address": "0x00473480",
     "address_int": 4666496,
     "name": "sub_00473480",
-    "num_instructions": 80
+    "num_instructions": 69
+  },
+  {
+    "address": "0x00473580",
+    "address_int": 4666752,
+    "name": "sub_00473580",
+    "num_instructions": 13
   },
   {
     "address": "0x004735B0",
@@ -12345,7 +13155,25 @@
     "address": "0x0047FD50",
     "address_int": 4717904,
     "name": "sub_0047FD50",
-    "num_instructions": 541
+    "num_instructions": 425
+  },
+  {
+    "address": "0x004802E0",
+    "address_int": 4719328,
+    "name": "sub_004802E0",
+    "num_instructions": 50
+  },
+  {
+    "address": "0x00480370",
+    "address_int": 4719472,
+    "name": "sub_00480370",
+    "num_instructions": 24
+  },
+  {
+    "address": "0x004803C0",
+    "address_int": 4719552,
+    "name": "sub_004803C0",
+    "num_instructions": 63
   },
   {
     "address": "0x00480460",
@@ -12363,7 +13191,13 @@
     "address": "0x00480710",
     "address_int": 4720400,
     "name": "sub_00480710",
-    "num_instructions": 92
+    "num_instructions": 89
+  },
+  {
+    "address": "0x00480820",
+    "address_int": 4720672,
+    "name": "sub_00480820",
+    "num_instructions": 6
   },
   {
     "address": "0x00480840",
@@ -12459,7 +13293,13 @@
     "address": "0x00481750",
     "address_int": 4724560,
     "name": "sub_00481750",
-    "num_instructions": 16
+    "num_instructions": 11
+  },
+  {
+    "address": "0x00481770",
+    "address_int": 4724592,
+    "name": "sub_00481770",
+    "num_instructions": 7
   },
   {
     "address": "0x00481780",
@@ -12477,7 +13317,13 @@
     "address": "0x004817A0",
     "address_int": 4724640,
     "name": "sub_004817A0",
-    "num_instructions": 24
+    "num_instructions": 4
+  },
+  {
+    "address": "0x004817B0",
+    "address_int": 4724656,
+    "name": "sub_004817B0",
+    "num_instructions": 22
   },
   {
     "address": "0x004817F0",
@@ -13167,7 +14013,13 @@
     "address": "0x004873C0",
     "address_int": 4748224,
     "name": "sub_004873C0",
-    "num_instructions": 16
+    "num_instructions": 11
+  },
+  {
+    "address": "0x004873E0",
+    "address_int": 4748256,
+    "name": "sub_004873E0",
+    "num_instructions": 7
   },
   {
     "address": "0x004873F0",
@@ -13185,7 +14037,13 @@
     "address": "0x00487410",
     "address_int": 4748304,
     "name": "sub_00487410",
-    "num_instructions": 9
+    "num_instructions": 4
+  },
+  {
+    "address": "0x00487420",
+    "address_int": 4748320,
+    "name": "sub_00487420",
+    "num_instructions": 7
   },
   {
     "address": "0x00487430",
@@ -13209,13 +14067,217 @@
     "address": "0x004881E0",
     "address_int": 4751840,
     "name": "sub_004881E0",
-    "num_instructions": 719
+    "num_instructions": 308
+  },
+  {
+    "address": "0x00488620",
+    "address_int": 4752928,
+    "name": "sub_00488620",
+    "num_instructions": 9
+  },
+  {
+    "address": "0x00488640",
+    "address_int": 4752960,
+    "name": "sub_00488640",
+    "num_instructions": 14
+  },
+  {
+    "address": "0x00488680",
+    "address_int": 4753024,
+    "name": "sub_00488680",
+    "num_instructions": 92
+  },
+  {
+    "address": "0x004887A0",
+    "address_int": 4753312,
+    "name": "sub_004887A0",
+    "num_instructions": 52
+  },
+  {
+    "address": "0x00488860",
+    "address_int": 4753504,
+    "name": "sub_00488860",
+    "num_instructions": 39
+  },
+  {
+    "address": "0x004888E0",
+    "address_int": 4753632,
+    "name": "sub_004888E0",
+    "num_instructions": 52
+  },
+  {
+    "address": "0x00488990",
+    "address_int": 4753808,
+    "name": "sub_00488990",
+    "num_instructions": 52
+  },
+  {
+    "address": "0x00488A40",
+    "address_int": 4753984,
+    "name": "sub_00488A40",
+    "num_instructions": 36
+  },
+  {
+    "address": "0x00488AC0",
+    "address_int": 4754112,
+    "name": "sub_00488AC0",
+    "num_instructions": 50
+  },
+  {
+    "address": "0x00488B70",
+    "address_int": 4754288,
+    "name": "sub_00488B70",
+    "num_instructions": 50
+  },
+  {
+    "address": "0x00488C20",
+    "address_int": 4754464,
+    "name": "sub_00488C20",
+    "num_instructions": 37
+  },
+  {
+    "address": "0x00488CA0",
+    "address_int": 4754592,
+    "name": "sub_00488CA0",
+    "num_instructions": 18
   },
   {
     "address": "0x00488CE0",
     "address_int": 4754656,
     "name": "sub_00488CE0",
-    "num_instructions": 379
+    "num_instructions": 77
+  },
+  {
+    "address": "0x00488DB0",
+    "address_int": 4754864,
+    "name": "sub_00488DB0",
+    "num_instructions": 319
+  },
+  {
+    "address": "0x00489280",
+    "address_int": 4756096,
+    "name": "sub_00489280",
+    "num_instructions": 8
+  },
+  {
+    "address": "0x00489290",
+    "address_int": 4756112,
+    "name": "sub_00489290",
+    "num_instructions": 7
+  },
+  {
+    "address": "0x004892B0",
+    "address_int": 4756144,
+    "name": "sub_004892B0",
+    "num_instructions": 7
+  },
+  {
+    "address": "0x004892D0",
+    "address_int": 4756176,
+    "name": "sub_004892D0",
+    "num_instructions": 6
+  },
+  {
+    "address": "0x004892F0",
+    "address_int": 4756208,
+    "name": "sub_004892F0",
+    "num_instructions": 6
+  },
+  {
+    "address": "0x00489310",
+    "address_int": 4756240,
+    "name": "sub_00489310",
+    "num_instructions": 2
+  },
+  {
+    "address": "0x00489320",
+    "address_int": 4756256,
+    "name": "sub_00489320",
+    "num_instructions": 6
+  },
+  {
+    "address": "0x00489340",
+    "address_int": 4756288,
+    "name": "sub_00489340",
+    "num_instructions": 29
+  },
+  {
+    "address": "0x004893B0",
+    "address_int": 4756400,
+    "name": "sub_004893B0",
+    "num_instructions": 8
+  },
+  {
+    "address": "0x004893D0",
+    "address_int": 4756432,
+    "name": "sub_004893D0",
+    "num_instructions": 8
+  },
+  {
+    "address": "0x004893F0",
+    "address_int": 4756464,
+    "name": "sub_004893F0",
+    "num_instructions": 8
+  },
+  {
+    "address": "0x00489410",
+    "address_int": 4756496,
+    "name": "sub_00489410",
+    "num_instructions": 8
+  },
+  {
+    "address": "0x00489430",
+    "address_int": 4756528,
+    "name": "sub_00489430",
+    "num_instructions": 8
+  },
+  {
+    "address": "0x00489450",
+    "address_int": 4756560,
+    "name": "sub_00489450",
+    "num_instructions": 2
+  },
+  {
+    "address": "0x00489460",
+    "address_int": 4756576,
+    "name": "sub_00489460",
+    "num_instructions": 6
+  },
+  {
+    "address": "0x004894A0",
+    "address_int": 4756640,
+    "name": "sub_004894A0",
+    "num_instructions": 7
+  },
+  {
+    "address": "0x004894C0",
+    "address_int": 4756672,
+    "name": "sub_004894C0",
+    "num_instructions": 12
+  },
+  {
+    "address": "0x004894D0",
+    "address_int": 4756688,
+    "name": "sub_004894D0",
+    "num_instructions": 12
+  },
+  {
+    "address": "0x004894E0",
+    "address_int": 4756704,
+    "name": "sub_004894E0",
+    "num_instructions": 11
+  },
+  {
+    "address": "0x00489510",
+    "address_int": 4756752,
+    "name": "sub_00489510",
+    "num_instructions": 22
+  },
+  {
+    "address": "0x00489570",
+    "address_int": 4756848,
+    "name": "sub_00489570",
+    "num_instructions": 11
   },
   {
     "address": "0x004895A0",
@@ -13473,7 +14535,13 @@
     "address": "0x00492F50",
     "address_int": 4796240,
     "name": "sub_00492F50",
-    "num_instructions": 16
+    "num_instructions": 11
+  },
+  {
+    "address": "0x00492F70",
+    "address_int": 4796272,
+    "name": "sub_00492F70",
+    "num_instructions": 7
   },
   {
     "address": "0x00492F80",
@@ -13491,7 +14559,13 @@
     "address": "0x00492FA0",
     "address_int": 4796320,
     "name": "sub_00492FA0",
-    "num_instructions": 9
+    "num_instructions": 4
+  },
+  {
+    "address": "0x00492FB0",
+    "address_int": 4796336,
+    "name": "sub_00492FB0",
+    "num_instructions": 7
   },
   {
     "address": "0x00492FC0",
@@ -13515,7 +14589,13 @@
     "address": "0x00493140",
     "address_int": 4796736,
     "name": "sub_00493140",
-    "num_instructions": 18
+    "num_instructions": 12
+  },
+  {
+    "address": "0x00493160",
+    "address_int": 4796768,
+    "name": "sub_00493160",
+    "num_instructions": 8
   },
   {
     "address": "0x00493170",
@@ -13677,7 +14757,13 @@
     "address": "0x00494D50",
     "address_int": 4803920,
     "name": "sub_00494D50",
-    "num_instructions": 16
+    "num_instructions": 11
+  },
+  {
+    "address": "0x00494D70",
+    "address_int": 4803952,
+    "name": "sub_00494D70",
+    "num_instructions": 7
   },
   {
     "address": "0x00494D80",
@@ -13695,7 +14781,13 @@
     "address": "0x00494DA0",
     "address_int": 4804000,
     "name": "sub_00494DA0",
-    "num_instructions": 9
+    "num_instructions": 4
+  },
+  {
+    "address": "0x00494DB0",
+    "address_int": 4804016,
+    "name": "sub_00494DB0",
+    "num_instructions": 7
   },
   {
     "address": "0x00494DC0",
@@ -13713,7 +14805,13 @@
     "address": "0x00494DE0",
     "address_int": 4804064,
     "name": "sub_00494DE0",
-    "num_instructions": 37
+    "num_instructions": 11
+  },
+  {
+    "address": "0x00494E20",
+    "address_int": 4804128,
+    "name": "sub_00494E20",
+    "num_instructions": 32
   },
   {
     "address": "0x00494E80",
@@ -13725,7 +14823,13 @@
     "address": "0x00494E90",
     "address_int": 4804240,
     "name": "sub_00494E90",
-    "num_instructions": 37
+    "num_instructions": 11
+  },
+  {
+    "address": "0x00494ED0",
+    "address_int": 4804304,
+    "name": "sub_00494ED0",
+    "num_instructions": 32
   },
   {
     "address": "0x00494F30",
@@ -13737,7 +14841,13 @@
     "address": "0x00494F40",
     "address_int": 4804416,
     "name": "sub_00494F40",
-    "num_instructions": 37
+    "num_instructions": 11
+  },
+  {
+    "address": "0x00494F80",
+    "address_int": 4804480,
+    "name": "sub_00494F80",
+    "num_instructions": 32
   },
   {
     "address": "0x00494FE0",
@@ -13749,7 +14859,13 @@
     "address": "0x00494FF0",
     "address_int": 4804592,
     "name": "sub_00494FF0",
-    "num_instructions": 37
+    "num_instructions": 11
+  },
+  {
+    "address": "0x00495030",
+    "address_int": 4804656,
+    "name": "sub_00495030",
+    "num_instructions": 32
   },
   {
     "address": "0x00495090",
@@ -13761,7 +14877,13 @@
     "address": "0x004950A0",
     "address_int": 4804768,
     "name": "sub_004950A0",
-    "num_instructions": 37
+    "num_instructions": 11
+  },
+  {
+    "address": "0x004950E0",
+    "address_int": 4804832,
+    "name": "sub_004950E0",
+    "num_instructions": 32
   },
   {
     "address": "0x00495140",
@@ -13773,7 +14895,13 @@
     "address": "0x00495150",
     "address_int": 4804944,
     "name": "sub_00495150",
-    "num_instructions": 37
+    "num_instructions": 11
+  },
+  {
+    "address": "0x00495190",
+    "address_int": 4805008,
+    "name": "sub_00495190",
+    "num_instructions": 32
   },
   {
     "address": "0x004951F0",
@@ -13785,13 +14913,25 @@
     "address": "0x00495200",
     "address_int": 4805120,
     "name": "sub_00495200",
-    "num_instructions": 37
+    "num_instructions": 11
+  },
+  {
+    "address": "0x00495240",
+    "address_int": 4805184,
+    "name": "sub_00495240",
+    "num_instructions": 32
   },
   {
     "address": "0x004952A0",
     "address_int": 4805280,
     "name": "sub_004952A0",
-    "num_instructions": 22
+    "num_instructions": 4
+  },
+  {
+    "address": "0x004952B0",
+    "address_int": 4805296,
+    "name": "sub_004952B0",
+    "num_instructions": 23
   },
   {
     "address": "0x004952F0",
@@ -13851,7 +14991,13 @@
     "address": "0x00496C60",
     "address_int": 4811872,
     "name": "sub_00496C60",
-    "num_instructions": 30
+    "num_instructions": 15
+  },
+  {
+    "address": "0x00496CA0",
+    "address_int": 4811936,
+    "name": "sub_00496CA0",
+    "num_instructions": 18
   },
   {
     "address": "0x00496CF0",
@@ -13893,7 +15039,13 @@
     "address": "0x00497850",
     "address_int": 4814928,
     "name": "sub_00497850",
-    "num_instructions": 114
+    "num_instructions": 85
+  },
+  {
+    "address": "0x00497950",
+    "address_int": 4815184,
+    "name": "sub_00497950",
+    "num_instructions": 29
   },
   {
     "address": "0x00497990",
@@ -13941,7 +15093,13 @@
     "address": "0x004988E0",
     "address_int": 4819168,
     "name": "sub_004988E0",
-    "num_instructions": 113
+    "num_instructions": 27
+  },
+  {
+    "address": "0x00498950",
+    "address_int": 4819280,
+    "name": "sub_00498950",
+    "num_instructions": 92
   },
   {
     "address": "0x00498A90",
@@ -13953,13 +15111,25 @@
     "address": "0x00498BF0",
     "address_int": 4819952,
     "name": "sub_00498BF0",
-    "num_instructions": 390
+    "num_instructions": 378
+  },
+  {
+    "address": "0x004990D0",
+    "address_int": 4821200,
+    "name": "sub_004990D0",
+    "num_instructions": 17
   },
   {
     "address": "0x00499110",
     "address_int": 4821264,
     "name": "sub_00499110",
-    "num_instructions": 101
+    "num_instructions": 40
+  },
+  {
+    "address": "0x00499190",
+    "address_int": 4821392,
+    "name": "sub_00499190",
+    "num_instructions": 77
   },
   {
     "address": "0x00499270",
@@ -13977,7 +15147,13 @@
     "address": "0x00499490",
     "address_int": 4822160,
     "name": "sub_00499490",
-    "num_instructions": 71
+    "num_instructions": 39
+  },
+  {
+    "address": "0x00499530",
+    "address_int": 4822320,
+    "name": "sub_00499530",
+    "num_instructions": 40
   },
   {
     "address": "0x004995A0",
@@ -14013,7 +15189,13 @@
     "address": "0x00499A50",
     "address_int": 4823632,
     "name": "sub_00499A50",
-    "num_instructions": 157
+    "num_instructions": 89
+  },
+  {
+    "address": "0x00499B30",
+    "address_int": 4823856,
+    "name": "sub_00499B30",
+    "num_instructions": 85
   },
   {
     "address": "0x00499C60",
@@ -14229,7 +15411,13 @@
     "address": "0x0049BC00",
     "address_int": 4832256,
     "name": "sub_0049BC00",
-    "num_instructions": 56
+    "num_instructions": 48
+  },
+  {
+    "address": "0x0049BC80",
+    "address_int": 4832384,
+    "name": "sub_0049BC80",
+    "num_instructions": 16
   },
   {
     "address": "0x0049BCC0",
@@ -14247,7 +15435,13 @@
     "address": "0x0049BD70",
     "address_int": 4832624,
     "name": "sub_0049BD70",
-    "num_instructions": 107
+    "num_instructions": 37
+  },
+  {
+    "address": "0x0049BDE0",
+    "address_int": 4832736,
+    "name": "sub_0049BDE0",
+    "num_instructions": 79
   },
   {
     "address": "0x0049BED0",
@@ -14379,7 +15573,13 @@
     "address": "0x0049C5D0",
     "address_int": 4834768,
     "name": "sub_0049C5D0",
-    "num_instructions": 18
+    "num_instructions": 12
+  },
+  {
+    "address": "0x0049C5F0",
+    "address_int": 4834800,
+    "name": "sub_0049C5F0",
+    "num_instructions": 8
   },
   {
     "address": "0x0049C600",
@@ -14583,7 +15783,13 @@
     "address": "0x0049F2E0",
     "address_int": 4846304,
     "name": "sub_0049F2E0",
-    "num_instructions": 16
+    "num_instructions": 11
+  },
+  {
+    "address": "0x0049F300",
+    "address_int": 4846336,
+    "name": "sub_0049F300",
+    "num_instructions": 7
   },
   {
     "address": "0x0049F310",
@@ -14601,7 +15807,13 @@
     "address": "0x0049F330",
     "address_int": 4846384,
     "name": "sub_0049F330",
-    "num_instructions": 9
+    "num_instructions": 4
+  },
+  {
+    "address": "0x0049F340",
+    "address_int": 4846400,
+    "name": "sub_0049F340",
+    "num_instructions": 7
   },
   {
     "address": "0x0049F350",
@@ -14886,6 +16098,12 @@
     "num_instructions": 49
   },
   {
+    "address": "0x004A1E80",
+    "address_int": 4857472,
+    "name": "sub_004A1E80",
+    "num_instructions": 8
+  },
+  {
     "address": "0x004A1EA0",
     "address_int": 4857504,
     "name": "sub_004A1EA0",
@@ -14943,7 +16161,13 @@
     "address": "0x004A2210",
     "address_int": 4858384,
     "name": "sub_004A2210",
-    "num_instructions": 43
+    "num_instructions": 12
+  },
+  {
+    "address": "0x004A2230",
+    "address_int": 4858416,
+    "name": "sub_004A2230",
+    "num_instructions": 33
   },
   {
     "address": "0x004A22A0",
@@ -15003,7 +16227,13 @@
     "address": "0x004A24F0",
     "address_int": 4859120,
     "name": "sub_004A24F0",
-    "num_instructions": 18
+    "num_instructions": 12
+  },
+  {
+    "address": "0x004A2510",
+    "address_int": 4859152,
+    "name": "sub_004A2510",
+    "num_instructions": 8
   },
   {
     "address": "0x004A2520",
@@ -15021,6 +16251,12 @@
     "address": "0x004A2540",
     "address_int": 4859200,
     "name": "sub_004A2540",
+    "num_instructions": 4
+  },
+  {
+    "address": "0x004A2550",
+    "address_int": 4859216,
+    "name": "sub_004A2550",
     "num_instructions": 9
   },
   {
@@ -15069,19 +16305,49 @@
     "address": "0x004A2960",
     "address_int": 4860256,
     "name": "sub_004A2960",
-    "num_instructions": 117
+    "num_instructions": 12
+  },
+  {
+    "address": "0x004A2980",
+    "address_int": 4860288,
+    "name": "sub_004A2980",
+    "num_instructions": 9
+  },
+  {
+    "address": "0x004A29A0",
+    "address_int": 4860320,
+    "name": "sub_004A29A0",
+    "num_instructions": 108
   },
   {
     "address": "0x004A2AF0",
     "address_int": 4860656,
     "name": "sub_004A2AF0",
-    "num_instructions": 55
+    "num_instructions": 13
+  },
+  {
+    "address": "0x004A2B30",
+    "address_int": 4860720,
+    "name": "sub_004A2B30",
+    "num_instructions": 40
+  },
+  {
+    "address": "0x004A2BB0",
+    "address_int": 4860848,
+    "name": "sub_004A2BB0",
+    "num_instructions": 11
   },
   {
     "address": "0x004A2BE0",
     "address_int": 4860896,
     "name": "sub_004A2BE0",
-    "num_instructions": 146
+    "num_instructions": 138
+  },
+  {
+    "address": "0x004A2DD0",
+    "address_int": 4861392,
+    "name": "sub_004A2DD0",
+    "num_instructions": 13
   },
   {
     "address": "0x004A2E00",
@@ -15327,7 +16593,13 @@
     "address": "0x004A5930",
     "address_int": 4872496,
     "name": "sub_004A5930",
-    "num_instructions": 17
+    "num_instructions": 12
+  },
+  {
+    "address": "0x004A5950",
+    "address_int": 4872528,
+    "name": "sub_004A5950",
+    "num_instructions": 9
   },
   {
     "address": "0x004A5970",
@@ -15789,7 +17061,13 @@
     "address": "0x004A6400",
     "address_int": 4875264,
     "name": "sub_004A6400",
-    "num_instructions": 17
+    "num_instructions": 12
+  },
+  {
+    "address": "0x004A6420",
+    "address_int": 4875296,
+    "name": "sub_004A6420",
+    "num_instructions": 9
   },
   {
     "address": "0x004A6440",
@@ -15891,7 +17169,13 @@
     "address": "0x004A6AC0",
     "address_int": 4876992,
     "name": "sub_004A6AC0",
-    "num_instructions": 131
+    "num_instructions": 12
+  },
+  {
+    "address": "0x004A6AE0",
+    "address_int": 4877024,
+    "name": "sub_004A6AE0",
+    "num_instructions": 97
   },
   {
     "address": "0x004A6D20",
@@ -16167,7 +17451,13 @@
     "address": "0x004A95B0",
     "address_int": 4887984,
     "name": "sub_004A95B0",
-    "num_instructions": 17
+    "num_instructions": 12
+  },
+  {
+    "address": "0x004A95D0",
+    "address_int": 4888016,
+    "name": "sub_004A95D0",
+    "num_instructions": 9
   },
   {
     "address": "0x004A95F0",
@@ -16185,7 +17475,19 @@
     "address": "0x004A9640",
     "address_int": 4888128,
     "name": "sub_004A9640",
-    "num_instructions": 59
+    "num_instructions": 21
+  },
+  {
+    "address": "0x004A9680",
+    "address_int": 4888192,
+    "name": "sub_004A9680",
+    "num_instructions": 33
+  },
+  {
+    "address": "0x004A96F0",
+    "address_int": 4888304,
+    "name": "sub_004A96F0",
+    "num_instructions": 15
   },
   {
     "address": "0x004A9720",
@@ -16272,6 +17574,12 @@
     "num_instructions": 9
   },
   {
+    "address": "0x004ABE70",
+    "address_int": 4898416,
+    "name": "sub_004ABE70",
+    "num_instructions": 11
+  },
+  {
     "address": "0x004ABEA0",
     "address_int": 4898464,
     "name": "sub_004ABEA0",
@@ -16299,7 +17607,13 @@
     "address": "0x004AC480",
     "address_int": 4899968,
     "name": "sub_004AC480",
-    "num_instructions": 173
+    "num_instructions": 166
+  },
+  {
+    "address": "0x004AC670",
+    "address_int": 4900464,
+    "name": "sub_004AC670",
+    "num_instructions": 12
   },
   {
     "address": "0x004AC690",
@@ -16353,7 +17667,13 @@
     "address": "0x004ACBE0",
     "address_int": 4901856,
     "name": "sub_004ACBE0",
-    "num_instructions": 17
+    "num_instructions": 12
+  },
+  {
+    "address": "0x004ACC00",
+    "address_int": 4901888,
+    "name": "sub_004ACC00",
+    "num_instructions": 9
   },
   {
     "address": "0x004ACC20",
@@ -16533,7 +17853,13 @@
     "address": "0x004AF3B0",
     "address_int": 4912048,
     "name": "sub_004AF3B0",
-    "num_instructions": 116
+    "num_instructions": 105
+  },
+  {
+    "address": "0x004AF530",
+    "address_int": 4912432,
+    "name": "sub_004AF530",
+    "num_instructions": 12
   },
   {
     "address": "0x004AF540",
@@ -16558,6 +17884,12 @@
     "address_int": 4913456,
     "name": "sub_004AF930",
     "num_instructions": 33
+  },
+  {
+    "address": "0x004AF9D0",
+    "address_int": 4913616,
+    "name": "sub_004AF9D0",
+    "num_instructions": 1
   },
   {
     "address": "0x004AF9E0",
@@ -16623,7 +17955,13 @@
     "address": "0x004AFE50",
     "address_int": 4914768,
     "name": "sub_004AFE50",
-    "num_instructions": 17
+    "num_instructions": 12
+  },
+  {
+    "address": "0x004AFE70",
+    "address_int": 4914800,
+    "name": "sub_004AFE70",
+    "num_instructions": 9
   },
   {
     "address": "0x004AFE90",
@@ -16635,7 +17973,13 @@
     "address": "0x004AFEA0",
     "address_int": 4914848,
     "name": "sub_004AFEA0",
-    "num_instructions": 17
+    "num_instructions": 12
+  },
+  {
+    "address": "0x004AFEC0",
+    "address_int": 4914880,
+    "name": "sub_004AFEC0",
+    "num_instructions": 9
   },
   {
     "address": "0x004AFEE0",
@@ -16797,7 +18141,13 @@
     "address": "0x004B20D0",
     "address_int": 4923600,
     "name": "sub_004B20D0",
-    "num_instructions": 9
+    "num_instructions": 6
+  },
+  {
+    "address": "0x004B20F0",
+    "address_int": 4923632,
+    "name": "sub_004B20F0",
+    "num_instructions": 6
   },
   {
     "address": "0x004B2110",
@@ -16995,7 +18345,31 @@
     "address": "0x004B4370",
     "address_int": 4932464,
     "name": "sub_004B4370",
-    "num_instructions": 7
+    "num_instructions": 1
+  },
+  {
+    "address": "0x004B4380",
+    "address_int": 4932480,
+    "name": "sub_004B4380",
+    "num_instructions": 2
+  },
+  {
+    "address": "0x004B4390",
+    "address_int": 4932496,
+    "name": "sub_004B4390",
+    "num_instructions": 9
+  },
+  {
+    "address": "0x004B43B0",
+    "address_int": 4932528,
+    "name": "sub_004B43B0",
+    "num_instructions": 6
+  },
+  {
+    "address": "0x004B43C0",
+    "address_int": 4932544,
+    "name": "sub_004B43C0",
+    "num_instructions": 11
   },
   {
     "address": "0x004B43E0",
@@ -17073,7 +18447,13 @@
     "address": "0x004B46B0",
     "address_int": 4933296,
     "name": "sub_004B46B0",
-    "num_instructions": 25
+    "num_instructions": 9
+  },
+  {
+    "address": "0x004B46E0",
+    "address_int": 4933344,
+    "name": "sub_004B46E0",
+    "num_instructions": 22
   },
   {
     "address": "0x004B4730",
@@ -17086,6 +18466,12 @@
     "address_int": 4933440,
     "name": "sub_004B4740",
     "num_instructions": 9
+  },
+  {
+    "address": "0x004B4770",
+    "address_int": 4933488,
+    "name": "sub_004B4770",
+    "num_instructions": 11
   },
   {
     "address": "0x004B47A0",
@@ -17187,7 +18573,13 @@
     "address": "0x004B5840",
     "address_int": 4937792,
     "name": "sub_004B5840",
-    "num_instructions": 37
+    "num_instructions": 11
+  },
+  {
+    "address": "0x004B5880",
+    "address_int": 4937856,
+    "name": "sub_004B5880",
+    "num_instructions": 32
   },
   {
     "address": "0x004B58E0",
@@ -17349,7 +18741,13 @@
     "address": "0x004B8800",
     "address_int": 4950016,
     "name": "sub_004B8800",
-    "num_instructions": 37
+    "num_instructions": 11
+  },
+  {
+    "address": "0x004B8840",
+    "address_int": 4950080,
+    "name": "sub_004B8840",
+    "num_instructions": 32
   },
   {
     "address": "0x004B88A0",
@@ -17493,7 +18891,19 @@
     "address": "0x004B8FD0",
     "address_int": 4952016,
     "name": "sub_004B8FD0",
-    "num_instructions": 222
+    "num_instructions": 186
+  },
+  {
+    "address": "0x004B9230",
+    "address_int": 4952624,
+    "name": "sub_004B9230",
+    "num_instructions": 27
+  },
+  {
+    "address": "0x004B9280",
+    "address_int": 4952704,
+    "name": "sub_004B9280",
+    "num_instructions": 17
   },
   {
     "address": "0x004B92C0",
@@ -17529,7 +18939,13 @@
     "address": "0x004B9440",
     "address_int": 4953152,
     "name": "sub_004B9440",
-    "num_instructions": 37
+    "num_instructions": 11
+  },
+  {
+    "address": "0x004B9480",
+    "address_int": 4953216,
+    "name": "sub_004B9480",
+    "num_instructions": 32
   },
   {
     "address": "0x004B94E0",
@@ -17568,6 +18984,12 @@
     "num_instructions": 47
   },
   {
+    "address": "0x004B9750",
+    "address_int": 4953936,
+    "name": "sub_004B9750",
+    "num_instructions": 12
+  },
+  {
     "address": "0x004B9770",
     "address_int": 4953968,
     "name": "sub_004B9770",
@@ -17583,7 +19005,25 @@
     "address": "0x004B9BC0",
     "address_int": 4955072,
     "name": "sub_004B9BC0",
-    "num_instructions": 1172
+    "num_instructions": 842
+  },
+  {
+    "address": "0x004BA660",
+    "address_int": 4957792,
+    "name": "sub_004BA660",
+    "num_instructions": 44
+  },
+  {
+    "address": "0x004BA6F0",
+    "address_int": 4957936,
+    "name": "sub_004BA6F0",
+    "num_instructions": 315
+  },
+  {
+    "address": "0x004BAAB0",
+    "address_int": 4958896,
+    "name": "sub_004BAAB0",
+    "num_instructions": 6
   },
   {
     "address": "0x004BAAD0",
@@ -17595,7 +19035,13 @@
     "address": "0x004BAB10",
     "address_int": 4958992,
     "name": "sub_004BAB10",
-    "num_instructions": 169
+    "num_instructions": 23
+  },
+  {
+    "address": "0x004BAB50",
+    "address_int": 4959056,
+    "name": "sub_004BAB50",
+    "num_instructions": 165
   },
   {
     "address": "0x004BAD90",
@@ -17613,7 +19059,13 @@
     "address": "0x004BADF0",
     "address_int": 4959728,
     "name": "sub_004BADF0",
-    "num_instructions": 16
+    "num_instructions": 11
+  },
+  {
+    "address": "0x004BAE10",
+    "address_int": 4959760,
+    "name": "sub_004BAE10",
+    "num_instructions": 7
   },
   {
     "address": "0x004BAE20",
@@ -17631,7 +19083,13 @@
     "address": "0x004BAE40",
     "address_int": 4959808,
     "name": "sub_004BAE40",
-    "num_instructions": 9
+    "num_instructions": 4
+  },
+  {
+    "address": "0x004BAE50",
+    "address_int": 4959824,
+    "name": "sub_004BAE50",
+    "num_instructions": 7
   },
   {
     "address": "0x004BAE60",
@@ -17709,7 +19167,13 @@
     "address": "0x004BC270",
     "address_int": 4964976,
     "name": "sub_004BC270",
-    "num_instructions": 59
+    "num_instructions": 12
+  },
+  {
+    "address": "0x004BC290",
+    "address_int": 4965008,
+    "name": "sub_004BC290",
+    "num_instructions": 49
   },
   {
     "address": "0x004BC320",
@@ -17763,13 +19227,31 @@
     "address": "0x004BD0D0",
     "address_int": 4968656,
     "name": "sub_004BD0D0",
-    "num_instructions": 17
+    "num_instructions": 12
+  },
+  {
+    "address": "0x004BD0F0",
+    "address_int": 4968688,
+    "name": "sub_004BD0F0",
+    "num_instructions": 9
   },
   {
     "address": "0x004BD110",
     "address_int": 4968720,
     "name": "sub_004BD110",
-    "num_instructions": 137
+    "num_instructions": 98
+  },
+  {
+    "address": "0x004BD250",
+    "address_int": 4969040,
+    "name": "sub_004BD250",
+    "num_instructions": 34
+  },
+  {
+    "address": "0x004BD2B0",
+    "address_int": 4969136,
+    "name": "sub_004BD2B0",
+    "num_instructions": 15
   },
   {
     "address": "0x004BD2E0",
@@ -18078,6 +19560,12 @@
     "num_instructions": 15
   },
   {
+    "address": "0x004C05F0",
+    "address_int": 4982256,
+    "name": "sub_004C05F0",
+    "num_instructions": 10
+  },
+  {
     "address": "0x004C0610",
     "address_int": 4982288,
     "name": "sub_004C0610",
@@ -18112,6 +19600,12 @@
     "address_int": 4982768,
     "name": "sub_004C07F0",
     "num_instructions": 24
+  },
+  {
+    "address": "0x004C0830",
+    "address_int": 4982832,
+    "name": "sub_004C0830",
+    "num_instructions": 10
   },
   {
     "address": "0x004C0850",
@@ -18447,7 +19941,13 @@
     "address": "0x004C24D0",
     "address_int": 4990160,
     "name": "sub_004C24D0",
-    "num_instructions": 128
+    "num_instructions": 81
+  },
+  {
+    "address": "0x004C2580",
+    "address_int": 4990336,
+    "name": "sub_004C2580",
+    "num_instructions": 51
   },
   {
     "address": "0x004C2610",
@@ -19650,6 +21150,12 @@
     "num_instructions": 19
   },
   {
+    "address": "0x004D1120",
+    "address_int": 5050656,
+    "name": "sub_004D1120",
+    "num_instructions": 12
+  },
+  {
     "address": "0x004D1150",
     "address_int": 5050704,
     "name": "sub_004D1150",
@@ -19665,7 +21171,13 @@
     "address": "0x004D11E0",
     "address_int": 5050848,
     "name": "sub_004D11E0",
-    "num_instructions": 29
+    "num_instructions": 8
+  },
+  {
+    "address": "0x004D1200",
+    "address_int": 5050880,
+    "name": "sub_004D1200",
+    "num_instructions": 25
   },
   {
     "address": "0x004D1240",
@@ -20499,7 +22011,13 @@
     "address": "0x004D8E40",
     "address_int": 5082688,
     "name": "sub_004D8E40",
-    "num_instructions": 32
+    "num_instructions": 23
+  },
+  {
+    "address": "0x004D8E90",
+    "address_int": 5082768,
+    "name": "sub_004D8E90",
+    "num_instructions": 13
   },
   {
     "address": "0x004D8EB0",
@@ -20853,7 +22371,19 @@
     "address": "0x004DB790",
     "address_int": 5093264,
     "name": "sub_004DB790",
-    "num_instructions": 235
+    "num_instructions": 145
+  },
+  {
+    "address": "0x004DB940",
+    "address_int": 5093696,
+    "name": "sub_004DB940",
+    "num_instructions": 58
+  },
+  {
+    "address": "0x004DB9D0",
+    "address_int": 5093840,
+    "name": "sub_004DB9D0",
+    "num_instructions": 47
   },
   {
     "address": "0x004DBA40",
@@ -21039,7 +22569,13 @@
     "address": "0x004DCDC0",
     "address_int": 5098944,
     "name": "sub_004DCDC0",
-    "num_instructions": 92
+    "num_instructions": 12
+  },
+  {
+    "address": "0x004DCDE0",
+    "address_int": 5098976,
+    "name": "sub_004DCDE0",
+    "num_instructions": 82
   },
   {
     "address": "0x004DCEC0",
@@ -21051,7 +22587,13 @@
     "address": "0x004DCED0",
     "address_int": 5099216,
     "name": "sub_004DCED0",
-    "num_instructions": 111
+    "num_instructions": 12
+  },
+  {
+    "address": "0x004DCEF0",
+    "address_int": 5099248,
+    "name": "sub_004DCEF0",
+    "num_instructions": 101
   },
   {
     "address": "0x004DD020",
@@ -21129,7 +22671,13 @@
     "address": "0x004DE620",
     "address_int": 5105184,
     "name": "sub_004DE620",
-    "num_instructions": 113
+    "num_instructions": 12
+  },
+  {
+    "address": "0x004DE640",
+    "address_int": 5105216,
+    "name": "sub_004DE640",
+    "num_instructions": 87
   },
   {
     "address": "0x004DE770",
@@ -21183,7 +22731,19 @@
     "address": "0x004DF340",
     "address_int": 5108544,
     "name": "sub_004DF340",
-    "num_instructions": 184
+    "num_instructions": 78
+  },
+  {
+    "address": "0x004DF420",
+    "address_int": 5108768,
+    "name": "sub_004DF420",
+    "num_instructions": 58
+  },
+  {
+    "address": "0x004DF4C0",
+    "address_int": 5108928,
+    "name": "sub_004DF4C0",
+    "num_instructions": 58
   },
   {
     "address": "0x004DF560",
@@ -21747,7 +23307,13 @@
     "address": "0x004E5BB0",
     "address_int": 5135280,
     "name": "sub_004E5BB0",
-    "num_instructions": 46
+    "num_instructions": 9
+  },
+  {
+    "address": "0x004E5BE0",
+    "address_int": 5135328,
+    "name": "sub_004E5BE0",
+    "num_instructions": 39
   },
   {
     "address": "0x004E5C60",
@@ -21760,6 +23326,12 @@
     "address_int": 5135472,
     "name": "sub_004E5C70",
     "num_instructions": 9
+  },
+  {
+    "address": "0x004E5CA0",
+    "address_int": 5135520,
+    "name": "sub_004E5CA0",
+    "num_instructions": 11
   },
   {
     "address": "0x004E5CD0",
@@ -21789,7 +23361,13 @@
     "address": "0x004E6120",
     "address_int": 5136672,
     "name": "sub_004E6120",
-    "num_instructions": 84
+    "num_instructions": 66
+  },
+  {
+    "address": "0x004E61E0",
+    "address_int": 5136864,
+    "name": "sub_004E61E0",
+    "num_instructions": 22
   },
   {
     "address": "0x004E6220",
@@ -21939,13 +23517,25 @@
     "address": "0x004E7130",
     "address_int": 5140784,
     "name": "sub_004E7130",
-    "num_instructions": 45
+    "num_instructions": 7
+  },
+  {
+    "address": "0x004E7150",
+    "address_int": 5140816,
+    "name": "sub_004E7150",
+    "num_instructions": 43
   },
   {
     "address": "0x004E71E0",
     "address_int": 5140960,
     "name": "sub_004E71E0",
-    "num_instructions": 78
+    "num_instructions": 21
+  },
+  {
+    "address": "0x004E7220",
+    "address_int": 5141024,
+    "name": "sub_004E7220",
+    "num_instructions": 61
   },
   {
     "address": "0x004E72E0",
@@ -22137,7 +23727,13 @@
     "address": "0x004ECD10",
     "address_int": 5164304,
     "name": "sub_004ECD10",
-    "num_instructions": 191
+    "num_instructions": 4
+  },
+  {
+    "address": "0x004ECD20",
+    "address_int": 5164320,
+    "name": "sub_004ECD20",
+    "num_instructions": 197
   },
   {
     "address": "0x004ECFB0",
@@ -22155,7 +23751,13 @@
     "address": "0x004ED190",
     "address_int": 5165456,
     "name": "sub_004ED190",
-    "num_instructions": 144
+    "num_instructions": 91
+  },
+  {
+    "address": "0x004ED2A0",
+    "address_int": 5165728,
+    "name": "sub_004ED2A0",
+    "num_instructions": 57
   },
   {
     "address": "0x004ED340",
@@ -23067,13 +24669,25 @@
     "address": "0x00523F10",
     "address_int": 5390096,
     "name": "sub_00523F10",
-    "num_instructions": 192
+    "num_instructions": 6
+  },
+  {
+    "address": "0x00523F30",
+    "address_int": 5390128,
+    "name": "sub_00523F30",
+    "num_instructions": 194
   },
   {
     "address": "0x005241D0",
     "address_int": 5390800,
     "name": "sub_005241D0",
-    "num_instructions": 330
+    "num_instructions": 32
+  },
+  {
+    "address": "0x00524230",
+    "address_int": 5390896,
+    "name": "sub_00524230",
+    "num_instructions": 310
   },
   {
     "address": "0x00524600",
@@ -23085,7 +24699,19 @@
     "address": "0x005246D0",
     "address_int": 5392080,
     "name": "sub_005246D0",
-    "num_instructions": 511
+    "num_instructions": 248
+  },
+  {
+    "address": "0x00524A40",
+    "address_int": 5392960,
+    "name": "sub_00524A40",
+    "num_instructions": 61
+  },
+  {
+    "address": "0x00524B00",
+    "address_int": 5393152,
+    "name": "sub_00524B00",
+    "num_instructions": 220
   },
   {
     "address": "0x00524DF5",
@@ -23103,7 +24729,19 @@
     "address": "0x00524F75",
     "address_int": 5394293,
     "name": "sub_00524F75",
-    "num_instructions": 315
+    "num_instructions": 16
+  },
+  {
+    "address": "0x00524FB0",
+    "address_int": 5394352,
+    "name": "sub_00524FB0",
+    "num_instructions": 171
+  },
+  {
+    "address": "0x00525210",
+    "address_int": 5394960,
+    "name": "sub_00525210",
+    "num_instructions": 150
   },
   {
     "address": "0x005253D0",
@@ -23205,7 +24843,13 @@
     "address": "0x00525FE0",
     "address_int": 5398496,
     "name": "sub_00525FE0",
-    "num_instructions": 127
+    "num_instructions": 60
+  },
+  {
+    "address": "0x00526080",
+    "address_int": 5398656,
+    "name": "sub_00526080",
+    "num_instructions": 71
   },
   {
     "address": "0x00526160",
@@ -24009,7 +25653,13 @@
     "address": "0x00530780",
     "address_int": 5441408,
     "name": "sub_00530780",
-    "num_instructions": 18
+    "num_instructions": 12
+  },
+  {
+    "address": "0x005307A0",
+    "address_int": 5441440,
+    "name": "sub_005307A0",
+    "num_instructions": 8
   },
   {
     "address": "0x005307B0",
@@ -24027,7 +25677,13 @@
     "address": "0x005307D0",
     "address_int": 5441488,
     "name": "sub_005307D0",
-    "num_instructions": 10
+    "num_instructions": 4
+  },
+  {
+    "address": "0x005307E0",
+    "address_int": 5441504,
+    "name": "sub_005307E0",
+    "num_instructions": 8
   },
   {
     "address": "0x005307F0",
@@ -24765,7 +26421,13 @@
     "address": "0x00534F40",
     "address_int": 5459776,
     "name": "sub_00534F40",
-    "num_instructions": 67
+    "num_instructions": 12
+  },
+  {
+    "address": "0x00534F60",
+    "address_int": 5459808,
+    "name": "sub_00534F60",
+    "num_instructions": 48
   },
   {
     "address": "0x00535020",
@@ -24963,7 +26625,13 @@
     "address": "0x005363A0",
     "address_int": 5464992,
     "name": "sub_005363A0",
-    "num_instructions": 105
+    "num_instructions": 91
+  },
+  {
+    "address": "0x00536520",
+    "address_int": 5465376,
+    "name": "sub_00536520",
+    "num_instructions": 26
   },
   {
     "address": "0x00536570",
@@ -25215,7 +26883,13 @@
     "address": "0x00537480",
     "address_int": 5469312,
     "name": "sub_00537480",
-    "num_instructions": 53
+    "num_instructions": 49
+  },
+  {
+    "address": "0x00537500",
+    "address_int": 5469440,
+    "name": "sub_00537500",
+    "num_instructions": 13
   },
   {
     "address": "0x00537530",
@@ -26691,7 +28365,13 @@
     "address": "0x0054E690",
     "address_int": 5564048,
     "name": "sub_0054E690",
-    "num_instructions": 17
+    "num_instructions": 12
+  },
+  {
+    "address": "0x0054E6B0",
+    "address_int": 5564080,
+    "name": "sub_0054E6B0",
+    "num_instructions": 9
   },
   {
     "address": "0x0054E6D0",
@@ -26721,7 +28401,13 @@
     "address": "0x0054EDD0",
     "address_int": 5565904,
     "name": "sub_0054EDD0",
-    "num_instructions": 17
+    "num_instructions": 12
+  },
+  {
+    "address": "0x0054EDF0",
+    "address_int": 5565936,
+    "name": "sub_0054EDF0",
+    "num_instructions": 9
   },
   {
     "address": "0x0054EE10",
@@ -29121,7 +30807,13 @@
     "address": "0x00579320",
     "address_int": 5739296,
     "name": "sub_00579320",
-    "num_instructions": 81
+    "num_instructions": 26
+  },
+  {
+    "address": "0x00579380",
+    "address_int": 5739392,
+    "name": "sub_00579380",
+    "num_instructions": 57
   },
   {
     "address": "0x00579430",
@@ -29439,7 +31131,13 @@
     "address": "0x0057A7E0",
     "address_int": 5744608,
     "name": "sub_0057A7E0",
-    "num_instructions": 41
+    "num_instructions": 11
+  },
+  {
+    "address": "0x0057A820",
+    "address_int": 5744672,
+    "name": "sub_0057A820",
+    "num_instructions": 36
   },
   {
     "address": "0x0057A890",
@@ -30483,13 +32181,25 @@
     "address": "0x00591AF0",
     "address_int": 5839600,
     "name": "sub_00591AF0",
-    "num_instructions": 101
+    "num_instructions": 94
+  },
+  {
+    "address": "0x00591CC0",
+    "address_int": 5840064,
+    "name": "sub_00591CC0",
+    "num_instructions": 10
   },
   {
     "address": "0x00591CE0",
     "address_int": 5840096,
     "name": "sub_00591CE0",
-    "num_instructions": 49
+    "num_instructions": 22
+  },
+  {
+    "address": "0x00591D20",
+    "address_int": 5840160,
+    "name": "sub_00591D20",
+    "num_instructions": 33
   },
   {
     "address": "0x00591D70",
@@ -30543,13 +32253,25 @@
     "address": "0x00592040",
     "address_int": 5840960,
     "name": "sub_00592040",
-    "num_instructions": 58
+    "num_instructions": 23
+  },
+  {
+    "address": "0x00592090",
+    "address_int": 5841040,
+    "name": "sub_00592090",
+    "num_instructions": 39
   },
   {
     "address": "0x005920F0",
     "address_int": 5841136,
     "name": "sub_005920F0",
     "num_instructions": 32
+  },
+  {
+    "address": "0x00592150",
+    "address_int": 5841232,
+    "name": "sub_00592150",
+    "num_instructions": 7
   },
   {
     "address": "0x00592170",
@@ -30712,6 +32434,12 @@
     "address_int": 5847856,
     "name": "sub_00593B30",
     "num_instructions": 11
+  },
+  {
+    "address": "0x00593B50",
+    "address_int": 5847888,
+    "name": "sub_00593B50",
+    "num_instructions": 12
   },
   {
     "address": "0x00593B80",
@@ -30921,7 +32649,13 @@
     "address": "0x00595F60",
     "address_int": 5857120,
     "name": "sub_00595F60",
-    "num_instructions": 18
+    "num_instructions": 12
+  },
+  {
+    "address": "0x00595F80",
+    "address_int": 5857152,
+    "name": "sub_00595F80",
+    "num_instructions": 8
   },
   {
     "address": "0x00595F90",
@@ -31209,7 +32943,13 @@
     "address": "0x00598050",
     "address_int": 5865552,
     "name": "sub_00598050",
-    "num_instructions": 37
+    "num_instructions": 11
+  },
+  {
+    "address": "0x00598090",
+    "address_int": 5865616,
+    "name": "sub_00598090",
+    "num_instructions": 32
   },
   {
     "address": "0x005980F0",
@@ -31359,7 +33099,13 @@
     "address": "0x00599460",
     "address_int": 5870688,
     "name": "sub_00599460",
-    "num_instructions": 37
+    "num_instructions": 11
+  },
+  {
+    "address": "0x005994A0",
+    "address_int": 5870752,
+    "name": "sub_005994A0",
+    "num_instructions": 32
   },
   {
     "address": "0x00599500",
@@ -31371,7 +33117,13 @@
     "address": "0x00599510",
     "address_int": 5870864,
     "name": "sub_00599510",
-    "num_instructions": 37
+    "num_instructions": 11
+  },
+  {
+    "address": "0x00599550",
+    "address_int": 5870928,
+    "name": "sub_00599550",
+    "num_instructions": 32
   },
   {
     "address": "0x005995B0",
@@ -31401,7 +33153,13 @@
     "address": "0x005998C0",
     "address_int": 5871808,
     "name": "sub_005998C0",
-    "num_instructions": 42
+    "num_instructions": 10
+  },
+  {
+    "address": "0x005998E0",
+    "address_int": 5871840,
+    "name": "sub_005998E0",
+    "num_instructions": 40
   },
   {
     "address": "0x00599940",
@@ -31437,7 +33195,13 @@
     "address": "0x00599F70",
     "address_int": 5873520,
     "name": "sub_00599F70",
-    "num_instructions": 251
+    "num_instructions": 240
+  },
+  {
+    "address": "0x0059A240",
+    "address_int": 5874240,
+    "name": "sub_0059A240",
+    "num_instructions": 19
   },
   {
     "address": "0x0059A270",
@@ -31450,6 +33214,12 @@
     "address_int": 5874368,
     "name": "sub_0059A2C0",
     "num_instructions": 50
+  },
+  {
+    "address": "0x0059A350",
+    "address_int": 5874512,
+    "name": "sub_0059A350",
+    "num_instructions": 8
   },
   {
     "address": "0x0059A366",
@@ -31518,6 +33288,12 @@
     "num_instructions": 102
   },
   {
+    "address": "0x0059AAB0",
+    "address_int": 5876400,
+    "name": "sub_0059AAB0",
+    "num_instructions": 6
+  },
+  {
     "address": "0x0059AAC0",
     "address_int": 5876416,
     "name": "sub_0059AAC0",
@@ -31528,6 +33304,12 @@
     "address_int": 5876480,
     "name": "sub_0059AB00",
     "num_instructions": 10
+  },
+  {
+    "address": "0x0059AB20",
+    "address_int": 5876512,
+    "name": "sub_0059AB20",
+    "num_instructions": 7
   },
   {
     "address": "0x0059AB40",
@@ -31593,7 +33375,13 @@
     "address": "0x0059AF20",
     "address_int": 5877536,
     "name": "sub_0059AF20",
-    "num_instructions": 37
+    "num_instructions": 11
+  },
+  {
+    "address": "0x0059AF60",
+    "address_int": 5877600,
+    "name": "sub_0059AF60",
+    "num_instructions": 32
   },
   {
     "address": "0x0059AFC0",
@@ -31660,6 +33448,12 @@
     "address_int": 5879808,
     "name": "sub_0059B800",
     "num_instructions": 115
+  },
+  {
+    "address": "0x0059B940",
+    "address_int": 5880128,
+    "name": "sub_0059B940",
+    "num_instructions": 5
   },
   {
     "address": "0x0059B950",
@@ -31893,13 +33687,31 @@
     "address": "0x0059CF20",
     "address_int": 5885728,
     "name": "sub_0059CF20",
-    "num_instructions": 59
+    "num_instructions": 20
+  },
+  {
+    "address": "0x0059CF60",
+    "address_int": 5885792,
+    "name": "sub_0059CF60",
+    "num_instructions": 9
+  },
+  {
+    "address": "0x0059CF80",
+    "address_int": 5885824,
+    "name": "sub_0059CF80",
+    "num_instructions": 44
   },
   {
     "address": "0x0059CFF0",
     "address_int": 5885936,
     "name": "sub_0059CFF0",
-    "num_instructions": 105
+    "num_instructions": 73
+  },
+  {
+    "address": "0x0059D0C0",
+    "address_int": 5886144,
+    "name": "sub_0059D0C0",
+    "num_instructions": 36
   },
   {
     "address": "0x0059D110",
@@ -31918,6 +33730,12 @@
     "address_int": 5886320,
     "name": "sub_0059D170",
     "num_instructions": 76
+  },
+  {
+    "address": "0x0059D240",
+    "address_int": 5886528,
+    "name": "sub_0059D240",
+    "num_instructions": 14
   },
   {
     "address": "0x0059D270",
@@ -32421,13 +34239,31 @@
     "address": "0x005A0260",
     "address_int": 5898848,
     "name": "sub_005A0260",
-    "num_instructions": 217
+    "num_instructions": 20
+  },
+  {
+    "address": "0x005A02B0",
+    "address_int": 5898928,
+    "name": "sub_005A02B0",
+    "num_instructions": 231
   },
   {
     "address": "0x005A0580",
     "address_int": 5899648,
     "name": "sub_005A0580",
-    "num_instructions": 252
+    "num_instructions": 63
+  },
+  {
+    "address": "0x005A0650",
+    "address_int": 5899856,
+    "name": "sub_005A0650",
+    "num_instructions": 160
+  },
+  {
+    "address": "0x005A0850",
+    "address_int": 5900368,
+    "name": "sub_005A0850",
+    "num_instructions": 63
   },
   {
     "address": "0x005A0910",
@@ -32475,7 +34311,13 @@
     "address": "0x005A0E00",
     "address_int": 5901824,
     "name": "sub_005A0E00",
-    "num_instructions": 1785
+    "num_instructions": 862
+  },
+  {
+    "address": "0x005A1810",
+    "address_int": 5904400,
+    "name": "sub_005A1810",
+    "num_instructions": 929
   },
   {
     "address": "0x005A25F0",
@@ -32568,6 +34410,24 @@
     "num_instructions": 198
   },
   {
+    "address": "0x005A5F00",
+    "address_int": 5922560,
+    "name": "sub_005A5F00",
+    "num_instructions": 12
+  },
+  {
+    "address": "0x005A5F30",
+    "address_int": 5922608,
+    "name": "sub_005A5F30",
+    "num_instructions": 12
+  },
+  {
+    "address": "0x005A5F60",
+    "address_int": 5922656,
+    "name": "sub_005A5F60",
+    "num_instructions": 12
+  },
+  {
     "address": "0x005A5F90",
     "address_int": 5922704,
     "name": "sub_005A5F90",
@@ -32602,6 +34462,12 @@
     "address_int": 5930832,
     "name": "sub_005A7F50",
     "num_instructions": 156
+  },
+  {
+    "address": "0x005A8130",
+    "address_int": 5931312,
+    "name": "sub_005A8130",
+    "num_instructions": 15
   },
   {
     "address": "0x005A8160",
@@ -33021,7 +34887,13 @@
     "address": "0x005A9D10",
     "address_int": 5938448,
     "name": "sub_005A9D10",
-    "num_instructions": 116
+    "num_instructions": 10
+  },
+  {
+    "address": "0x005A9D30",
+    "address_int": 5938480,
+    "name": "sub_005A9D30",
+    "num_instructions": 123
   },
   {
     "address": "0x005A9EA0",
@@ -33087,7 +34959,13 @@
     "address": "0x005ABA20",
     "address_int": 5945888,
     "name": "sub_005ABA20",
-    "num_instructions": 18
+    "num_instructions": 12
+  },
+  {
+    "address": "0x005ABA40",
+    "address_int": 5945920,
+    "name": "sub_005ABA40",
+    "num_instructions": 8
   },
   {
     "address": "0x005ABA50",
@@ -33219,7 +35097,13 @@
     "address": "0x005AC3A0",
     "address_int": 5948320,
     "name": "sub_005AC3A0",
-    "num_instructions": 125
+    "num_instructions": 60
+  },
+  {
+    "address": "0x005AC460",
+    "address_int": 5948512,
+    "name": "sub_005AC460",
+    "num_instructions": 82
   },
   {
     "address": "0x005AC560",
@@ -33312,6 +35196,12 @@
     "num_instructions": 24
   },
   {
+    "address": "0x005AD320",
+    "address_int": 5952288,
+    "name": "sub_005AD320",
+    "num_instructions": 3
+  },
+  {
     "address": "0x005AD330",
     "address_int": 5952304,
     "name": "sub_005AD330",
@@ -33346,6 +35236,18 @@
     "address_int": 5952736,
     "name": "sub_005AD4E0",
     "num_instructions": 41
+  },
+  {
+    "address": "0x005AD5C0",
+    "address_int": 5952960,
+    "name": "sub_005AD5C0",
+    "num_instructions": 12
+  },
+  {
+    "address": "0x005AD5F0",
+    "address_int": 5953008,
+    "name": "sub_005AD5F0",
+    "num_instructions": 5
   },
   {
     "address": "0x005AD610",
@@ -33573,7 +35475,13 @@
     "address": "0x005B1F00",
     "address_int": 5971712,
     "name": "sub_005B1F00",
-    "num_instructions": 37
+    "num_instructions": 11
+  },
+  {
+    "address": "0x005B1F40",
+    "address_int": 5971776,
+    "name": "sub_005B1F40",
+    "num_instructions": 32
   },
   {
     "address": "0x005B1FA0",
@@ -33585,7 +35493,13 @@
     "address": "0x005B1FB0",
     "address_int": 5971888,
     "name": "sub_005B1FB0",
-    "num_instructions": 18
+    "num_instructions": 12
+  },
+  {
+    "address": "0x005B1FD0",
+    "address_int": 5971920,
+    "name": "sub_005B1FD0",
+    "num_instructions": 8
   },
   {
     "address": "0x005B1FE0",
@@ -33603,7 +35517,13 @@
     "address": "0x005B2000",
     "address_int": 5971968,
     "name": "sub_005B2000",
-    "num_instructions": 10
+    "num_instructions": 4
+  },
+  {
+    "address": "0x005B2010",
+    "address_int": 5971984,
+    "name": "sub_005B2010",
+    "num_instructions": 8
   },
   {
     "address": "0x005B2020",
@@ -33699,7 +35619,13 @@
     "address": "0x005B2820",
     "address_int": 5974048,
     "name": "sub_005B2820",
-    "num_instructions": 642
+    "num_instructions": 558
+  },
+  {
+    "address": "0x005B2F80",
+    "address_int": 5975936,
+    "name": "sub_005B2F80",
+    "num_instructions": 100
   },
   {
     "address": "0x005B30C0",
@@ -33789,7 +35715,13 @@
     "address": "0x005B33D0",
     "address_int": 5977040,
     "name": "sub_005B33D0",
-    "num_instructions": 18
+    "num_instructions": 12
+  },
+  {
+    "address": "0x005B33F0",
+    "address_int": 5977072,
+    "name": "sub_005B33F0",
+    "num_instructions": 8
   },
   {
     "address": "0x005B3400",
@@ -33807,7 +35739,13 @@
     "address": "0x005B3420",
     "address_int": 5977120,
     "name": "sub_005B3420",
-    "num_instructions": 12
+    "num_instructions": 4
+  },
+  {
+    "address": "0x005B3430",
+    "address_int": 5977136,
+    "name": "sub_005B3430",
+    "num_instructions": 10
   },
   {
     "address": "0x005B3450",
@@ -33855,7 +35793,13 @@
     "address": "0x005B3670",
     "address_int": 5977712,
     "name": "sub_005B3670",
-    "num_instructions": 56
+    "num_instructions": 15
+  },
+  {
+    "address": "0x005B36A0",
+    "address_int": 5977760,
+    "name": "sub_005B36A0",
+    "num_instructions": 50
   },
   {
     "address": "0x005B3740",
@@ -33984,6 +35928,12 @@
     "num_instructions": 12
   },
   {
+    "address": "0x005B4240",
+    "address_int": 5980736,
+    "name": "sub_005B4240",
+    "num_instructions": 4
+  },
+  {
     "address": "0x005B4250",
     "address_int": 5980752,
     "name": "sub_005B4250",
@@ -33993,7 +35943,13 @@
     "address": "0x005B4280",
     "address_int": 5980800,
     "name": "sub_005B4280",
-    "num_instructions": 136
+    "num_instructions": 53
+  },
+  {
+    "address": "0x005B4300",
+    "address_int": 5980928,
+    "name": "sub_005B4300",
+    "num_instructions": 92
   },
   {
     "address": "0x005B4400",
@@ -34023,7 +35979,13 @@
     "address": "0x005B4610",
     "address_int": 5981712,
     "name": "sub_005B4610",
-    "num_instructions": 37
+    "num_instructions": 11
+  },
+  {
+    "address": "0x005B4650",
+    "address_int": 5981776,
+    "name": "sub_005B4650",
+    "num_instructions": 32
   },
   {
     "address": "0x005B46B0",
@@ -34203,7 +36165,13 @@
     "address": "0x005B5180",
     "address_int": 5984640,
     "name": "sub_005B5180",
-    "num_instructions": 33
+    "num_instructions": 24
+  },
+  {
+    "address": "0x005B51D0",
+    "address_int": 5984720,
+    "name": "sub_005B51D0",
+    "num_instructions": 19
   },
   {
     "address": "0x005B5210",
@@ -34821,7 +36789,13 @@
     "address": "0x005BD5A0",
     "address_int": 6018464,
     "name": "sub_005BD5A0",
-    "num_instructions": 17
+    "num_instructions": 12
+  },
+  {
+    "address": "0x005BD5C0",
+    "address_int": 6018496,
+    "name": "sub_005BD5C0",
+    "num_instructions": 9
   },
   {
     "address": "0x005BD5E0",
@@ -34839,7 +36813,13 @@
     "address": "0x005BD6A0",
     "address_int": 6018720,
     "name": "sub_005BD6A0",
-    "num_instructions": 12
+    "num_instructions": 10
+  },
+  {
+    "address": "0x005BD6C0",
+    "address_int": 6018752,
+    "name": "sub_005BD6C0",
+    "num_instructions": 8
   },
   {
     "address": "0x005BD6E0",
@@ -35460,6 +37440,12 @@
     "num_instructions": 191
   },
   {
+    "address": "0x005C0A10",
+    "address_int": 6031888,
+    "name": "sub_005C0A10",
+    "num_instructions": 15
+  },
+  {
     "address": "0x005C0A40",
     "address_int": 6031936,
     "name": "sub_005C0A40",
@@ -35814,6 +37800,12 @@
     "num_instructions": 11
   },
   {
+    "address": "0x005C3F80",
+    "address_int": 6045568,
+    "name": "sub_005C3F80",
+    "num_instructions": 3
+  },
+  {
     "address": "0x005C3F90",
     "address_int": 6045584,
     "name": "sub_005C3F90",
@@ -35920,6 +37912,18 @@
     "address_int": 6049088,
     "name": "sub_005C4D40",
     "num_instructions": 5
+  },
+  {
+    "address": "0x005C4D60",
+    "address_int": 6049120,
+    "name": "sub_005C4D60",
+    "num_instructions": 10
+  },
+  {
+    "address": "0x005C4D80",
+    "address_int": 6049152,
+    "name": "sub_005C4D80",
+    "num_instructions": 2
   },
   {
     "address": "0x005C4D90",
@@ -36432,6 +38436,12 @@
     "num_instructions": 11
   },
   {
+    "address": "0x005C8C50",
+    "address_int": 6065232,
+    "name": "sub_005C8C50",
+    "num_instructions": 10
+  },
+  {
     "address": "0x005C8C70",
     "address_int": 6065264,
     "name": "sub_005C8C70",
@@ -36555,7 +38565,13 @@
     "address": "0x005CA1C0",
     "address_int": 6070720,
     "name": "sub_005CA1C0",
-    "num_instructions": 18
+    "num_instructions": 12
+  },
+  {
+    "address": "0x005CA1E0",
+    "address_int": 6070752,
+    "name": "sub_005CA1E0",
+    "num_instructions": 8
   },
   {
     "address": "0x005CA1F0",
@@ -36657,7 +38673,13 @@
     "address": "0x005CA640",
     "address_int": 6071872,
     "name": "sub_005CA640",
-    "num_instructions": 18
+    "num_instructions": 12
+  },
+  {
+    "address": "0x005CA660",
+    "address_int": 6071904,
+    "name": "sub_005CA660",
+    "num_instructions": 8
   },
   {
     "address": "0x005CA670",
@@ -36813,7 +38835,19 @@
     "address": "0x005CBA20",
     "address_int": 6076960,
     "name": "sub_005CBA20",
-    "num_instructions": 30
+    "num_instructions": 12
+  },
+  {
+    "address": "0x005CBA40",
+    "address_int": 6076992,
+    "name": "sub_005CBA40",
+    "num_instructions": 8
+  },
+  {
+    "address": "0x005CBA50",
+    "address_int": 6077008,
+    "name": "sub_005CBA50",
+    "num_instructions": 12
   },
   {
     "address": "0x005CBA70",
@@ -37269,7 +39303,13 @@
     "address": "0x005CDEB0",
     "address_int": 6086320,
     "name": "sub_005CDEB0",
-    "num_instructions": 47
+    "num_instructions": 29
+  },
+  {
+    "address": "0x005CDEF0",
+    "address_int": 6086384,
+    "name": "sub_005CDEF0",
+    "num_instructions": 18
   },
   {
     "address": "0x005CDF40",
@@ -37377,6 +39417,12 @@
     "address": "0x005CE610",
     "address_int": 6088208,
     "name": "sub_005CE610",
+    "num_instructions": 11
+  },
+  {
+    "address": "0x005CE640",
+    "address_int": 6088256,
+    "name": "sub_005CE640",
     "num_instructions": 62
   },
   {
@@ -37498,6 +39544,12 @@
     "address_int": 6092752,
     "name": "sub_005CF7D0",
     "num_instructions": 9
+  },
+  {
+    "address": "0x005CF800",
+    "address_int": 6092800,
+    "name": "sub_005CF800",
+    "num_instructions": 11
   },
   {
     "address": "0x005CF830",
@@ -37647,7 +39699,13 @@
     "address": "0x005D03B0",
     "address_int": 6095792,
     "name": "sub_005D03B0",
-    "num_instructions": 71
+    "num_instructions": 19
+  },
+  {
+    "address": "0x005D0410",
+    "address_int": 6095888,
+    "name": "sub_005D0410",
+    "num_instructions": 55
   },
   {
     "address": "0x005D04F0",
@@ -37683,7 +39741,13 @@
     "address": "0x005D08B0",
     "address_int": 6097072,
     "name": "sub_005D08B0",
-    "num_instructions": 95
+    "num_instructions": 65
+  },
+  {
+    "address": "0x005D09C0",
+    "address_int": 6097344,
+    "name": "sub_005D09C0",
+    "num_instructions": 37
   },
   {
     "address": "0x005D0AD0",
@@ -37737,7 +39801,13 @@
     "address": "0x005D0CE0",
     "address_int": 6098144,
     "name": "sub_005D0CE0",
-    "num_instructions": 98
+    "num_instructions": 40
+  },
+  {
+    "address": "0x005D0DA0",
+    "address_int": 6098336,
+    "name": "sub_005D0DA0",
+    "num_instructions": 63
   },
   {
     "address": "0x005D0EA0",
@@ -37870,6 +39940,12 @@
     "address_int": 6105416,
     "name": "sub_005D2948",
     "num_instructions": 25
+  },
+  {
+    "address": "0x005D2AC0",
+    "address_int": 6105792,
+    "name": "sub_005D2AC0",
+    "num_instructions": 21
   },
   {
     "address": "0x005D2B00",
@@ -38175,7 +40251,121 @@
     "address": "0x005D9D50",
     "address_int": 6135120,
     "name": "sub_005D9D50",
-    "num_instructions": 594
+    "num_instructions": 569
+  },
+  {
+    "address": "0x005DA4F0",
+    "address_int": 6137072,
+    "name": "sub_005DA4F0",
+    "num_instructions": 5
+  },
+  {
+    "address": "0x005DA500",
+    "address_int": 6137088,
+    "name": "sub_005DA500",
+    "num_instructions": 13
+  },
+  {
+    "address": "0x005DA540",
+    "address_int": 6137152,
+    "name": "sub_005DA540",
+    "num_instructions": 5
+  },
+  {
+    "address": "0x005DA550",
+    "address_int": 6137168,
+    "name": "sub_005DA550",
+    "num_instructions": 13
+  },
+  {
+    "address": "0x005DA590",
+    "address_int": 6137232,
+    "name": "sub_005DA590",
+    "num_instructions": 5
+  },
+  {
+    "address": "0x005DA5A0",
+    "address_int": 6137248,
+    "name": "sub_005DA5A0",
+    "num_instructions": 13
+  },
+  {
+    "address": "0x005DA5E0",
+    "address_int": 6137312,
+    "name": "sub_005DA5E0",
+    "num_instructions": 5
+  },
+  {
+    "address": "0x005DA5F0",
+    "address_int": 6137328,
+    "name": "sub_005DA5F0",
+    "num_instructions": 13
+  },
+  {
+    "address": "0x005DA630",
+    "address_int": 6137392,
+    "name": "sub_005DA630",
+    "num_instructions": 5
+  },
+  {
+    "address": "0x005DA640",
+    "address_int": 6137408,
+    "name": "sub_005DA640",
+    "num_instructions": 13
+  },
+  {
+    "address": "0x005DA680",
+    "address_int": 6137472,
+    "name": "sub_005DA680",
+    "num_instructions": 5
+  },
+  {
+    "address": "0x005DA690",
+    "address_int": 6137488,
+    "name": "sub_005DA690",
+    "num_instructions": 6
+  },
+  {
+    "address": "0x005DA6B0",
+    "address_int": 6137520,
+    "name": "sub_005DA6B0",
+    "num_instructions": 2
+  },
+  {
+    "address": "0x005DA6C0",
+    "address_int": 6137536,
+    "name": "sub_005DA6C0",
+    "num_instructions": 5
+  },
+  {
+    "address": "0x005DA6D0",
+    "address_int": 6137552,
+    "name": "sub_005DA6D0",
+    "num_instructions": 5
+  },
+  {
+    "address": "0x005DA6E0",
+    "address_int": 6137568,
+    "name": "sub_005DA6E0",
+    "num_instructions": 2
+  },
+  {
+    "address": "0x005DA6F0",
+    "address_int": 6137584,
+    "name": "sub_005DA6F0",
+    "num_instructions": 5
+  },
+  {
+    "address": "0x005DA700",
+    "address_int": 6137600,
+    "name": "sub_005DA700",
+    "num_instructions": 2
+  },
+  {
+    "address": "0x005DA710",
+    "address_int": 6137616,
+    "name": "sub_005DA710",
+    "num_instructions": 5
   },
   {
     "address": "0x005DA720",
@@ -38235,7 +40425,13 @@
     "address": "0x005DB770",
     "address_int": 6141808,
     "name": "sub_005DB770",
-    "num_instructions": 122
+    "num_instructions": 107
+  },
+  {
+    "address": "0x005DB850",
+    "address_int": 6142032,
+    "name": "sub_005DB850",
+    "num_instructions": 20
   },
   {
     "address": "0x005DB890",
@@ -38391,7 +40587,13 @@
     "address": "0x005DD950",
     "address_int": 6150480,
     "name": "sub_005DD950",
-    "num_instructions": 51
+    "num_instructions": 4
+  },
+  {
+    "address": "0x005DD970",
+    "address_int": 6150512,
+    "name": "sub_005DD970",
+    "num_instructions": 52
   },
   {
     "address": "0x005DDA10",
@@ -42012,6 +44214,132 @@
     "num_instructions": 1
   },
   {
+    "address": "0x005FC628",
+    "address_int": 6276648,
+    "name": "sub_005FC628",
+    "num_instructions": 2
+  },
+  {
+    "address": "0x005FC658",
+    "address_int": 6276696,
+    "name": "sub_005FC658",
+    "num_instructions": 2
+  },
+  {
+    "address": "0x005FC744",
+    "address_int": 6276932,
+    "name": "sub_005FC744",
+    "num_instructions": 21
+  },
+  {
+    "address": "0x005FC795",
+    "address_int": 6277013,
+    "name": "sub_005FC795",
+    "num_instructions": 15
+  },
+  {
+    "address": "0x005FC7C8",
+    "address_int": 6277064,
+    "name": "sub_005FC7C8",
+    "num_instructions": 15
+  },
+  {
+    "address": "0x005FC817",
+    "address_int": 6277143,
+    "name": "sub_005FC817",
+    "num_instructions": 15
+  },
+  {
+    "address": "0x005FC84A",
+    "address_int": 6277194,
+    "name": "sub_005FC84A",
+    "num_instructions": 6
+  },
+  {
+    "address": "0x005FC8C1",
+    "address_int": 6277313,
+    "name": "sub_005FC8C1",
+    "num_instructions": 2
+  },
+  {
+    "address": "0x005FC8E1",
+    "address_int": 6277345,
+    "name": "sub_005FC8E1",
+    "num_instructions": 2
+  },
+  {
+    "address": "0x005FC9E7",
+    "address_int": 6277607,
+    "name": "sub_005FC9E7",
+    "num_instructions": 31
+  },
+  {
+    "address": "0x005FCA69",
+    "address_int": 6277737,
+    "name": "sub_005FCA69",
+    "num_instructions": 7
+  },
+  {
+    "address": "0x005FCA7E",
+    "address_int": 6277758,
+    "name": "sub_005FCA7E",
+    "num_instructions": 2
+  },
+  {
+    "address": "0x005FD08E",
+    "address_int": 6279310,
+    "name": "sub_005FD08E",
+    "num_instructions": 5
+  },
+  {
+    "address": "0x005FD104",
+    "address_int": 6279428,
+    "name": "sub_005FD104",
+    "num_instructions": 7
+  },
+  {
+    "address": "0x005FD119",
+    "address_int": 6279449,
+    "name": "sub_005FD119",
+    "num_instructions": 2
+  },
+  {
+    "address": "0x005FD215",
+    "address_int": 6279701,
+    "name": "sub_005FD215",
+    "num_instructions": 14
+  },
+  {
+    "address": "0x005FD247",
+    "address_int": 6279751,
+    "name": "sub_005FD247",
+    "num_instructions": 14
+  },
+  {
+    "address": "0x005FD284",
+    "address_int": 6279812,
+    "name": "sub_005FD284",
+    "num_instructions": 12
+  },
+  {
+    "address": "0x005FDAEB",
+    "address_int": 6281963,
+    "name": "sub_005FDAEB",
+    "num_instructions": 7
+  },
+  {
+    "address": "0x005FDB00",
+    "address_int": 6281984,
+    "name": "sub_005FDB00",
+    "num_instructions": 162
+  },
+  {
+    "address": "0x005FDE21",
+    "address_int": 6282785,
+    "name": "sub_005FDE21",
+    "num_instructions": 2
+  },
+  {
     "address": "0x005FDF40",
     "address_int": 6283072,
     "name": "sub_005FDF40",
@@ -42024,9 +44352,555 @@
     "num_instructions": 3
   },
   {
+    "address": "0x005FE140",
+    "address_int": 6283584,
+    "name": "sub_005FE140",
+    "num_instructions": 2
+  },
+  {
+    "address": "0x005FE15A",
+    "address_int": 6283610,
+    "name": "sub_005FE15A",
+    "num_instructions": 14
+  },
+  {
+    "address": "0x005FE221",
+    "address_int": 6283809,
+    "name": "sub_005FE221",
+    "num_instructions": 2
+  },
+  {
+    "address": "0x005FE451",
+    "address_int": 6284369,
+    "name": "sub_005FE451",
+    "num_instructions": 2
+  },
+  {
+    "address": "0x005FE4D1",
+    "address_int": 6284497,
+    "name": "sub_005FE4D1",
+    "num_instructions": 2
+  },
+  {
+    "address": "0x005FE539",
+    "address_int": 6284601,
+    "name": "sub_005FE539",
+    "num_instructions": 2
+  },
+  {
+    "address": "0x005FE6DD",
+    "address_int": 6285021,
+    "name": "sub_005FE6DD",
+    "num_instructions": 10
+  },
+  {
+    "address": "0x005FE721",
+    "address_int": 6285089,
+    "name": "sub_005FE721",
+    "num_instructions": 2
+  },
+  {
+    "address": "0x005FE756",
+    "address_int": 6285142,
+    "name": "sub_005FE756",
+    "num_instructions": 36
+  },
+  {
+    "address": "0x005FE811",
+    "address_int": 6285329,
+    "name": "sub_005FE811",
+    "num_instructions": 2
+  },
+  {
+    "address": "0x005FE842",
+    "address_int": 6285378,
+    "name": "sub_005FE842",
+    "num_instructions": 2
+  },
+  {
+    "address": "0x005FE87B",
+    "address_int": 6285435,
+    "name": "sub_005FE87B",
+    "num_instructions": 2
+  },
+  {
+    "address": "0x005FE8C4",
+    "address_int": 6285508,
+    "name": "sub_005FE8C4",
+    "num_instructions": 51
+  },
+  {
+    "address": "0x005FE98E",
+    "address_int": 6285710,
+    "name": "sub_005FE98E",
+    "num_instructions": 2
+  },
+  {
+    "address": "0x005FEA1B",
+    "address_int": 6285851,
+    "name": "sub_005FEA1B",
+    "num_instructions": 2
+  },
+  {
+    "address": "0x005FEA3B",
+    "address_int": 6285883,
+    "name": "sub_005FEA3B",
+    "num_instructions": 2
+  },
+  {
+    "address": "0x005FEA71",
+    "address_int": 6285937,
+    "name": "sub_005FEA71",
+    "num_instructions": 7
+  },
+  {
+    "address": "0x005FEA86",
+    "address_int": 6285958,
+    "name": "sub_005FEA86",
+    "num_instructions": 9
+  },
+  {
+    "address": "0x005FEAA3",
+    "address_int": 6285987,
+    "name": "sub_005FEAA3",
+    "num_instructions": 13
+  },
+  {
+    "address": "0x005FEAD2",
+    "address_int": 6286034,
+    "name": "sub_005FEAD2",
+    "num_instructions": 14
+  },
+  {
+    "address": "0x005FEB80",
+    "address_int": 6286208,
+    "name": "sub_005FEB80",
+    "num_instructions": 2
+  },
+  {
+    "address": "0x005FEC5C",
+    "address_int": 6286428,
+    "name": "sub_005FEC5C",
+    "num_instructions": 12
+  },
+  {
+    "address": "0x005FECA2",
+    "address_int": 6286498,
+    "name": "sub_005FECA2",
+    "num_instructions": 2
+  },
+  {
+    "address": "0x005FECBB",
+    "address_int": 6286523,
+    "name": "sub_005FECBB",
+    "num_instructions": 2
+  },
+  {
+    "address": "0x005FEE33",
+    "address_int": 6286899,
+    "name": "sub_005FEE33",
+    "num_instructions": 6
+  },
+  {
+    "address": "0x005FF071",
+    "address_int": 6287473,
+    "name": "sub_005FF071",
+    "num_instructions": 2
+  },
+  {
+    "address": "0x005FF08B",
+    "address_int": 6287499,
+    "name": "sub_005FF08B",
+    "num_instructions": 10
+  },
+  {
+    "address": "0x005FF1EB",
+    "address_int": 6287851,
+    "name": "sub_005FF1EB",
+    "num_instructions": 2
+  },
+  {
+    "address": "0x005FF3B0",
+    "address_int": 6288304,
+    "name": "sub_005FF3B0",
+    "num_instructions": 38
+  },
+  {
+    "address": "0x005FF49F",
+    "address_int": 6288543,
+    "name": "sub_005FF49F",
+    "num_instructions": 8
+  },
+  {
+    "address": "0x005FF4DB",
+    "address_int": 6288603,
+    "name": "sub_005FF4DB",
+    "num_instructions": 2
+  },
+  {
+    "address": "0x005FF5B7",
+    "address_int": 6288823,
+    "name": "sub_005FF5B7",
+    "num_instructions": 7
+  },
+  {
+    "address": "0x005FF5CC",
+    "address_int": 6288844,
+    "name": "sub_005FF5CC",
+    "num_instructions": 68
+  },
+  {
+    "address": "0x005FF6E4",
+    "address_int": 6289124,
+    "name": "sub_005FF6E4",
+    "num_instructions": 16
+  },
+  {
+    "address": "0x005FF7E1",
+    "address_int": 6289377,
+    "name": "sub_005FF7E1",
+    "num_instructions": 2
+  },
+  {
+    "address": "0x005FF876",
+    "address_int": 6289526,
+    "name": "sub_005FF876",
+    "num_instructions": 206
+  },
+  {
+    "address": "0x005FFC33",
+    "address_int": 6290483,
+    "name": "sub_005FFC33",
+    "num_instructions": 17
+  },
+  {
+    "address": "0x005FFCB1",
+    "address_int": 6290609,
+    "name": "sub_005FFCB1",
+    "num_instructions": 2
+  },
+  {
+    "address": "0x005FFCD1",
+    "address_int": 6290641,
+    "name": "sub_005FFCD1",
+    "num_instructions": 2
+  },
+  {
+    "address": "0x005FFD21",
+    "address_int": 6290721,
+    "name": "sub_005FFD21",
+    "num_instructions": 2
+  },
+  {
+    "address": "0x005FFE16",
+    "address_int": 6290966,
+    "name": "sub_005FFE16",
+    "num_instructions": 6
+  },
+  {
+    "address": "0x00600093",
+    "address_int": 6291603,
+    "name": "sub_00600093",
+    "num_instructions": 65
+  },
+  {
     "address": "0x006001CE",
     "address_int": 6291918,
     "name": "sub_006001CE",
     "num_instructions": 1
+  },
+  {
+    "address": "0x006002ED",
+    "address_int": 6292205,
+    "name": "sub_006002ED",
+    "num_instructions": 7
+  },
+  {
+    "address": "0x00600302",
+    "address_int": 6292226,
+    "name": "sub_00600302",
+    "num_instructions": 10
+  },
+  {
+    "address": "0x006003ED",
+    "address_int": 6292461,
+    "name": "sub_006003ED",
+    "num_instructions": 48
+  },
+  {
+    "address": "0x006004BE",
+    "address_int": 6292670,
+    "name": "sub_006004BE",
+    "num_instructions": 2
+  },
+  {
+    "address": "0x0060053B",
+    "address_int": 6292795,
+    "name": "sub_0060053B",
+    "num_instructions": 27
+  },
+  {
+    "address": "0x006005AA",
+    "address_int": 6292906,
+    "name": "sub_006005AA",
+    "num_instructions": 2
+  },
+  {
+    "address": "0x006005D6",
+    "address_int": 6292950,
+    "name": "sub_006005D6",
+    "num_instructions": 12
+  },
+  {
+    "address": "0x00600737",
+    "address_int": 6293303,
+    "name": "sub_00600737",
+    "num_instructions": 2
+  },
+  {
+    "address": "0x006007C2",
+    "address_int": 6293442,
+    "name": "sub_006007C2",
+    "num_instructions": 2
+  },
+  {
+    "address": "0x00600851",
+    "address_int": 6293585,
+    "name": "sub_00600851",
+    "num_instructions": 2
+  },
+  {
+    "address": "0x0060096D",
+    "address_int": 6293869,
+    "name": "sub_0060096D",
+    "num_instructions": 46
+  },
+  {
+    "address": "0x00600A37",
+    "address_int": 6294071,
+    "name": "sub_00600A37",
+    "num_instructions": 14
+  },
+  {
+    "address": "0x00600A69",
+    "address_int": 6294121,
+    "name": "sub_00600A69",
+    "num_instructions": 2
+  },
+  {
+    "address": "0x00600B6F",
+    "address_int": 6294383,
+    "name": "sub_00600B6F",
+    "num_instructions": 7
+  },
+  {
+    "address": "0x00600B84",
+    "address_int": 6294404,
+    "name": "sub_00600B84",
+    "num_instructions": 2
+  },
+  {
+    "address": "0x00600BD1",
+    "address_int": 6294481,
+    "name": "sub_00600BD1",
+    "num_instructions": 2
+  },
+  {
+    "address": "0x00600C6F",
+    "address_int": 6294639,
+    "name": "sub_00600C6F",
+    "num_instructions": 2
+  },
+  {
+    "address": "0x00601071",
+    "address_int": 6295665,
+    "name": "sub_00601071",
+    "num_instructions": 2
+  },
+  {
+    "address": "0x006010D6",
+    "address_int": 6295766,
+    "name": "sub_006010D6",
+    "num_instructions": 17
+  },
+  {
+    "address": "0x0060111A",
+    "address_int": 6295834,
+    "name": "sub_0060111A",
+    "num_instructions": 7
+  },
+  {
+    "address": "0x0060113A",
+    "address_int": 6295866,
+    "name": "sub_0060113A",
+    "num_instructions": 7
+  },
+  {
+    "address": "0x0060114F",
+    "address_int": 6295887,
+    "name": "sub_0060114F",
+    "num_instructions": 6
+  },
+  {
+    "address": "0x00601206",
+    "address_int": 6296070,
+    "name": "sub_00601206",
+    "num_instructions": 6
+  },
+  {
+    "address": "0x0060123B",
+    "address_int": 6296123,
+    "name": "sub_0060123B",
+    "num_instructions": 59
+  },
+  {
+    "address": "0x006013AB",
+    "address_int": 6296491,
+    "name": "sub_006013AB",
+    "num_instructions": 2
+  },
+  {
+    "address": "0x006015AB",
+    "address_int": 6297003,
+    "name": "sub_006015AB",
+    "num_instructions": 2
+  },
+  {
+    "address": "0x0060160B",
+    "address_int": 6297099,
+    "name": "sub_0060160B",
+    "num_instructions": 2
+  },
+  {
+    "address": "0x0060162B",
+    "address_int": 6297131,
+    "name": "sub_0060162B",
+    "num_instructions": 2
+  },
+  {
+    "address": "0x0060168B",
+    "address_int": 6297227,
+    "name": "sub_0060168B",
+    "num_instructions": 2
+  },
+  {
+    "address": "0x006016AB",
+    "address_int": 6297259,
+    "name": "sub_006016AB",
+    "num_instructions": 2
+  },
+  {
+    "address": "0x00601AFB",
+    "address_int": 6298363,
+    "name": "sub_00601AFB",
+    "num_instructions": 2
+  },
+  {
+    "address": "0x00601B3B",
+    "address_int": 6298427,
+    "name": "sub_00601B3B",
+    "num_instructions": 2
+  },
+  {
+    "address": "0x00601BA3",
+    "address_int": 6298531,
+    "name": "sub_00601BA3",
+    "num_instructions": 2
+  },
+  {
+    "address": "0x00601BC6",
+    "address_int": 6298566,
+    "name": "sub_00601BC6",
+    "num_instructions": 6
+  },
+  {
+    "address": "0x00601BFB",
+    "address_int": 6298619,
+    "name": "sub_00601BFB",
+    "num_instructions": 2
+  },
+  {
+    "address": "0x00601C1B",
+    "address_int": 6298651,
+    "name": "sub_00601C1B",
+    "num_instructions": 2
+  },
+  {
+    "address": "0x00601C3B",
+    "address_int": 6298683,
+    "name": "sub_00601C3B",
+    "num_instructions": 2
+  },
+  {
+    "address": "0x00601C5B",
+    "address_int": 6298715,
+    "name": "sub_00601C5B",
+    "num_instructions": 2
+  },
+  {
+    "address": "0x00601C9B",
+    "address_int": 6298779,
+    "name": "sub_00601C9B",
+    "num_instructions": 2
+  },
+  {
+    "address": "0x00601CDC",
+    "address_int": 6298844,
+    "name": "sub_00601CDC",
+    "num_instructions": 2
+  },
+  {
+    "address": "0x00601D4A",
+    "address_int": 6298954,
+    "name": "sub_00601D4A",
+    "num_instructions": 2
+  },
+  {
+    "address": "0x00601E41",
+    "address_int": 6299201,
+    "name": "sub_00601E41",
+    "num_instructions": 2
+  },
+  {
+    "address": "0x00601F7B",
+    "address_int": 6299515,
+    "name": "sub_00601F7B",
+    "num_instructions": 2
+  },
+  {
+    "address": "0x00601FF1",
+    "address_int": 6299633,
+    "name": "sub_00601FF1",
+    "num_instructions": 2
+  },
+  {
+    "address": "0x00602061",
+    "address_int": 6299745,
+    "name": "sub_00602061",
+    "num_instructions": 2
+  },
+  {
+    "address": "0x00602141",
+    "address_int": 6299969,
+    "name": "sub_00602141",
+    "num_instructions": 2
+  },
+  {
+    "address": "0x00602231",
+    "address_int": 6300209,
+    "name": "sub_00602231",
+    "num_instructions": 2
+  },
+  {
+    "address": "0x006022C1",
+    "address_int": 6300353,
+    "name": "sub_006022C1",
+    "num_instructions": 2
+  },
+  {
+    "address": "0x0060249B",
+    "address_int": 6300827,
+    "name": "sub_0060249B",
+    "num_instructions": 14
   }
 ]

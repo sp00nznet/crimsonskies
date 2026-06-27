@@ -617,26 +617,10 @@ static void manual_00410560(void) {
     MEM32(g_eax + 0x30) = 0;
 }
 
-/* 0x00410D90: thiscall constructor — calls sub_005F6F5A (array init), sets fields */
-static void manual_00410D90(void) {
-    uint32_t saved_esi = g_esi;
-    g_esi = g_ecx;
-    PUSH32(g_esp, g_esi);
-    PUSH32(g_esp, 0x10u);
-    PUSH32(g_esp, 0x64u);
-    PUSH32(g_esp, 0x00411010u);
-    PUSH32(g_esp, 0x00411140u);
-    PUSH32(g_esp, 0xDEAD0000u);
-    {
-        recomp_func_t fn = recomp_lookup(0x005F6F5A);
-        if (fn) fn();
-    }
-    MEM32(g_esi + 0x648) = 0;
-    MEM32(g_esi + 0x640) = 0;
-    MEM32(g_esi + 0x644) = 0x64;
-    g_eax = g_esi;
-    g_esi = saved_esi;
-}
+/* 0x00410D90 was a hand-written override here, but its push order was reversed
+ * (constructor pointer slot got 0x10 -> ICALL VA 0x10). It is now a regular
+ * auto-generated entry (config/manual_functions.json), along with the element
+ * ctors 0x411010 / 0x411140 it passes by pointer to sub_005F6F5A. */
 
 /* 0x004DE740: thiscall constructor — alloc node, init linked list */
 static void manual_004DE740(void) {
@@ -668,11 +652,10 @@ static recomp_dispatch_entry_t g_manual_overrides[] = {
     { 0x00411C90u, manual_00411C90 },
     { 0x0045E280u, manual_0045E280 },
     { 0x00410560u, manual_00410560 },
-    { 0x00410D90u, manual_00410D90 },
     { 0x004DE740u, manual_004DE740 },
     { 0, NULL }  /* sentinel */
 };
-static const int g_manual_override_count = 7;
+static const int g_manual_override_count = 6;
 
 recomp_func_t recomp_lookup_manual(uint32_t va) {
     for (int i = 0; i < g_manual_override_count; i++) {

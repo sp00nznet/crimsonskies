@@ -84,7 +84,23 @@ def find_entries(code_data, code_start, code_end):
         if i > 0 and code_data[i-1] in (0xCC, 0x90, 0xC3):
             if code_data[i] == 0x83 and code_data[i+1] == 0xEC:
                 prologues.add(code_start + i)
-    return sorted(call_targets | prologues)
+
+    # Function pointers passed as immediates: `push imm32` where imm32 is a
+    # .text address (constructor/callback pointers handed to iterators like the
+    # MSVC array-construct helper). These are never `call`ed directly, so the
+    # call-graph + prologue scans miss them — the same blind spot as vtables.
+    # Guard against mid-function false positives by requiring the target to be
+    # preceded by a function terminator / alignment padding.
+    TERMINATORS = (0xC3, 0xC2, 0xCB, 0xCC, 0x90, 0xE9)
+    push_imm_targets = set()
+    for i in range(len(code_data) - 5):
+        if code_data[i] == 0x68:  # push imm32
+            target = struct.unpack_from('<I', code_data, i + 1)[0]
+            if code_start <= target < code_end:
+                off = target - code_start
+                if 0 < off < len(code_data) and code_data[off - 1] in TERMINATORS:
+                    push_imm_targets.add(target)
+    return sorted(call_targets | prologues | push_imm_targets)
 
 
 def linear_disassemble_function(md, code_data, code_start, func_start, func_end):
