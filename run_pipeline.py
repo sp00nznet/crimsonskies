@@ -116,7 +116,9 @@ def linear_disassemble_function(md, code_data, code_start, func_start, func_end)
 def lift_function_linear(lifter, name, instructions, leaders, func_start):
     lines = []
     lines.append(f'void {name}(void) {{')
-    lines.append(f'    uint32_t ebp = 0;')
+    # ebp is a global register (g_ebp via alias) — see recomp_types.h. It must
+    # persist across calls for frameless helpers, so it is NOT a per-function
+    # local. (No 'uint32_t ebp = 0;' emitted here anymore.)
     lines.append(f'    double _st[8] = {{0}};')
     lines.append(f'    int _fp_top = 0;')
     lines.append(f'    int _fpu_cmp = 0;')

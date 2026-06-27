@@ -30,8 +30,11 @@
 /* Volatile (caller-saved) registers */
 extern uint32_t g_eax, g_ecx, g_edx, g_esp;
 
-/* Callee-saved registers (also global for implicit parameter passing) */
-extern uint32_t g_ebx, g_esi, g_edi;
+/* Callee-saved registers (also global for implicit parameter passing).
+ * ebp MUST be global: frameless helper functions (no push ebp/mov ebp,esp
+ * prologue) read the caller's frame via [ebp+N], so ebp has to persist across
+ * calls exactly like real x86. Framed functions save/restore it via push/pop. */
+extern uint32_t g_ebx, g_esi, g_edi, g_ebp;
 
 /* Segment registers (flat mode Win32 - effectively unused) */
 extern uint16_t g_seg_cs, g_seg_ds, g_seg_es, g_seg_fs, g_seg_gs, g_seg_ss;
@@ -61,7 +64,7 @@ extern const uint32_t recomp_dispatch_count;
 #define esp g_esp
 #define esi g_esi
 #define edi g_edi
-/* ebp is declared local in each function */
+#define ebp g_ebp
 #define _seg_cs g_seg_cs
 #define _seg_ds g_seg_ds
 #define _seg_es g_seg_es
